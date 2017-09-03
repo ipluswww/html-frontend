@@ -1,0 +1,71 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0;">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Yachtcloser Demo</title>
+    <link href="..\css\style.css" rel="stylesheet" type="text/css">
+    <link href="..\css\jquery.fancybox.css" rel="stylesheet" type="text/css">
+    <link href="..\css\responsive.css" rel="stylesheet" type="text/css">
+    <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <style>
+		html, body { height: auto;}
+        body { background: #fff none; }
+    </style>
+   
+    <script language="javascript" type="text/javascript">
+		var bkfolder = "/";
+		var siteurlfull = "http://demo.ycwebservice.com";
+	</script>
+    <script type="text/javascript" src="..\js\jquery.min.js"></script>
+    <script type="text/javascript" src="..\js\html5.js"></script>
+    <script type="text/javascript" src="..\js\jquery-ui.min.js"></script>
+    <script type="text/javascript" src="..\js\jquery.ui.touch-punch.min.js"></script>
+    <script type="text/javascript" src="..\js\jquery.cookie.js"></script>
+    <script type="text/javascript" src="..\js\jquery.carouFredSel-6.2.1-packed.js"></script>
+    <script type="text/javascript" src="..\js\jquery.cycle2.min.js"></script>
+    <script type="text/javascript" src="..\js\jquery.fancybox.js"></script>
+    <script type="text/javascript" src="..\js\jquery.sticky-kit.min.js"></script>
+    <script type="text/javascript" src="..\js\language.js"></script>
+    <script type="text/javascript" src="..\js\validator.js"></script>
+    <script type="text/javascript" src="..\js\jquery.extra.js"></script>
+    <script type="text/javascript" src="..\js\creditapplication.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async="" defer=""></script>
+</head>
+<body class="pop">
+<div class="main text_area">
+    <form method="post" action="/" id="contact_roker_ff" name="ff">
+    	<input type="hidden" value="1400" id="yid" name="yid">
+        <input class="finfo" id="email2" name="email2" type="text">
+        <input type="hidden" id="fcapi" name="fcapi" value="contactmodelsubmit">
+        <ul class="form">
+            
+            <li>
+                <p>Your Name</p>
+                <input type="text" id="fullname" name="fullname" value="" class="input">
+            </li>
+            <li>
+                <p>Your Email Address</p>
+                <input type="text" id="email" name="email" value="" class="input">
+            </li>
+            <li>
+                <p>Subject</p>
+                <input type="text" id="subject" name="subject" value="2017 San Juan SJ40FB" class="input">
+            </li>
+            <li>
+                <p>Message</p>
+                <textarea name="message" id="message" rows="1" cols="1" class="comments"></textarea>
+            </li>
+            <li><div class="g-recaptcha" data-sitekey="6LcwGwgUAAAAAJN4_TdrEza_l3sM3iSk0QXfC0L_"></div></li>
+            <li>
+                <button type="submit" class="button" value="Send">Send</button>
+            </li>
+
+        </ul>
+    </form>
+<div class="clear"></div>
+</div>
+</body>
+</html>

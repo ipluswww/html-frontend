@@ -1,0 +1,729 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0;">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Yachtcloser Demo</title>
+    <meta name="description" content="Yachtcloser Demo">
+    <meta name="keywords" content="Yachtcloser Demo">
+    <meta name="google-site-verification" content="#">
+    
+		  <meta property="og:title" content="Yachtcloser Demo">
+		  <meta property="og:description" content="Yachtcloser Demo">
+		  <meta property="og:url" content="http://demo.ycwebservice.com/model/2017/viking/75-my/">
+		  <meta property="og:image" content="http://demo.ycwebservice.com/images/logoshare.png">	  
+		   
+    <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="..\..\..\..\favicons\favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="..\..\..\..\favicons\favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="..\..\..\..\favicons\favicon-16x16.png">
+    <link rel="manifest" href="..\..\..\..\favicons\manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <link href="..\..\..\..\css\font-awesome.min.css" rel="stylesheet">
+	<link href="..\..\..\..\css\socicon.css" rel="stylesheet">
+    <link href="..\..\..\..\css\jquery-ui.css" rel="stylesheet" type="text/css">
+    <link href="..\..\..\..\css\animate.css" rel="stylesheet" type="text/css">
+    <link href="..\..\..\..\css\camera.css" rel="stylesheet" type="text/css">
+    <link href="..\..\..\..\css\style.css" rel="stylesheet" type="text/css">
+    <link href="..\..\..\..\css\style-extend.css" rel="stylesheet" type="text/css">
+    <link href="..\..\..\..\css\menu.css" rel="stylesheet" type="text/css">    
+    <link href="..\..\..\..\css\jquery.timepicker.css" rel="stylesheet" type="text/css">
+    <link href="..\..\..\..\css\jquery.fancybox.css" rel="stylesheet" type="text/css">
+    <link href="..\..\..\..\css\responsive.css" rel="stylesheet" type="text/css">
+    <!--[if IE]>
+    <link rel="stylesheet" href="/css/ie.php?path=/" type="text/css" media="screen">
+    <![endif]-->
+
+    <script language="javascript" type="text/javascript">
+		var bkfolder = "/";
+		var siteurlfull = "http://demo.ycwebservice.com";
+	</script>
+    <script type="text/javascript" src="..\..\..\..\js\jquery.min.js"></script>
+    <script type="text/javascript" src="..\..\..\..\js\html5.js"></script>
+    <script type="text/javascript" src="..\..\..\..\js\jquery-ui.min.js"></script>
+    <script type="text/javascript" src="..\..\..\..\js\jquery.ui.touch-punch.min.js"></script>
+    <script type="text/javascript" src="..\..\..\..\js\jquery.timepicker.min.js"></script>
+    <script type="text/javascript" src="..\..\..\..\js\jquery.cookie.js"></script>
+    <script type="text/javascript" src="..\..\..\..\js\jquery.carouFredSel-6.2.1-packed.js"></script>
+    <script type="text/javascript" src="..\..\..\..\js\jquery.cycle2.min.js"></script>
+    <script type="text/javascript" src="..\..\..\..\js\jquery.fancybox.js"></script>
+    <script type="text/javascript" src="..\..\..\..\js\jquery.sticky-kit.min.js"></script>
+    <script type="text/javascript" src="..\..\..\..\js\jquery.previewer.js"></script>
+    <script type="text/javascript" src="..\..\..\..\js\language.js"></script>
+    
+    <script type="text/javascript" src="..\..\..\..\js\jquery.mobile.customized.min.js"></script>
+    <script type="text/javascript" src="..\..\..\..\js\jquery.easing.1.3.js"></script> 
+    <script type="text/javascript" src="..\..\..\..\js\camera.js"></script>
+
+    <script type="text/javascript" src="..\..\..\..\js\validator.js"></script>
+    <script type="text/javascript" src="..\..\..\..\js\jquery.extra.js"></script>
+    <script type="text/javascript" src="..\..\..\..\js\creditapplication.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async="" defer=""></script>
+
+ 
+    
+    
+            
+    <script type="text/javascript" src="..\..\..\..\js\abclient.js"></script>
+	<script type="text/javascript" src="..\..\..\..\js\abjquery.js"></script>
+    
+    <script></script>    
+    <script type="text/javascript">
+	var airbrake = new airbrakeJs.Client({projectId: 117837, projectKey: 'de3d05543b28193078e680a0e845ae4a'});
+	if (window.jQuery) 
+	  airbrakeJs.instrumentation.jquery(airbrake, jQuery);
+	
+	function ___log__error(aMsg, aUrl, aLine, aCol, aErr) {
+	 airbrake.notify({
+		error:       aErr,
+		context:     { script: 'script-name', url : aUrl, line: aLine, col: aCol },
+		session:     { userid: 'userid-if-any' }
+	  });
+	   return false;
+	};
+	//window.onerror = ___log__error;
+	</script>        
+</head>
+<body>
+
+<!--==============================header start=================================-->
+
+		<noscript>
+			<div class="noscript">
+				<div class="noscript-inner">
+					<p><strong>JavaScript seem to be disabled in your browser.</strong></p>
+					<p>You must have JavaScript enabled in your browser to utilize the functionality of this website.</p>
+				</div>
+			</div>
+		</noscript>
+		
+		<div class="fcheader header gradient clearfixmain">
+			<div class="container clearfixmain">
+				<ul class="headercol">
+					<li><a href="..\..\..\..\index.htm" title="YC Website Demo"><img src="..\..\..\..\images\logo.png" alt="YC Website Demo"></a></li>
+					<li class="clearfixmain">
+						<div class="header-right-top clearfixmain">
+														
+						</div>
+						
+						<div class="topsocial clearfixmain"> 
+							<ul class="social_icon">               	
+								<li><a class="facebook" title="Facebook" href="https://www.facebook.com/YachtCloser" target="_blank"><span class="socicon socicon-facebook"></span></a></li><li><a class="twitter" title="Twitter" href="https://twitter.com/yachtcloser" target="_blank"><span class="socicon socicon-twitter"></span></a></li><li><a class="google" title="Google Plus" href="https://plus.google.com/b/104437041434625196887/+YachtCloser/posts" target="_blank"><span class="socicon socicon-google"></span></a></li><li><a class="linkedin" title="Linkedin" href="https://www.linkedin.com/company/yachtcloser-com" target="_blank"><span class="socicon socicon-linkedin"></span></a></li>
+							</ul>        
+						</div>
+						
+						<div class="topphone clearfixmain">
+							<a class="tel" href="tel:(954) 361-1322"><span>(954) 361-1322</span></a>
+						</div>						
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+		<!--Top Navigation-->
+		<div id="toggle"><a title="Menu" class="gn-icon-menu" href="javascript:void(0);"><span></span><menutitle>Menu</menutitle></a></div>
+		<div id="menu" class="menu clearfixmain">
+			<div class="container clearfixmain">   	
+				<ul class="nav-menu"><li><a href="..\..\..\..\index.htm">Home</a></li><li><a href="..\..\..\..\inventory.htm">Inventory<i class="fa fa-angle-down"></i></a><ul class="sub-menu">
+				<li><a href="..\..\..\..\featured-boats.htm">Featured Boats</a></li>
+				
+				<li><a href="..\..\..\..\new-inventory.htm">New Inventory</a></li>
+				
+				<li><a href="..\..\..\..\brokerage-inventory.htm">Brokerage Inventory</a></li>
+				
+				<li><a href="..\..\..\..\search-by-type.htm">Search By Type</a></li>
+				
+				<li><a href="..\..\..\..\search-by-brand.htm">Search By Brand</a></li>
+				
+				<li><a href="..\..\..\..\recently-sold.htm">Recently Sold</a></li>
+				
+				<li><a href="..\..\..\..\find-my-boat.htm">Find My Boat</a></li>
+				</ul></li><li class="current-menu-item"><a href="javascript:void(0);">New Yachts<i class="fa fa-angle-down"></i></a><ul class="sub-menu">
+				<li><a href="..\..\..\..\mjm-yacht.htm">MJM Yacht</a></li>
+				
+				<li><a href="..\..\..\..\san-juan-yachts.htm">San Juan Yachts</a></li>
+				
+				<li><a href="..\..\..\..\viking-yachts.htm">Viking Yachts</a></li>
+				</ul></li><li><a href="javascript:void(0);">Pages<i class="fa fa-angle-down"></i></a><ul class="sub-menu">
+				<li><a href="..\..\..\..\content.htm">Content</a></li>
+				
+				<li><a href="..\..\..\..\blog.htm">Blog</a></li>
+				
+				<li><a href="..\..\..\..\news.htm">News</a></li>
+				</ul></li><li><a href="javascript:void(0);">Forms<i class="fa fa-angle-down"></i></a><ul class="sub-menu">
+				<li><a href="..\..\..\..\contact-us.htm">Contact Us</a></li>
+				
+				<li><a href="..\..\..\..\sell-your-boat.htm">Sell Your Boat</a></li>
+				
+				<li><a href="..\..\..\..\trade-your-boat.htm">Trade Your Boat</a></li>
+				
+				<li><a href="..\..\..\..\insurance-quote.htm">Insurance Quote</a></li>
+				
+				<li><a href="..\..\..\..\finance-application.htm">Finance Application</a></li>
+				
+				<li><a href="..\..\..\..\transport-quote.htm">Transport Quote</a></li>
+				
+				<li><a href="..\..\..\..\service.htm">Service</a></li>
+				
+				<li><a href="..\..\..\..\we-buy-boats.htm">We Buy Boats</a></li>
+				</ul></li><li><a href="..\..\..\..\marketing.htm">Marketing</a></li><li><a href="..\..\..\..\about-us.htm">About Us<i class="fa fa-angle-down"></i></a><ul class="sub-menu nav_last">
+				<li><a href="..\..\..\..\our-team.htm">Our Team</a></li>
+				
+				<li><a href="..\..\..\..\locations.htm">Locations</a></li>
+				
+				<li><a href="..\..\..\..\customer-testimonials.htm">Customer Testimonials</a></li>
+				
+				<li><a href="..\..\..\..\share-testimonial.htm">Share Testimonial</a></li>
+				</ul></li></ul>
+			</div>
+		</div>
+		<!--Top Navigation end-->
+		<!--==============================header end=================================-->
+
+<!--Image Slider-->
+<!--Image Slider end-->
+
+<!--Main start-->
+<div class="main">
+<div class="container text_area">
+    <ul class="breadcrumbs"><li><a href="..\..\..\..\index.htm">Home</a></li><li><a href="javascript:void(0);">New Yachts</a></li><li><a href="..\..\..\..\viking-yachts.htm">Viking Yachts</a></li><li><a href="javascript:void(0);">75 MY</a></li></ul>
+	  <div class="clear"></div>
+	       
+<div class="product-detail">
+	
+				<div class="product-detail-header">
+					<h1 class="title">2017 Viking 75 MY</h1>
+					<ul class="listing-meta"><li class="ft">75 ft</li><li class="cat">Motor Yacht</li></ul>
+				</div>
+				    <div class="clear"></div>
+    <div class="left-cell">
+    	
+            <div class="product-slider-wrap">
+                <ul class="product-slider">
+                <li><img src="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/J4CZKX0ERZEEQ0TGKJJX7AYSI20SECE12451206mm2017-02-1308.07.07am.png" title="" alt=""></li><li><img src="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/I5BIVZW0CTR1UYS5I8Z0MFWY3UHUNNN12451206mm2016-12-2208.01.10am.png" title="" alt=""></li><li><img src="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/AVKFRNTAB8WNB4TWPNYCU1PE7YC8TV712451206mm2016-12-2208.01.24am.png" title="" alt=""></li><li><img src="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/H3XTU3JAYV857XBAX0NQ41BKAWHC1RT12451206mm2016-12-2208.01.41am.png" title="" alt=""></li><li><img src="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/TNVYAHCV256K10IBJ363WB333CM8SM812451206mm2016-12-2208.01.56am.png" title="" alt=""></li><li><img src="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/AHEHI2VYP8EJS1YEUI3TH8KMYTQSVK712451206mm2016-12-2208.02.19am.png" title="" alt=""></li><li><img src="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/XHH1ZAEBS5V2KHVYF5WHM5CKETAGX7S12451206mm2016-12-2208.02.28am.png" title="" alt=""></li><li><img src="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/YNVP55G68SCV5XSECU2Z6FKB7AFJQBQ12451206mm2016-12-2208.02.50am.png" title="" alt=""></li><li><img src="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/8JARQ4S1H7F7KR7ESBZ6E6KTW4NFWHP12451206mm2016-12-2208.03.08am.png" title="" alt=""></li><li><img src="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/GHIZFFNVQWRFPJZB0TUYU8NICRN2J0J12451206mm2016-12-2208.03.22am.png" title="" alt=""></li>
+                </ul>
+				<a class="prev" href="#" title="Previous"></a><a class="next" href="#" title="Next"><span>next</span></a>
+				<div id="pager" class="pager"></div>
+            </div>
+                
+					
+				<div class="social righticoncol">
+				<ul>
+					<li><a href="https://data.yachtcloser.com/bsdownload/?fcapi=createmodelpdf&modelid=1206&mfid=1245&siteid=65" title="Create a Brochure"><img src="https://data.yachtcloser.com/images/print.png" alt=""></a></li>
+					<li>
+		<div id="fb-root"></div>
+		<script>
+		window.fbAsyncInit = function() {
+		  // init the FB JS SDK
+		  FB.init({
+			appId      : '396027900547624',                        // App ID from the app dashboard			
+			status     : true,                                 // Check Facebook Login status
+			xfbml      : true                                  // Look for social plugins on the page
+		  });
+	  
+		  // Additional initialization code such as adding Event Listeners goes here
+		};
+	  
+		// Load the SDK asynchronously
+		(function(d, s, id){
+		   var js, fjs = d.getElementsByTagName(s)[0];
+		   if (d.getElementById(id)) {return;}
+		   js = d.createElement(s); js.id = id;
+		   js.src = "//connect.facebook.net/en_US/all.js";
+		   fjs.parentNode.insertBefore(js, fjs);
+		 }(document, 'script', 'facebook-jssdk'));
+		 
+		 function fb_share() {
+			FB.ui( {
+				method: 'feed',
+				name: "2017+Viking+75+MY",
+				link: "http%3A%2F%2Fdemo.ycwebservice.com%2Fmodel%2F2017%2Fviking%2F75-my%2F",
+				picture: "https://stackexchange.com/users/flair/557969.png",
+				caption: "Please+check+this+record."
+			}, function( response ) {
+				if ( response !== null && typeof response.post_id !== 'undefined' ) {
+					console.log( response );
+					// ajax call to save response
+				  $.post( 'http://www.webniraj.com/', { 'response': response }, function( result ) {
+						console.log( result );
+					}, 'json' );
+				}
+			} );
+		}
+		
+		$(document).ready(function(){
+		  $(".fbbtn").on( "click", fb_share );
+		});
+
+		</script>
+		<a class="fbbtn" title="Facebook Share" href="javascript:void(0);"><img src="https://data.yachtcloser.com/images/facebook.png" alt=""></a>
+		</li>
+					<li><a title="Google + Share" href="https://plusone.google.com/_/+1/confirm?hl=en&url=http%3A%2F%2Fdemo.ycwebservice.com%2Fmodel%2F2017%2Fviking%2F75-my%2F" target="_blank"><img src="https://data.yachtcloser.com/images/googleplus.png" alt=""></a></li>
+					<li><a title="Twitter Post" href="http://twitter.com/home?status=Please+check+this+record." target="_blank"><img src="https://data.yachtcloser.com/images/twitter.png" alt=""></a></li>
+					<li><a title="Linkedin Post" href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fdemo.ycwebservice.com%2Fmodel%2F2017%2Fviking%2F75-my%2F&title=2017+Viking+75+MY&summary=Please+check+this+record.&source=YachtCloser Data" target="_blank"><img src="https://data.yachtcloser.com/images/linkden.png" alt=""></a></li>
+					<li><a title="Pinterest Post" href="http://pinterest.com/pin/create/button/?url=&media=https%3A%2F%2Fdata.yachtcloser.com%2Fyachtimage%2FPlease+check+this+record.%2Fbigger%2Fhttp%3A%2F%2Fdemo.ycwebservice.com%2Fmodel%2F2017%2Fviking%2F75-my%2F&description=2017+Viking+75+MY" target="_blank"><img src="https://data.yachtcloser.com/images/pinterest.png" alt=""></a></li>					
+				</ul>
+				</div>
+				<div class="clear"></div>
+				
+				<div class="product-description-wrap">
+					<ul class="product-description-nav">
+						<li><a href="javascript:void(0);" ptabid="1" class="active">Overview</a></li>
+						<li><a href="javascript:void(0);" ptabid="2">Specifications</a></li>
+						<li><a href="javascript:void(0);" ptabid="3">Gallery</a></li>
+						<li><a href="javascript:void(0);" ptabid="4">Features</a></li>
+				
+					</ul>
+					<div class="product-description">
+						<div class="description-tab" id="ptab1">
+							<h3 class="title">Overview</h3>
+							<div class="con">
+								<table cellpadding="2" cellspacing="2">
+	<tbody>
+		<tr>
+			<td>
+				<table border="0" cellpadding="2" cellspacing="2">
+					<tbody>
+						<tr>
+							<td>
+								Viking 75 Motor Yacht</td>
+						</tr>
+					</tbody>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<table border="0" cellpadding="2" cellspacing="2">
+					<tbody>
+						<tr>
+							<td>
+								<p>
+									&ldquo;What goes around comes around&rdquo; is a popular saying of Viking&rsquo;s co-founder and president, Bill Healey, and one that emerges again as Viking has relaunched its motor yacht series.</p>
+								<p>
+									Viking exited the motor yacht market with the last 60 Cockpit Sport Yacht delivered in 2001. This model was a strong performer and during its reign was recognized by Boating magazine as the publication&rsquo;s Boat of the Year in 1995. Much has changed in the motor yacht arena over the years and the development of the new 75 Motor Yacht, a strategic collaboration between the Viking Yacht design team and the firm of Michael Peters Yacht Design of Sarasota, Florida, reflects a number of innovations and refinements in this portion of the market.</p>
+								<p>
+									The exterior profile is sleek, curvy and embodies a number of style cues from our convertibles including the teardrop salon windows, and distinctive molded feature lines in the hull and superstructure. The fiberglass hardtop and raked side supports replicates the look of our Sky Bridge, a very popular appointment found aboard many of our enclosed bridge convertibles. An integrated molded swim platform is planked with teak for secure footing for boarding, as well as water sports activities. Shapely port lights and master stateroom hull side windows contribute style and function, and the full wrap-around anodized aluminum bow rail and wide side decks make for convenient passage when moving forward to handle dock lines or anchoring.</p>
+								<p>
+									As always, a new Viking starts with a freshly designed hull to take full advantage of the available power so as to perform to our formidable standards. The 75 Motor Yacht has a convertible running surface to not only utilize the available horsepower to its best advantage for speed and efficiency, but also for ease of handling and sea-keeping ability. These elements are major differences between our 75 MY and other motor yachts of similar and even longer LOA. The first boat, delivered with a pair of C32-A Caterpillars developing 1,925 mhp each. With a 30 knot cruise and a top end in the mid-30 knot range. With this kind of speed, longer distances can be comfortably covered in a day&rsquo;s run opening up new cruising areas and expanding opportunities for traveling in motor yacht fashion.</p>
+								<p>
+									The Viking 75 Motor Yacht is filled with special features and spacious accommodations. The tri-level layout demonstrates an intelligent use of space with accents on family comfort and usability. Twin molded fiberglass staircases lead from the teak planked swim platform to the aft deck with its U-shape lounge and table, a perfect invitation for al fresco dining at the yacht club, or on the hook in Nantucket Harbor. A glass door slides open to the salon and you are greeted with the warmth of hand-finished teak joinery, and the rich textures of designer fabrics and soft leathers balanced with natural lighting that feeds in from the salon windows.</p>
+								<p>
+									A custom made sofa and cocktail table on the port side faces teak cabinetry with a built-in entertainment center and flat screen television, which rises on an electric lift. Moving forward, the center area combines a formal dining area with seating for six, and a galley capably equipped to turn out anything from a shrimp cocktail to a 20-pound roast.</p>
+								<p>
+									A lower helm station is complemented with an electronic navigation and communication package provided by Viking sister company Atlantic Marine Electronics. The helm area features a pair of leather seats and additional seating is available at the port settee. Lounge seating also is provided forward on the main exterior deck, along with a large sun pad making this a most versatile area at the dock or under way.</p>
+								<p>
+									Below, accommodations include five nicely proportioned staterooms, each with its own head and shower, including a full beam master suite and crew quarters with private access from the stern.</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<p>
+	&nbsp;</p>
+							</div>
+						</div>
+					
+						<div class="description-tab" id="ptab2">
+							<h3 class="title">Specifications</h3>
+							<div class="con specifications">
+								<h3>Basic Information</h3>
+								<div class="specifications-row"><div class="devider">
+										<div class="left-side">
+											<dl>
+												<dt>Manufacturer:</dt>
+												<dd>Viking</dd>
+											</dl>
+											<dl>
+												<dt>Model:</dt>
+												<dd>75 MY</dd>
+											</dl>
+											<dl>
+												<dt>Year:</dt>
+												<dd>2017</dd>
+											</dl>
+											<dl>
+												<dt>Category:</dt>
+												<dd>Power</dd>
+											</dl>										
+										</div>
+										<div class="right-side">										
+											<dl>
+												<dt>Boat Type:</dt>
+												<dd>Motor Yacht</dd>
+											</dl>
+											<dl>
+												<dt>Hull Material:</dt>
+												<dd>Fiberglass</dd>
+											</dl>
+											<dl>
+												<dt>Hull Type:</dt>
+												<dd></dd>
+											</dl>										
+										</div>
+										<div class="clear"></div>
+									</div></div>
+								
+								<h3>Dimensions &amp; Weight</h3>
+								<div class="specifications-row"><div class="devider">
+										<div class="left-side">
+											<dl>
+												<dt>Length:</dt>
+												<dd>75 ft - 22.86 meter</dd>
+											</dl>
+											<dl>
+												<dt>LOA:</dt>
+												<dd>78 ft 10 in - 24.03 meter</dd>
+											</dl>
+											<dl>
+												<dt>Beam:</dt>
+												<dd>20 ft 6 in - 6.25 meter</dd>
+											</dl>
+										</div>
+										<div class="right-side">
+											<dl>
+												<dt>Draft - max:</dt>
+												<dd>5 ft 8 in - 1.73 meter</dd>
+											</dl>
+											<dl>
+												<dt>Bridge Clearance:</dt>
+												<dd>-</dd>
+											</dl>
+											<dl>
+												<dt>Dry Weight:</dt>
+												<dd>148175 lbs</dd>
+											</dl>
+											<dl>
+												<dt>Deadrise Aft:</dt>
+												<dd>-</dd>
+											</dl>
+										</div>
+										<div class="clear"></div>
+									</div></div>
+								
+				<h3>Standard Engine</h3>
+				<div class="specifications-row"><div class="devider">
+						<div class="left-side">
+							<dl>
+								<dt>Make:</dt>
+								<dd>MAN</dd>
+							</dl>
+							<dl>
+								<dt>Model:</dt>
+								<dd>V12 1550CRM</dd>
+							</dl>
+							<dl>
+								<dt>Horsepower:</dt>
+								<dd>1550</dd>
+							</dl>
+						</div>
+						<div class="right-side">
+							<dl>
+								<dt>Engine Type:</dt>
+								<dd>Inboard</dd>
+							</dl>
+							<dl>
+								<dt>Drive Type:</dt>
+								<dd></dd>
+							</dl>
+							<dl>
+								<dt>Fuel Type:</dt>
+								<dd>Diesel</dd>
+							</dl>
+						</div>
+						<div class="clear"></div>
+					</div></div>
+				
+				<h3>Optional Engine</h3>
+				<div class="specifications-row"><div class="devider">
+						<div class="left-side">
+							<dl>
+								<dt>Make:</dt>
+								<dd>MAN</dd>
+							</dl>
+							<dl>
+								<dt>Model:</dt>
+								<dd>V12 1800</dd>
+							</dl>
+							<dl>
+								<dt>Horsepower:</dt>
+								<dd>1800</dd>
+							</dl>
+						</div>
+						<div class="right-side">
+							<dl>
+								<dt>Engine Type:</dt>
+								<dd>Inboard</dd>
+							</dl>
+							<dl>
+								<dt>Drive Type:</dt>
+								<dd></dd>
+							</dl>
+							<dl>
+								<dt>Fuel Type:</dt>
+								<dd>Diesel</dd>
+							</dl>
+						</div>
+						<div class="clear"></div>
+					</div></div>
+				
+				<h3>Optional Engine</h3>
+				<div class="specifications-row"><div class="devider">
+						<div class="left-side">
+							<dl>
+								<dt>Make:</dt>
+								<dd>Caterpillar</dd>
+							</dl>
+							<dl>
+								<dt>Model:</dt>
+								<dd>C32A</dd>
+							</dl>
+							<dl>
+								<dt>Horsepower:</dt>
+								<dd>1925</dd>
+							</dl>
+						</div>
+						<div class="right-side">
+							<dl>
+								<dt>Engine Type:</dt>
+								<dd>Inboard</dd>
+							</dl>
+							<dl>
+								<dt>Drive Type:</dt>
+								<dd></dd>
+							</dl>
+							<dl>
+								<dt>Fuel Type:</dt>
+								<dd>Diesel</dd>
+							</dl>
+						</div>
+						<div class="clear"></div>
+					</div></div>
+				
+								<h3>Tank Capacities</h3>
+								<div class="specifications-row"><div class="devider">
+										<div class="left-side">
+											<dl>
+												<dt>Fuel Tank:</dt>
+												<dd>1650 gallons - 1 tank(s)</dd>
+											</dl>
+											<dl>
+												<dt>Fresh Water Tank:</dt>
+												<dd>300 gallons - 1 tank(s)</dd>
+											</dl>
+										</div>
+										<div class="right-side">
+											<dl>
+												<dt>Holding Tank:</dt>
+												<dd>-</dd>
+											</dl>
+										</div>
+										<div class="clear"></div>
+									</div></div>
+								
+								<h3>Accommodations</h3>
+								<div class="specifications-row"><div class="devider">
+										<div class="left-side">
+											<dl>
+												<dt>Total Cabins:</dt>
+												<dd>6</dd>
+											</dl>
+											<dl>
+												<dt>Total Berths:</dt>
+												<dd>-</dd>
+											</dl>
+											<dl>
+												<dt>Total Sleeps:</dt>
+												<dd>-</dd>
+											</dl>
+											<dl>
+												<dt>Total Heads:</dt>
+												<dd>5</dd>
+											</dl>
+											<dl>
+												<dt>Captains Cabin:</dt>
+												<dd>No</dd>
+											</dl>
+										</div>
+										<div class="right-side">
+											<dl>
+												<dt>Crew Cabins:</dt>
+												<dd>-</dd>
+											</dl>
+											<dl>
+												<dt>Crew Berths:</dt>
+												<dd>-</dd>
+											</dl>
+											<dl>
+												<dt>Crew Sleeps:</dt>
+												<dd>-</dd>
+											</dl>
+											<dl>
+												<dt>Crew Heads:</dt>
+												<dd>-</dd>
+											</dl>
+										</div>
+										<div class="clear"></div>
+									</div></div>
+								
+							</div>
+						</div>
+						
+						<div class="description-tab" id="ptab3">
+							
+            <h3 class="title">Gallery</h3>
+            <div class="con">
+                <ul class="product-gallery">
+                <li><a class="fancybox" data-fancybox-group="gallery" href="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/J4CZKX0ERZEEQ0TGKJJX7AYSI20SECE12451206mm2017-02-1308.07.07am.png" title="" alt=""><img src="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/J4CZKX0ERZEEQ0TGKJJX7AYSI20SECE12451206mm2017-02-1308.07.07am.png"></a></li><li><a class="fancybox" data-fancybox-group="gallery" href="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/I5BIVZW0CTR1UYS5I8Z0MFWY3UHUNNN12451206mm2016-12-2208.01.10am.png" title="" alt=""><img src="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/I5BIVZW0CTR1UYS5I8Z0MFWY3UHUNNN12451206mm2016-12-2208.01.10am.png"></a></li><li><a class="fancybox" data-fancybox-group="gallery" href="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/AVKFRNTAB8WNB4TWPNYCU1PE7YC8TV712451206mm2016-12-2208.01.24am.png" title="" alt=""><img src="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/AVKFRNTAB8WNB4TWPNYCU1PE7YC8TV712451206mm2016-12-2208.01.24am.png"></a></li><li><a class="fancybox" data-fancybox-group="gallery" href="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/H3XTU3JAYV857XBAX0NQ41BKAWHC1RT12451206mm2016-12-2208.01.41am.png" title="" alt=""><img src="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/H3XTU3JAYV857XBAX0NQ41BKAWHC1RT12451206mm2016-12-2208.01.41am.png"></a></li><li><a class="fancybox" data-fancybox-group="gallery" href="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/TNVYAHCV256K10IBJ363WB333CM8SM812451206mm2016-12-2208.01.56am.png" title="" alt=""><img src="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/TNVYAHCV256K10IBJ363WB333CM8SM812451206mm2016-12-2208.01.56am.png"></a></li><li><a class="fancybox" data-fancybox-group="gallery" href="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/AHEHI2VYP8EJS1YEUI3TH8KMYTQSVK712451206mm2016-12-2208.02.19am.png" title="" alt=""><img src="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/AHEHI2VYP8EJS1YEUI3TH8KMYTQSVK712451206mm2016-12-2208.02.19am.png"></a></li><li><a class="fancybox" data-fancybox-group="gallery" href="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/XHH1ZAEBS5V2KHVYF5WHM5CKETAGX7S12451206mm2016-12-2208.02.28am.png" title="" alt=""><img src="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/XHH1ZAEBS5V2KHVYF5WHM5CKETAGX7S12451206mm2016-12-2208.02.28am.png"></a></li><li><a class="fancybox" data-fancybox-group="gallery" href="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/YNVP55G68SCV5XSECU2Z6FKB7AFJQBQ12451206mm2016-12-2208.02.50am.png" title="" alt=""><img src="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/YNVP55G68SCV5XSECU2Z6FKB7AFJQBQ12451206mm2016-12-2208.02.50am.png"></a></li><li><a class="fancybox" data-fancybox-group="gallery" href="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/8JARQ4S1H7F7KR7ESBZ6E6KTW4NFWHP12451206mm2016-12-2208.03.08am.png" title="" alt=""><img src="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/8JARQ4S1H7F7KR7ESBZ6E6KTW4NFWHP12451206mm2016-12-2208.03.08am.png"></a></li><li><a class="fancybox" data-fancybox-group="gallery" href="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/GHIZFFNVQWRFPJZB0TUYU8NICRN2J0J12451206mm2016-12-2208.03.22am.png" title="" alt=""><img src="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/GHIZFFNVQWRFPJZB0TUYU8NICRN2J0J12451206mm2016-12-2208.03.22am.png"></a></li><li><a class="fancybox" data-fancybox-group="gallery" href="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/EW25NPIX1G1842PEKSMGMQ8SKAVW0YB12451206mm2016-12-2208.03.42am.png" title="" alt=""><img src="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/EW25NPIX1G1842PEKSMGMQ8SKAVW0YB12451206mm2016-12-2208.03.42am.png"></a></li><li><a class="fancybox" data-fancybox-group="gallery" href="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/2MY1USKSWJ4PYIX0W3Z8WIXMN0JYB2412451206mm2016-12-2208.03.57am.png" title="" alt=""><img src="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/2MY1USKSWJ4PYIX0W3Z8WIXMN0JYB2412451206mm2016-12-2208.03.57am.png"></a></li><li><a class="fancybox" data-fancybox-group="gallery" href="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/0H4G6FTTWEU3CMHFYHJ0PMQZJ5B5UCG12451206mm2016-12-2208.04.37am.png" title="" alt=""><img src="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/0H4G6FTTWEU3CMHFYHJ0PMQZJ5B5UCG12451206mm2016-12-2208.04.37am.png"></a></li><li><a class="fancybox" data-fancybox-group="gallery" href="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/JHTHPBAHU4W4A2E1HMXHBP3R7SYVFW812451206mm2016-12-2208.04.51am.png" title="" alt=""><img src="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/JHTHPBAHU4W4A2E1HMXHBP3R7SYVFW812451206mm2016-12-2208.04.51am.png"></a></li><li><a class="fancybox" data-fancybox-group="gallery" href="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/CFNYFKIKX251IGT4WT2Q56IMI6FEWBN12451206mm2016-12-2208.05.09am.png" title="" alt=""><img src="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/CFNYFKIKX251IGT4WT2Q56IMI6FEWBN12451206mm2016-12-2208.05.09am.png"></a></li><li><a class="fancybox" data-fancybox-group="gallery" href="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/FBS4H1AZ06F87CUKBBQIYFX0GZWAP4P12451206mm2016-12-2208.05.28am.png" title="" alt=""><img src="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/FBS4H1AZ06F87CUKBBQIYFX0GZWAP4P12451206mm2016-12-2208.05.28am.png"></a></li><li><a class="fancybox" data-fancybox-group="gallery" href="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/1W4PVQTZ6H7B0THSQAYFHJ3ZMHTXV3E12451206mm2016-12-2208.05.50am.png" title="" alt=""><img src="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/1W4PVQTZ6H7B0THSQAYFHJ3ZMHTXV3E12451206mm2016-12-2208.05.50am.png"></a></li><li><a class="fancybox" data-fancybox-group="gallery" href="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/R381QQZ7E31N1WTG27ASJMVJN73S22112451206mm2016-12-2208.06.08am.png" title="" alt=""><img src="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/R381QQZ7E31N1WTG27ASJMVJN73S22112451206mm2016-12-2208.06.08am.png"></a></li><li><a class="fancybox" data-fancybox-group="gallery" href="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/UPIXHZSNRAP5XH3B1XKG1Q8P1V0FNR612451206mm2016-12-2208.06.23am.png" title="" alt=""><img src="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/UPIXHZSNRAP5XH3B1XKG1Q8P1V0FNR612451206mm2016-12-2208.06.23am.png"></a></li>
+                </ul>
+               <div class="clear"></div>
+            </div>
+                
+						</div>
+						
+						<div class="description-tab" id="ptab4">
+							<h3 class="title">Features</h3>
+							<div class="con">
+															
+							</div>
+						</div>
+					
+					</div>
+				</div>
+				    </div>
+    <div class="right-cell scrollcol" parentdiv="product-detail">
+    	<section class="section broker-wrap">
+            
+        <h3>Presented by :</h3>
+        <div class="broker">
+            <img src="..\..\..\..\images\logo-blue.png" alt="">            
+            <div class="clear"></div>
+        </div>
+        
+		<div class="ph"><a class="tel" href="tel:(954) 361-1322"><span>(954) 361-1322</span></a></div>
+		<div class="cb cb2"><a href="..\..\..\..\contact-model\index-46.htm?m=1206" class="contactbroker button contact" data-fancybox-type="iframe"><span>Contact Us</span></a></div>
+		<div class="cb cb2"><a href="..\..\..\..\make\viking\condition\new\index.htm" class="button contact">New Inventory in Stock</a></div><div class="cb cb2"><a href="..\..\..\..\make\viking\condition\used\index.htm" class="button contact">Used Boats</a></div>
+                </section>
+        
+        <section class="section">
+        
+				<h3>Our Locations :</h3>
+				<div class="locationholdersidebar clearfixmain">
+				<ul class="locationlist">
+				<li>
+					<h4><a href="..\..\..\..\locationprofile\fort-lauderdale\index.htm">Fort Lauderdale</a>
+					
+					<div class="locaddress">777 SE 20th Street, Suite 280</div>
+					<div class="locaddress">Fort Lauderdale, FL, US</div>
+					<div class="locphone"><a class="tel" href="tel:(954) 361-1322">(954) 361-1322</a></div>
+					
+				</h4></li>
+				</ul></div>        </section>
+        
+        <section class="section clearfixmain">
+	<h2>
+		Heading</h2>
+	<p>
+		Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s</p>
+</section>
+
+<h2 class="sidebartitle">Heading 2</h2>
+<div class="leftrightcolsection notopborder clearfixmain">
+<p>
+		Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s</p>
+</div>
+    </div>
+    <div class="clear"></div>
+</div>
+		
+                
+                
+                <div class="clear"></div>
+    </div>
+     
+	<div class="clear"></div> 
+	</div> 
+<!--Main end-->
+
+<!--Footer Start-->
+
+		<div class="footer clearfixmain">
+			<div class="container clearfixmain">
+				
+				<div class="footertop clearfixmain">
+					
+             <ul class="footermenu">
+            
+                 <li><a href="..\..\..\..\index.htm">Home</a></li>
+                 
+                 <li><a href="..\..\..\..\inventory.htm">Inventory</a></li>
+                 
+                 <li class="current_page_item"><a href="..\..\..\..\mjm-yacht.htm">New Yachts</a></li>
+                 
+                 <li><a href="..\..\..\..\content.htm">Pages</a></li>
+                 
+                 <li><a href="..\..\..\..\contact-us.htm">Forms</a></li>
+                 
+                 <li><a href="..\..\..\..\marketing.htm">Marketing</a></li>
+                 
+                 <li><a href="..\..\..\..\about-us.htm">About Us</a></li>
+                 
+                 <li><a href="..\..\..\..\login\index.htm">Login</a></li>
+                 
+            </ul>
+			<div class="clearfix"></div>
+            
+				</div>
+				
+				<div class="footerlogo"><img src="..\..\..\..\images\footer-logo.png" alt="YC Website Demo"></div>
+				
+				<div class="footerbottom clearfixmain">
+					<ul class="footercol">
+						<li>
+							<div class="bottomphone"><a class="tel" href="tel:(954) 361-1322">(954) 361-1322</a></div>
+						</li>
+						
+						<li>
+							<div class="bottomemail"><a href="mailto:websites@yachtcloser.com">websites@yachtcloser.com</a></div>
+						</li>
+						
+						<li>
+							<ul class="social_icon">               	
+								<li><a class="facebook" title="Facebook" href="https://www.facebook.com/YachtCloser" target="_blank"><span class="socicon socicon-facebook"></span></a></li><li><a class="twitter" title="Twitter" href="https://twitter.com/yachtcloser" target="_blank"><span class="socicon socicon-twitter"></span></a></li><li><a class="google" title="Google Plus" href="https://plus.google.com/b/104437041434625196887/+YachtCloser/posts" target="_blank"><span class="socicon socicon-google"></span></a></li><li><a class="linkedin" title="Linkedin" href="https://www.linkedin.com/company/yachtcloser-com" target="_blank"><span class="socicon socicon-linkedin"></span></a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				
+			</div>
+		</div>
+		
+		<div class="footerlast clearfixmain">
+			<div class="container clearfixmain">
+				<ul class="footerbox">
+					<li>&copy; Copyright <?php echo="" date("y");=""?> YC Website Demo.</li>            
+					<li>Powered by <a href="http://www.yachtcloser.com" target="_blank">YachtCloser</a></li>
+				</ul>
+			</div>
+		</div>
+		<!--Footer End-->
+
+<a href="javascript:void(0);" class="BackToTop">Top</a>
+<div id="fc_msg" class="errormessagepop">
+<script></script></div></body>
+</html>

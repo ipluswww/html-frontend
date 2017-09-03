@@ -1,0 +1,743 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0;">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Yachtcloser Demo</title>
+    <meta name="description" content="Yachtcloser Demo">
+    <meta name="keywords" content="Yachtcloser Demo">
+    <meta name="google-site-verification" content="#">
+    
+		  <meta property="og:title" content="Yachtcloser Demo">
+		  <meta property="og:description" content="Yachtcloser Demo">
+		  <meta property="og:url" content="http://demo.ycwebservice.com/model/2017/san-juan/sj40fb/">
+		  <meta property="og:image" content="http://demo.ycwebservice.com/images/logoshare.png">	  
+		   
+    <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="..\..\..\..\favicons\favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="..\..\..\..\favicons\favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="..\..\..\..\favicons\favicon-16x16.png">
+    <link rel="manifest" href="..\..\..\..\favicons\manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <link href="..\..\..\..\css\font-awesome.min.css" rel="stylesheet">
+	<link href="..\..\..\..\css\socicon.css" rel="stylesheet">
+    <link href="..\..\..\..\css\jquery-ui.css" rel="stylesheet" type="text/css">
+    <link href="..\..\..\..\css\animate.css" rel="stylesheet" type="text/css">
+    <link href="..\..\..\..\css\camera.css" rel="stylesheet" type="text/css">
+    <link href="..\..\..\..\css\style.css" rel="stylesheet" type="text/css">
+    <link href="..\..\..\..\css\style-extend.css" rel="stylesheet" type="text/css">
+    <link href="..\..\..\..\css\menu.css" rel="stylesheet" type="text/css">    
+    <link href="..\..\..\..\css\jquery.timepicker.css" rel="stylesheet" type="text/css">
+    <link href="..\..\..\..\css\jquery.fancybox.css" rel="stylesheet" type="text/css">
+    <link href="..\..\..\..\css\responsive.css" rel="stylesheet" type="text/css">
+    <!--[if IE]>
+    <link rel="stylesheet" href="/css/ie.php?path=/" type="text/css" media="screen">
+    <![endif]-->
+
+    <script language="javascript" type="text/javascript">
+		var bkfolder = "/";
+		var siteurlfull = "http://demo.ycwebservice.com";
+	</script>
+    <script type="text/javascript" src="..\..\..\..\js\jquery.min.js"></script>
+    <script type="text/javascript" src="..\..\..\..\js\html5.js"></script>
+    <script type="text/javascript" src="..\..\..\..\js\jquery-ui.min.js"></script>
+    <script type="text/javascript" src="..\..\..\..\js\jquery.ui.touch-punch.min.js"></script>
+    <script type="text/javascript" src="..\..\..\..\js\jquery.timepicker.min.js"></script>
+    <script type="text/javascript" src="..\..\..\..\js\jquery.cookie.js"></script>
+    <script type="text/javascript" src="..\..\..\..\js\jquery.carouFredSel-6.2.1-packed.js"></script>
+    <script type="text/javascript" src="..\..\..\..\js\jquery.cycle2.min.js"></script>
+    <script type="text/javascript" src="..\..\..\..\js\jquery.fancybox.js"></script>
+    <script type="text/javascript" src="..\..\..\..\js\jquery.sticky-kit.min.js"></script>
+    <script type="text/javascript" src="..\..\..\..\js\jquery.previewer.js"></script>
+    <script type="text/javascript" src="..\..\..\..\js\language.js"></script>
+    
+    <script type="text/javascript" src="..\..\..\..\js\jquery.mobile.customized.min.js"></script>
+    <script type="text/javascript" src="..\..\..\..\js\jquery.easing.1.3.js"></script> 
+    <script type="text/javascript" src="..\..\..\..\js\camera.js"></script>
+
+    <script type="text/javascript" src="..\..\..\..\js\validator.js"></script>
+    <script type="text/javascript" src="..\..\..\..\js\jquery.extra.js"></script>
+    <script type="text/javascript" src="..\..\..\..\js\creditapplication.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async="" defer=""></script>
+
+ 
+    
+    
+            
+    <script type="text/javascript" src="..\..\..\..\js\abclient.js"></script>
+	<script type="text/javascript" src="..\..\..\..\js\abjquery.js"></script>
+    
+    <script></script>    
+    <script type="text/javascript">
+	var airbrake = new airbrakeJs.Client({projectId: 117837, projectKey: 'de3d05543b28193078e680a0e845ae4a'});
+	if (window.jQuery) 
+	  airbrakeJs.instrumentation.jquery(airbrake, jQuery);
+	
+	function ___log__error(aMsg, aUrl, aLine, aCol, aErr) {
+	 airbrake.notify({
+		error:       aErr,
+		context:     { script: 'script-name', url : aUrl, line: aLine, col: aCol },
+		session:     { userid: 'userid-if-any' }
+	  });
+	   return false;
+	};
+	//window.onerror = ___log__error;
+	</script>        
+</head>
+<body>
+
+<!--==============================header start=================================-->
+
+		<noscript>
+			<div class="noscript">
+				<div class="noscript-inner">
+					<p><strong>JavaScript seem to be disabled in your browser.</strong></p>
+					<p>You must have JavaScript enabled in your browser to utilize the functionality of this website.</p>
+				</div>
+			</div>
+		</noscript>
+		
+		<div class="fcheader header gradient clearfixmain">
+			<div class="container clearfixmain">
+				<ul class="headercol">
+					<li><a href="..\..\..\..\index.htm" title="YC Website Demo"><img src="..\..\..\..\images\logo.png" alt="YC Website Demo"></a></li>
+					<li class="clearfixmain">
+						<div class="header-right-top clearfixmain">
+														
+						</div>
+						
+						<div class="topsocial clearfixmain"> 
+							<ul class="social_icon">               	
+								<li><a class="facebook" title="Facebook" href="https://www.facebook.com/YachtCloser" target="_blank"><span class="socicon socicon-facebook"></span></a></li><li><a class="twitter" title="Twitter" href="https://twitter.com/yachtcloser" target="_blank"><span class="socicon socicon-twitter"></span></a></li><li><a class="google" title="Google Plus" href="https://plus.google.com/b/104437041434625196887/+YachtCloser/posts" target="_blank"><span class="socicon socicon-google"></span></a></li><li><a class="linkedin" title="Linkedin" href="https://www.linkedin.com/company/yachtcloser-com" target="_blank"><span class="socicon socicon-linkedin"></span></a></li>
+							</ul>        
+						</div>
+						
+						<div class="topphone clearfixmain">
+							<a class="tel" href="tel:(954) 361-1322"><span>(954) 361-1322</span></a>
+						</div>						
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+		<!--Top Navigation-->
+		<div id="toggle"><a title="Menu" class="gn-icon-menu" href="javascript:void(0);"><span></span><menutitle>Menu</menutitle></a></div>
+		<div id="menu" class="menu clearfixmain">
+			<div class="container clearfixmain">   	
+				<ul class="nav-menu"><li><a href="..\..\..\..\index.htm">Home</a></li><li><a href="..\..\..\..\inventory.htm">Inventory<i class="fa fa-angle-down"></i></a><ul class="sub-menu">
+				<li><a href="..\..\..\..\featured-boats.htm">Featured Boats</a></li>
+				
+				<li><a href="..\..\..\..\new-inventory.htm">New Inventory</a></li>
+				
+				<li><a href="..\..\..\..\brokerage-inventory.htm">Brokerage Inventory</a></li>
+				
+				<li><a href="..\..\..\..\search-by-type.htm">Search By Type</a></li>
+				
+				<li><a href="..\..\..\..\search-by-brand.htm">Search By Brand</a></li>
+				
+				<li><a href="..\..\..\..\recently-sold.htm">Recently Sold</a></li>
+				
+				<li><a href="..\..\..\..\find-my-boat.htm">Find My Boat</a></li>
+				</ul></li><li class="current-menu-item"><a href="javascript:void(0);">New Yachts<i class="fa fa-angle-down"></i></a><ul class="sub-menu">
+				<li><a href="..\..\..\..\mjm-yacht.htm">MJM Yacht</a></li>
+				
+				<li><a href="..\..\..\..\san-juan-yachts.htm">San Juan Yachts</a></li>
+				
+				<li><a href="..\..\..\..\viking-yachts.htm">Viking Yachts</a></li>
+				</ul></li><li><a href="javascript:void(0);">Pages<i class="fa fa-angle-down"></i></a><ul class="sub-menu">
+				<li><a href="..\..\..\..\content.htm">Content</a></li>
+				
+				<li><a href="..\..\..\..\blog.htm">Blog</a></li>
+				
+				<li><a href="..\..\..\..\news.htm">News</a></li>
+				</ul></li><li><a href="javascript:void(0);">Forms<i class="fa fa-angle-down"></i></a><ul class="sub-menu">
+				<li><a href="..\..\..\..\contact-us.htm">Contact Us</a></li>
+				
+				<li><a href="..\..\..\..\sell-your-boat.htm">Sell Your Boat</a></li>
+				
+				<li><a href="..\..\..\..\trade-your-boat.htm">Trade Your Boat</a></li>
+				
+				<li><a href="..\..\..\..\insurance-quote.htm">Insurance Quote</a></li>
+				
+				<li><a href="..\..\..\..\finance-application.htm">Finance Application</a></li>
+				
+				<li><a href="..\..\..\..\transport-quote.htm">Transport Quote</a></li>
+				
+				<li><a href="..\..\..\..\service.htm">Service</a></li>
+				
+				<li><a href="..\..\..\..\we-buy-boats.htm">We Buy Boats</a></li>
+				</ul></li><li><a href="..\..\..\..\marketing.htm">Marketing</a></li><li><a href="..\..\..\..\about-us.htm">About Us<i class="fa fa-angle-down"></i></a><ul class="sub-menu nav_last">
+				<li><a href="..\..\..\..\our-team.htm">Our Team</a></li>
+				
+				<li><a href="..\..\..\..\locations.htm">Locations</a></li>
+				
+				<li><a href="..\..\..\..\customer-testimonials.htm">Customer Testimonials</a></li>
+				
+				<li><a href="..\..\..\..\share-testimonial.htm">Share Testimonial</a></li>
+				</ul></li></ul>
+			</div>
+		</div>
+		<!--Top Navigation end-->
+		<!--==============================header end=================================-->
+
+<!--Image Slider-->
+<!--Image Slider end-->
+
+<!--Main start-->
+<div class="main">
+<div class="container text_area">
+    <ul class="breadcrumbs"><li><a href="..\..\..\..\index.htm">Home</a></li><li><a href="javascript:void(0);">New Yachts</a></li><li><a href="..\..\..\..\san-juan-yachts.htm">San Juan Yachts</a></li><li><a href="javascript:void(0);">SJ40FB</a></li></ul>
+	  <div class="clear"></div>
+	       
+<div class="product-detail">
+	
+				<div class="product-detail-header">
+					<h1 class="title">2017 San Juan SJ40FB</h1>
+					<ul class="listing-meta"><li class="ft">40 ft</li><li class="cat">Motor Yacht</li></ul>
+				</div>
+				    <div class="clear"></div>
+    <div class="left-cell">
+    	
+            <div class="product-slider-wrap">
+                <ul class="product-slider">
+                <li><img src="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/ZH6NJBZACKQH7HJCRQGUZ56SPZHHB8K9941400mm2017-03-2903.42.40pm.png" title="" alt=""></li><li><img src="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/2HRN1J7Q7IQU4GNIN3MH4T7P6K3RFTQ9941400mm2017-03-2903.42.58pm.png" title="" alt=""></li><li><img src="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/2P8PAHYE867K7RQIWM187GEHRSWG1CG9941400mm2017-03-2903.43.14pm.png" title="" alt=""></li><li><img src="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/K23FYIEQ73KIGNFSTK15IHV7C0YGYHP9941400mm2017-03-2903.43.29pm.png" title="" alt=""></li><li><img src="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/WUCX4J6IYHGRI0PMBQH7STFW14CMTY09941400mm2017-03-2903.43.53pm.png" title="" alt=""></li><li><img src="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/1MZZEPTUHZVRARUKJMT5UHHTHV0TB0N9941400mm2017-03-2903.44.14pm.png" title="" alt=""></li><li><img src="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/ZZK02GKFNGCXFXXYQEY3556HIM5X2729941400mm2017-03-2903.44.33pm.png" title="" alt=""></li><li><img src="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/ZHEVSNTAFBKU8HYCH0AAGENH8VBHHCK9941400mm2017-03-2903.45.05pm.png" title="" alt=""></li><li><img src="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/HBMXHF2IMKSY1U5AI5WIWGASVAHAFMX9941400mm2017-03-2903.45.17pm.png" title="" alt=""></li>
+                </ul>
+				<a class="prev" href="#" title="Previous"></a><a class="next" href="#" title="Next"><span>next</span></a>
+				<div id="pager" class="pager"></div>
+            </div>
+                
+					
+				<div class="social righticoncol">
+				<ul>
+					<li><a href="https://data.yachtcloser.com/bsdownload/?fcapi=createmodelpdf&modelid=1400&mfid=994&siteid=65" title="Create a Brochure"><img src="https://data.yachtcloser.com/images/print.png" alt=""></a></li>
+					<li>
+		<div id="fb-root"></div>
+		<script>
+		window.fbAsyncInit = function() {
+		  // init the FB JS SDK
+		  FB.init({
+			appId      : '396027900547624',                        // App ID from the app dashboard			
+			status     : true,                                 // Check Facebook Login status
+			xfbml      : true                                  // Look for social plugins on the page
+		  });
+	  
+		  // Additional initialization code such as adding Event Listeners goes here
+		};
+	  
+		// Load the SDK asynchronously
+		(function(d, s, id){
+		   var js, fjs = d.getElementsByTagName(s)[0];
+		   if (d.getElementById(id)) {return;}
+		   js = d.createElement(s); js.id = id;
+		   js.src = "//connect.facebook.net/en_US/all.js";
+		   fjs.parentNode.insertBefore(js, fjs);
+		 }(document, 'script', 'facebook-jssdk'));
+		 
+		 function fb_share() {
+			FB.ui( {
+				method: 'feed',
+				name: "2017+San+Juan+SJ40FB",
+				link: "http%3A%2F%2Fdemo.ycwebservice.com%2Fmodel%2F2017%2Fsan-juan%2Fsj40fb%2F",
+				picture: "https://stackexchange.com/users/flair/557969.png",
+				caption: "Please+check+this+record."
+			}, function( response ) {
+				if ( response !== null && typeof response.post_id !== 'undefined' ) {
+					console.log( response );
+					// ajax call to save response
+				  $.post( 'http://www.webniraj.com/', { 'response': response }, function( result ) {
+						console.log( result );
+					}, 'json' );
+				}
+			} );
+		}
+		
+		$(document).ready(function(){
+		  $(".fbbtn").on( "click", fb_share );
+		});
+
+		</script>
+		<a class="fbbtn" title="Facebook Share" href="javascript:void(0);"><img src="https://data.yachtcloser.com/images/facebook.png" alt=""></a>
+		</li>
+					<li><a title="Google + Share" href="https://plusone.google.com/_/+1/confirm?hl=en&url=http%3A%2F%2Fdemo.ycwebservice.com%2Fmodel%2F2017%2Fsan-juan%2Fsj40fb%2F" target="_blank"><img src="https://data.yachtcloser.com/images/googleplus.png" alt=""></a></li>
+					<li><a title="Twitter Post" href="http://twitter.com/home?status=Please+check+this+record." target="_blank"><img src="https://data.yachtcloser.com/images/twitter.png" alt=""></a></li>
+					<li><a title="Linkedin Post" href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fdemo.ycwebservice.com%2Fmodel%2F2017%2Fsan-juan%2Fsj40fb%2F&title=2017+San+Juan+SJ40FB&summary=Please+check+this+record.&source=YachtCloser Data" target="_blank"><img src="https://data.yachtcloser.com/images/linkden.png" alt=""></a></li>
+					<li><a title="Pinterest Post" href="http://pinterest.com/pin/create/button/?url=&media=https%3A%2F%2Fdata.yachtcloser.com%2Fyachtimage%2FPlease+check+this+record.%2Fbigger%2Fhttp%3A%2F%2Fdemo.ycwebservice.com%2Fmodel%2F2017%2Fsan-juan%2Fsj40fb%2F&description=2017+San+Juan+SJ40FB" target="_blank"><img src="https://data.yachtcloser.com/images/pinterest.png" alt=""></a></li>					
+				</ul>
+				</div>
+				<div class="clear"></div>
+				
+				<div class="product-description-wrap">
+					<ul class="product-description-nav">
+						<li><a href="javascript:void(0);" ptabid="1" class="active">Overview</a></li>
+						<li><a href="javascript:void(0);" ptabid="2">Specifications</a></li>
+						<li><a href="javascript:void(0);" ptabid="3">Gallery</a></li>
+						<li><a href="javascript:void(0);" ptabid="4">Features</a></li>
+				
+					</ul>
+					<div class="product-description">
+						<div class="description-tab" id="ptab1">
+							<h3 class="title">Overview</h3>
+							<div class="con">
+								<p>
+	SanJuanYachts is proud to introduce the SanJuan40 Flybridge. Our new SanJuan40FB offers all the fine styling, performance and creature comforts of our SanJuan40 sedan with the added benefit of an upper helm for outside operation and excellent all round visability. &nbsp;Our SJ40FB offers twin pilot stations, soaring views and inspiring luxury accommodations from the top down and all the excellence in design, craftsmanship, seaworthiness and performance that the nautical world has come to expect from SanJuanyachts.</p>
+							</div>
+						</div>
+					
+						<div class="description-tab" id="ptab2">
+							<h3 class="title">Specifications</h3>
+							<div class="con specifications">
+								<h3>Basic Information</h3>
+								<div class="specifications-row"><div class="devider">
+										<div class="left-side">
+											<dl>
+												<dt>Manufacturer:</dt>
+												<dd>San Juan</dd>
+											</dl>
+											<dl>
+												<dt>Model:</dt>
+												<dd>SJ40FB</dd>
+											</dl>
+											<dl>
+												<dt>Year:</dt>
+												<dd>2017</dd>
+											</dl>
+											<dl>
+												<dt>Category:</dt>
+												<dd>Power</dd>
+											</dl>										
+										</div>
+										<div class="right-side">										
+											<dl>
+												<dt>Boat Type:</dt>
+												<dd>Motor Yacht</dd>
+											</dl>
+											<dl>
+												<dt>Hull Material:</dt>
+												<dd>Fiberglass</dd>
+											</dl>
+											<dl>
+												<dt>Hull Type:</dt>
+												<dd></dd>
+											</dl>										
+										</div>
+										<div class="clear"></div>
+									</div></div>
+								
+								<h3>Dimensions &amp; Weight</h3>
+								<div class="specifications-row"><div class="devider">
+										<div class="left-side">
+											<dl>
+												<dt>Length:</dt>
+												<dd>40 ft - 12.19 meter</dd>
+											</dl>
+											<dl>
+												<dt>LOA:</dt>
+												<dd>40 ft 7 in - 12.37 meter</dd>
+											</dl>
+											<dl>
+												<dt>Beam:</dt>
+												<dd>12 ft 2 in - 3.71 meter</dd>
+											</dl>
+										</div>
+										<div class="right-side">
+											<dl>
+												<dt>Draft - max:</dt>
+												<dd>2 ft 10 in - 0.86 meter</dd>
+											</dl>
+											<dl>
+												<dt>Bridge Clearance:</dt>
+												<dd>-</dd>
+											</dl>
+											<dl>
+												<dt>Dry Weight:</dt>
+												<dd>18000 lbs</dd>
+											</dl>
+											<dl>
+												<dt>Deadrise Aft:</dt>
+												<dd>-</dd>
+											</dl>
+										</div>
+										<div class="clear"></div>
+									</div></div>
+								
+				<h3>Standard Engine</h3>
+				<div class="specifications-row"><div class="devider">
+						<div class="left-side">
+							<dl>
+								<dt>Make:</dt>
+								<dd>Volvo Penta</dd>
+							</dl>
+							<dl>
+								<dt>Model:</dt>
+								<dd>IPS 500</dd>
+							</dl>
+							<dl>
+								<dt>Horsepower:</dt>
+								<dd>370</dd>
+							</dl>
+						</div>
+						<div class="right-side">
+							<dl>
+								<dt>Engine Type:</dt>
+								<dd>Inboard</dd>
+							</dl>
+							<dl>
+								<dt>Drive Type:</dt>
+								<dd>Pod Drive</dd>
+							</dl>
+							<dl>
+								<dt>Fuel Type:</dt>
+								<dd>Diesel</dd>
+							</dl>
+						</div>
+						<div class="clear"></div>
+					</div></div>
+				
+				<h3>Optional Engine</h3>
+				<div class="specifications-row"><div class="devider">
+						<div class="left-side">
+							<dl>
+								<dt>Make:</dt>
+								<dd>Yanmar</dd>
+							</dl>
+							<dl>
+								<dt>Model:</dt>
+								<dd>6LY3-UTP</dd>
+							</dl>
+							<dl>
+								<dt>Horsepower:</dt>
+								<dd>380</dd>
+							</dl>
+						</div>
+						<div class="right-side">
+							<dl>
+								<dt>Engine Type:</dt>
+								<dd>Inboard</dd>
+							</dl>
+							<dl>
+								<dt>Drive Type:</dt>
+								<dd></dd>
+							</dl>
+							<dl>
+								<dt>Fuel Type:</dt>
+								<dd>Diesel</dd>
+							</dl>
+						</div>
+						<div class="clear"></div>
+					</div></div>
+				
+								<h3>Tank Capacities</h3>
+								<div class="specifications-row"><div class="devider">
+										<div class="left-side">
+											<dl>
+												<dt>Fuel Tank:</dt>
+												<dd>300 gallons - 1 tank(s)</dd>
+											</dl>
+											<dl>
+												<dt>Fresh Water Tank:</dt>
+												<dd>80 gallons - 1 tank(s)</dd>
+											</dl>
+										</div>
+										<div class="right-side">
+											<dl>
+												<dt>Holding Tank:</dt>
+												<dd>-</dd>
+											</dl>
+										</div>
+										<div class="clear"></div>
+									</div></div>
+								
+								<h3>Accommodations</h3>
+								<div class="specifications-row"><div class="devider">
+										<div class="left-side">
+											<dl>
+												<dt>Total Cabins:</dt>
+												<dd>-</dd>
+											</dl>
+											<dl>
+												<dt>Total Berths:</dt>
+												<dd>5</dd>
+											</dl>
+											<dl>
+												<dt>Total Sleeps:</dt>
+												<dd>-</dd>
+											</dl>
+											<dl>
+												<dt>Total Heads:</dt>
+												<dd>-</dd>
+											</dl>
+											<dl>
+												<dt>Captains Cabin:</dt>
+												<dd>No</dd>
+											</dl>
+										</div>
+										<div class="right-side">
+											<dl>
+												<dt>Crew Cabins:</dt>
+												<dd>-</dd>
+											</dl>
+											<dl>
+												<dt>Crew Berths:</dt>
+												<dd>-</dd>
+											</dl>
+											<dl>
+												<dt>Crew Sleeps:</dt>
+												<dd>-</dd>
+											</dl>
+											<dl>
+												<dt>Crew Heads:</dt>
+												<dd>-</dd>
+											</dl>
+										</div>
+										<div class="clear"></div>
+									</div></div>
+								
+							</div>
+						</div>
+						
+						<div class="description-tab" id="ptab3">
+							
+            <h3 class="title">Gallery</h3>
+            <div class="con">
+                <ul class="product-gallery">
+                <li><a class="fancybox" data-fancybox-group="gallery" href="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/ZH6NJBZACKQH7HJCRQGUZ56SPZHHB8K9941400mm2017-03-2903.42.40pm.png" title="" alt=""><img src="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/ZH6NJBZACKQH7HJCRQGUZ56SPZHHB8K9941400mm2017-03-2903.42.40pm.png"></a></li><li><a class="fancybox" data-fancybox-group="gallery" href="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/2HRN1J7Q7IQU4GNIN3MH4T7P6K3RFTQ9941400mm2017-03-2903.42.58pm.png" title="" alt=""><img src="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/2HRN1J7Q7IQU4GNIN3MH4T7P6K3RFTQ9941400mm2017-03-2903.42.58pm.png"></a></li><li><a class="fancybox" data-fancybox-group="gallery" href="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/2P8PAHYE867K7RQIWM187GEHRSWG1CG9941400mm2017-03-2903.43.14pm.png" title="" alt=""><img src="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/2P8PAHYE867K7RQIWM187GEHRSWG1CG9941400mm2017-03-2903.43.14pm.png"></a></li><li><a class="fancybox" data-fancybox-group="gallery" href="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/K23FYIEQ73KIGNFSTK15IHV7C0YGYHP9941400mm2017-03-2903.43.29pm.png" title="" alt=""><img src="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/K23FYIEQ73KIGNFSTK15IHV7C0YGYHP9941400mm2017-03-2903.43.29pm.png"></a></li><li><a class="fancybox" data-fancybox-group="gallery" href="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/WUCX4J6IYHGRI0PMBQH7STFW14CMTY09941400mm2017-03-2903.43.53pm.png" title="" alt=""><img src="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/WUCX4J6IYHGRI0PMBQH7STFW14CMTY09941400mm2017-03-2903.43.53pm.png"></a></li><li><a class="fancybox" data-fancybox-group="gallery" href="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/1MZZEPTUHZVRARUKJMT5UHHTHV0TB0N9941400mm2017-03-2903.44.14pm.png" title="" alt=""><img src="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/1MZZEPTUHZVRARUKJMT5UHHTHV0TB0N9941400mm2017-03-2903.44.14pm.png"></a></li><li><a class="fancybox" data-fancybox-group="gallery" href="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/ZZK02GKFNGCXFXXYQEY3556HIM5X2729941400mm2017-03-2903.44.33pm.png" title="" alt=""><img src="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/ZZK02GKFNGCXFXXYQEY3556HIM5X2729941400mm2017-03-2903.44.33pm.png"></a></li><li><a class="fancybox" data-fancybox-group="gallery" href="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/ZHEVSNTAFBKU8HYCH0AAGENH8VBHHCK9941400mm2017-03-2903.45.05pm.png" title="" alt=""><img src="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/ZHEVSNTAFBKU8HYCH0AAGENH8VBHHCK9941400mm2017-03-2903.45.05pm.png"></a></li><li><a class="fancybox" data-fancybox-group="gallery" href="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/HBMXHF2IMKSY1U5AI5WIWGASVAHAFMX9941400mm2017-03-2903.45.17pm.png" title="" alt=""><img src="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/HBMXHF2IMKSY1U5AI5WIWGASVAHAFMX9941400mm2017-03-2903.45.17pm.png"></a></li>
+                </ul>
+               <div class="clear"></div>
+            </div>
+                
+						</div>
+						
+						<div class="description-tab" id="ptab4">
+							<h3 class="title">Features</h3>
+							<div class="con">
+								<h3>
+	General Specifications</h3>
+<div>
+	HULL</div>
+<div>
+	The SJ40FB IPS hull has been designed and computer modeled to be both handsomely styled and capable in a broad range of sea conditions. &nbsp; The traditional flared bow with fine entry and tumble home aft is complemented by the hydro-dynamically efficient underbody. &nbsp;Tooling for the entire boat was modeled and cut by a computer controlled 5-axis router creating the most fair and precise parts available in the industry today. &nbsp;The SJ40FB IPS hull is formed using a Kevlar&reg; / E-glass and Corecell&reg; foam core composite infused with vinyl ester resin. Dupont Kevlar&reg; / &nbsp;E-glass hybrid is used to greatly increase the strength of the hull against damage caused by impact. The infusion process yields strong lightweight parts with high glass to resin ratios. The core is removed and replaced with solid glass and extra laminations in areas of major penetrations and high stress. Three composites watertight structural bulkheads separate the hull into damage control zones with dedicated bilge pumps. Structural bulkheads are built using Corecell&reg; foam core with E-glass skins infused with vinyl ester resin. &nbsp;Longitudinal and transverse stringers are an E-glass Corecell&reg; foam core composite. The entire structure of the boat &nbsp;is built using wood free composites. The hull is painted in the owner&rsquo;s choice of Imron LPU colors.</div>
+<div>
+	&nbsp;</div>
+<div>
+	DECK</div>
+<div>
+	The deck is a one piece infused composite molding using E-glass and Corecell&reg; with vinyl ester resin. The hull is joined to the deck using an engineered flanged box joint and is bonded using a high strength adhesive with mechanical fasteners. This provides a &nbsp;permanent, watertight hull/deck joint.</div>
+<div>
+	&nbsp;</div>
+<div>
+	COCKPIT AND DECK</div>
+<div>
+	The large cockpit was designed to allow ample room for sitting, dining, fishing and sunbathing. An opening walk through transom door provides easy access on and off the boat via the swim step. The built-in transom seat provides both seating and underside bin storage. The storage bin is removable to provide additional storage space below in the lazarette. The centerline bin may be used as a cooler or may be set up as bait locker as an option for fishing. Sitting and sunbathing space is also available on the port and starboard engine compartment boxes with hatches that lift with the aid of lifting cylinders for engine access. Engine compartment hatches are supplied with teak decking as a standard. &nbsp;A starboard side stainless steel ladder with teak treads provides access to the flybridge.&nbsp;The cockpit deck is molded with 1&rdquo; waterways. &nbsp;Teak decking is standard for the cockpit, pilothouse and on the composite swim step. A flush hatch in the deck provides easy access to the engines. Port and starboard cockpit bulwark lockers allow for storage of fenders and mooring lines. A removable teak cockpit table may be provided as an option.</div>
+<div>
+	&nbsp;</div>
+<div>
+	Teak toe-rails and solid stainless steel half-round guards are fastened through the hull and deck flange. Six polished stainless steel deck cleats are provided for bow, stern, and spring lines along with custom stainless steel bow and midship chocks and chafe guards. A stainless steel deck fuel fill is located starboard side amidships. The water tank fill and holding tank dump are located on the starboard side forward. The foredeck anchor handling system consists of a stainless steel bow roller with a 22 lb. stainless steel &ldquo;Bruce type&rdquo; anchor and 20 feet of 5/16&rdquo;galvanized chain spliced to 200 feet of 9/16&rdquo; nylon rope. A Muir anchor windlass is standard. A Lewmar Low Profile 40 deck hatch is located over the forward stateroom. &nbsp;Four opening stainless steel portlights with screens provide ventilation to the cabin area. A stainless flagpole with stainless steel socket is supplied aft with a stainless steel flagpole supplied forward at the bow. Four stainless steel handrails provide handholds when moving forward on the side decks. A stainless steel bow rail is available as an option.&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	PILOTHOUSE</div>
+<div>
+	The pilothouse is built of an E-glass, Corecell&reg;, resin infused composite providing a stiff, strong, lightweight structure with sound and vibration dampening qualities. &nbsp;The pilothouse is accessed from the cockpit via a tempered glass door with locking hand set for security. Out board of the door are removable windows providing ventilation and all round visibility. &nbsp;The starboard side helm is equipped with a Stidd Systems helm chair. Aft of the helm seat is the bar area with counter, stainless steel bar sink and teak storage locker. &nbsp; &nbsp;An optional icemaker may be installed in lieu of the teak locker. &nbsp;The portside settee with bright finished teak table provides seating for four with panoramic views. &nbsp;The power high / low table lowers to provide a double berth. A hatch below the table provides access to the storage space below. The pilothouse helm station provides for a complete array of electronics and instruments, and offers 360-degree visibility. &nbsp;The pilothouse is open to the galley below.</div>
+<div>
+	&nbsp;</div>
+<div>
+	<div>
+		FLY BRIDGE</div>
+	<div>
+		The fly bridge is built of an E-glass, Corecell&reg;, resin infused composite providing a stiff, strong, lightweight structure. The fly bridge has been designed to be both light and low profile and is surrounded by stainless steel rails, which develop seating for three aft. The fly bridge is accessed via a stainless steel ladder with teak treads. A stainless steel arch is provided to accommodate a wide variety of electronics and stowage for the optional fly bridge bimini. There are two single Stidd Systems chairs providing seating for two at the helm. The flybridge helm provides excellent 360-degree visibility for running in all conditions and accommodates all equipment offered at the pilothouse helm. Teak decking is supplied as standard equipment.</div>
+</div>
+<div>
+	&nbsp;</div>
+<div>
+	INTERIOR</div>
+<div>
+	The &nbsp;interior is trimmed with teak and finished to a satin sheen. The hull sides forward are sheathed with teak &ldquo;ceiling&rdquo; strips. &nbsp;The galley and forward cabin sole is teak with holly splines. Countertops are surfaced with solid surfacing material. Forward of the galley is a walk around queen size berth which lifts for access to storage below. Teak drawers are supplied at the foot of the bed. The forward stateroom boasts two hanging lockers port and starboard. Ventilation and daylight are provided via a screened Lewmar overhead hatch and four opening screened portlights. Berth mattress is 5&rdquo; foam composite with a wide variety of fabrics available for berth upholstery. Overheads are Majelite or equal with teak trim supports. &nbsp;Reverse cycle air conditioning is provided as standard equipment for cabin and pilothouse heating and cooling.</div>
+<div>
+	&nbsp;</div>
+<div>
+	GALLEY</div>
+<div>
+	The below decks galley is open to the pilothouse with an abundance of daylight provided by the pilothouse windshield directly above. &nbsp;A two-burner electric stove and built-in micro-convection oven are standard. &nbsp;A stainless steel sink is supplied with hot and cold water through a Scandvik mixer with a pullout-extending faucet. &nbsp;An abundance of storage is provided in above counter cabinets, below counter cabinets and drawers. The refrigerator is a custom stainless steel refrigerator/freezer with remote mount compressor. &nbsp;An opening portlight with screen above the galley provides ventilation. &nbsp;Drawers and overhead cabinets provide ample storage for galley supplies.</div>
+<div>
+	&nbsp;</div>
+<div>
+	HEAD</div>
+<div>
+	The head, with separate shower, is designed to be easily cleaned and maintained. &nbsp;A Sealand Traveler head is connected to a holding tank with shore side pump out fitting on &nbsp;deck. &nbsp;A discharge pump is provided for overboard use where allowed. The holding tank is sounded with a Tank Tender gauge. &nbsp;A stainless steel sink is supplied with hot and cold water. &nbsp;The separate shower with seat drains to a sump and is discharged via a drain pump. &nbsp;A mirror and lockers with shelves are provided. &nbsp;The head has an opening portlight with a screen.</div>
+<div>
+	&nbsp;</div>
+<div>
+	ELECTRICAL SYSTEM</div>
+<div>
+	A bank of two 4D AGM batteries provide ship&rsquo;s power. Two 4D AGM batteries provide starting power. &nbsp;Isolation is provided between the lighting and house circuits and the starting bank with the provision for emergency starting if necessary. &nbsp;Charging of the system is done through alternators mounted on each engine as well as a Magnum 2800 watt battery charger/inverter.</div>
+<div>
+	&nbsp;</div>
+<div>
+	Two shore power receptacles are provided amidships on the starboard side to provide 110 V power to outlets in each cabin as well as the galley, head and pilothouse. &nbsp;A Northern Lights 6.0kw marine generator is standard with switching located at the main distribution panel. Switching for both the 12V and 110V are provided at the main distribution panel located on the inboard side of the helm seat as well as in the galley above the refrigerator both are equipped with a voltmeter and ammeter. All circuits are protected with circuit breakers and main disconnects. &nbsp;All hull penetrating marine hardware is bonded and connected to a sacrificial zinc plate located at the transom below the swim step.&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	Interior lighting is Imtra LED lighting for low power draw and extended bulb life. Overhead recessed &nbsp;lights are positioned in the pilothouse and cabin areas and are controlled by bulkhead-mounted dimmer switches. Two bulkhead mounted reading lights are located forward over the queen berth. Courtesy lights illuminate the walkway from the cockpit to the cabin sole. Six &nbsp;lights are located in the engine compartments, mechanical compartment and lazarette. LED navigation lights meeting International Rules are provided. &nbsp;Two Roca pilothouse windshield wipers with washers are supplied. &nbsp;An ACR spotlight with remote control is offered as optional equipment.&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	Most Navigation electronics packages may be installed at the helm as optional equipment including Autopilot, GPS, VHF, Chart Plotter, Sounder / Fishfinder and Radar systems. A Fusion AV700 multi zone stereo system supplies video to the recessed flat screen TV below decks as well as stereo throughout the boat.&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	MACHINERY</div>
+<div>
+	The standard main engines are twin Volvo Penta IPS 500 common rail aftercooled diesel engines rated at 370 H.P each. &nbsp;The main engines are equipped with IPS drives for exceptional performance &nbsp;and &nbsp;maneuvering. &nbsp;All engines are painted white. The propellers are Nibral bronze, counter rotating. The engine compartment is protected &nbsp;by an automatic fire extinguisher system. &nbsp;An oil transfer pump system &nbsp;is standard &nbsp;for main &nbsp;engine and transmission oil changes.&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	CONTROLS AND INSTRUMENTS</div>
+<div>
+	Transmission and throttle control for the main engines is achieved using electronic controls. The controls offer shift and throttle control with built-in safety factors for use during emergency maneuvers. Electronic engine synchronization is standard. Volvo IPS one handed maneuvering is provided with a joy stick located at the helm. &nbsp;The main engines are fully alarmed including both low oil pressure and high coolant temperature. The LCD engine instrument panels located at the helm console displays RPM&rsquo;s, oil pressure, water temperature and gear temperature and LCD display readouts can be customized. &nbsp;A 4 &frac12;&rdquo; Ritchie Navigator compass &nbsp;is mounted forward of the helm console. &nbsp;A Kahlenberg air horn system with tank-mounted compressor is standard. An 18&rdquo; stainless steel destroyer type wheel with varnished mahogany trim is provided at the helm. A Raymarine autopilot system may be installed as optional equipment.</div>
+<div>
+	&nbsp;</div>
+<div>
+	PLUMBING</div>
+<div>
+	Eighty &nbsp;gallons of fresh water are stored in a baffled stainless steel tank with a Tank Tender sounding gauge. &nbsp;A water pump system provides water pressure. &nbsp;Hot water is supplied by a stainless steel six-gallon hot water heater. The shower has a sump pump system for discharge overboard. &nbsp;Three Rule 2000 GPH electric bilge pumps with Rule Ultra automatic float switches are located forward in the cabin, aft in the engine compartment and in the lazarette. &nbsp;Bronze thru hull fittings throughout are U.L. listed, and fitted with seacocks. &nbsp;A &nbsp;Village Marine 350 GPD water-maker is available as an option.</div>
+<div>
+	&nbsp;</div>							
+							</div>
+						</div>
+					
+					</div>
+				</div>
+				    </div>
+    <div class="right-cell scrollcol" parentdiv="product-detail">
+    	<section class="section broker-wrap">
+            
+        <h3>Presented by :</h3>
+        <div class="broker">
+            <img src="..\..\..\..\images\logo-blue.png" alt="">            
+            <div class="clear"></div>
+        </div>
+        
+		<div class="ph"><a class="tel" href="tel:(954) 361-1322"><span>(954) 361-1322</span></a></div>
+		<div class="cb cb2"><a href="..\..\..\..\contact-model\index-12.htm?m=1400" class="contactbroker button contact" data-fancybox-type="iframe"><span>Contact Us</span></a></div>
+		<div class="cb cb2"><a href="..\..\..\..\make\san-juan\condition\new\index.htm" class="button contact">New Inventory in Stock</a></div><div class="cb cb2"><a href="..\..\..\..\make\san-juan\condition\used\index.htm" class="button contact">Used Boats</a></div>
+                </section>
+        
+        <section class="section">
+        
+				<h3>Our Locations :</h3>
+				<div class="locationholdersidebar clearfixmain">
+				<ul class="locationlist">
+				<li>
+					<h4><a href="..\..\..\..\locationprofile\fort-lauderdale\index.htm">Fort Lauderdale</a>
+					
+					<div class="locaddress">777 SE 20th Street, Suite 280</div>
+					<div class="locaddress">Fort Lauderdale, FL, US</div>
+					<div class="locphone"><a class="tel" href="tel:(954) 361-1322">(954) 361-1322</a></div>
+					
+				</h4></li>
+				</ul></div>        </section>
+        
+        <section class="section clearfixmain">
+	<h2>
+		Heading</h2>
+	<p>
+		Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s</p>
+</section>
+
+<h2 class="sidebartitle">Heading 2</h2>
+<div class="leftrightcolsection notopborder clearfixmain">
+<p>
+		Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s</p>
+</div>
+    </div>
+    <div class="clear"></div>
+</div>
+		
+                
+                
+                <div class="clear"></div>
+    </div>
+     
+	<div class="clear"></div> 
+	</div> 
+<!--Main end-->
+
+<!--Footer Start-->
+
+		<div class="footer clearfixmain">
+			<div class="container clearfixmain">
+				
+				<div class="footertop clearfixmain">
+					
+             <ul class="footermenu">
+            
+                 <li><a href="..\..\..\..\index.htm">Home</a></li>
+                 
+                 <li><a href="..\..\..\..\inventory.htm">Inventory</a></li>
+                 
+                 <li class="current_page_item"><a href="..\..\..\..\mjm-yacht.htm">New Yachts</a></li>
+                 
+                 <li><a href="..\..\..\..\content.htm">Pages</a></li>
+                 
+                 <li><a href="..\..\..\..\contact-us.htm">Forms</a></li>
+                 
+                 <li><a href="..\..\..\..\marketing.htm">Marketing</a></li>
+                 
+                 <li><a href="..\..\..\..\about-us.htm">About Us</a></li>
+                 
+                 <li><a href="..\..\..\..\login\index.htm">Login</a></li>
+                 
+            </ul>
+			<div class="clearfix"></div>
+            
+				</div>
+				
+				<div class="footerlogo"><img src="..\..\..\..\images\footer-logo.png" alt="YC Website Demo"></div>
+				
+				<div class="footerbottom clearfixmain">
+					<ul class="footercol">
+						<li>
+							<div class="bottomphone"><a class="tel" href="tel:(954) 361-1322">(954) 361-1322</a></div>
+						</li>
+						
+						<li>
+							<div class="bottomemail"><a href="mailto:websites@yachtcloser.com">websites@yachtcloser.com</a></div>
+						</li>
+						
+						<li>
+							<ul class="social_icon">               	
+								<li><a class="facebook" title="Facebook" href="https://www.facebook.com/YachtCloser" target="_blank"><span class="socicon socicon-facebook"></span></a></li><li><a class="twitter" title="Twitter" href="https://twitter.com/yachtcloser" target="_blank"><span class="socicon socicon-twitter"></span></a></li><li><a class="google" title="Google Plus" href="https://plus.google.com/b/104437041434625196887/+YachtCloser/posts" target="_blank"><span class="socicon socicon-google"></span></a></li><li><a class="linkedin" title="Linkedin" href="https://www.linkedin.com/company/yachtcloser-com" target="_blank"><span class="socicon socicon-linkedin"></span></a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				
+			</div>
+		</div>
+		
+		<div class="footerlast clearfixmain">
+			<div class="container clearfixmain">
+				<ul class="footerbox">
+					<li>&copy; Copyright <?php echo="" date("y");=""?> YC Website Demo.</li>            
+					<li>Powered by <a href="http://www.yachtcloser.com" target="_blank">YachtCloser</a></li>
+				</ul>
+			</div>
+		</div>
+		<!--Footer End-->
+
+<a href="javascript:void(0);" class="BackToTop">Top</a>
+<div id="fc_msg" class="errormessagepop">
+<script></script></div></body>
+</html>

@@ -1,0 +1,981 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0;">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Yachtcloser Demo</title>
+    <meta name="description" content="Yachtcloser Demo">
+    <meta name="keywords" content="Yachtcloser Demo">
+    <meta name="google-site-verification" content="#">
+    
+		  <meta property="og:title" content="Yachtcloser Demo">
+		  <meta property="og:description" content="Yachtcloser Demo">
+		  <meta property="og:url" content="http://demo.ycwebservice.com/model/2017/mjm-yachts/40z-express/">
+		  <meta property="og:image" content="http://demo.ycwebservice.com/images/logoshare.png">	  
+		   
+    <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="..\..\..\..\favicons\favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="..\..\..\..\favicons\favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="..\..\..\..\favicons\favicon-16x16.png">
+    <link rel="manifest" href="..\..\..\..\favicons\manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <link href="..\..\..\..\css\font-awesome.min.css" rel="stylesheet">
+	<link href="..\..\..\..\css\socicon.css" rel="stylesheet">
+    <link href="..\..\..\..\css\jquery-ui.css" rel="stylesheet" type="text/css">
+    <link href="..\..\..\..\css\animate.css" rel="stylesheet" type="text/css">
+    <link href="..\..\..\..\css\camera.css" rel="stylesheet" type="text/css">
+    <link href="..\..\..\..\css\style.css" rel="stylesheet" type="text/css">
+    <link href="..\..\..\..\css\style-extend.css" rel="stylesheet" type="text/css">
+    <link href="..\..\..\..\css\menu.css" rel="stylesheet" type="text/css">    
+    <link href="..\..\..\..\css\jquery.timepicker.css" rel="stylesheet" type="text/css">
+    <link href="..\..\..\..\css\jquery.fancybox.css" rel="stylesheet" type="text/css">
+    <link href="..\..\..\..\css\responsive.css" rel="stylesheet" type="text/css">
+    <!--[if IE]>
+    <link rel="stylesheet" href="/css/ie.php?path=/" type="text/css" media="screen">
+    <![endif]-->
+
+    <script language="javascript" type="text/javascript">
+		var bkfolder = "/";
+		var siteurlfull = "http://demo.ycwebservice.com";
+	</script>
+    <script type="text/javascript" src="..\..\..\..\js\jquery.min.js"></script>
+    <script type="text/javascript" src="..\..\..\..\js\html5.js"></script>
+    <script type="text/javascript" src="..\..\..\..\js\jquery-ui.min.js"></script>
+    <script type="text/javascript" src="..\..\..\..\js\jquery.ui.touch-punch.min.js"></script>
+    <script type="text/javascript" src="..\..\..\..\js\jquery.timepicker.min.js"></script>
+    <script type="text/javascript" src="..\..\..\..\js\jquery.cookie.js"></script>
+    <script type="text/javascript" src="..\..\..\..\js\jquery.carouFredSel-6.2.1-packed.js"></script>
+    <script type="text/javascript" src="..\..\..\..\js\jquery.cycle2.min.js"></script>
+    <script type="text/javascript" src="..\..\..\..\js\jquery.fancybox.js"></script>
+    <script type="text/javascript" src="..\..\..\..\js\jquery.sticky-kit.min.js"></script>
+    <script type="text/javascript" src="..\..\..\..\js\jquery.previewer.js"></script>
+    <script type="text/javascript" src="..\..\..\..\js\language.js"></script>
+    
+    <script type="text/javascript" src="..\..\..\..\js\jquery.mobile.customized.min.js"></script>
+    <script type="text/javascript" src="..\..\..\..\js\jquery.easing.1.3.js"></script> 
+    <script type="text/javascript" src="..\..\..\..\js\camera.js"></script>
+
+    <script type="text/javascript" src="..\..\..\..\js\validator.js"></script>
+    <script type="text/javascript" src="..\..\..\..\js\jquery.extra.js"></script>
+    <script type="text/javascript" src="..\..\..\..\js\creditapplication.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async="" defer=""></script>
+
+ 
+    
+    
+            
+    <script type="text/javascript" src="..\..\..\..\js\abclient.js"></script>
+	<script type="text/javascript" src="..\..\..\..\js\abjquery.js"></script>
+    
+    <script></script>    
+    <script type="text/javascript">
+	var airbrake = new airbrakeJs.Client({projectId: 117837, projectKey: 'de3d05543b28193078e680a0e845ae4a'});
+	if (window.jQuery) 
+	  airbrakeJs.instrumentation.jquery(airbrake, jQuery);
+	
+	function ___log__error(aMsg, aUrl, aLine, aCol, aErr) {
+	 airbrake.notify({
+		error:       aErr,
+		context:     { script: 'script-name', url : aUrl, line: aLine, col: aCol },
+		session:     { userid: 'userid-if-any' }
+	  });
+	   return false;
+	};
+	//window.onerror = ___log__error;
+	</script>        
+</head>
+<body>
+
+<!--==============================header start=================================-->
+
+		<noscript>
+			<div class="noscript">
+				<div class="noscript-inner">
+					<p><strong>JavaScript seem to be disabled in your browser.</strong></p>
+					<p>You must have JavaScript enabled in your browser to utilize the functionality of this website.</p>
+				</div>
+			</div>
+		</noscript>
+		
+		<div class="fcheader header gradient clearfixmain">
+			<div class="container clearfixmain">
+				<ul class="headercol">
+					<li><a href="..\..\..\..\index.htm" title="YC Website Demo"><img src="..\..\..\..\images\logo.png" alt="YC Website Demo"></a></li>
+					<li class="clearfixmain">
+						<div class="header-right-top clearfixmain">
+														
+						</div>
+						
+						<div class="topsocial clearfixmain"> 
+							<ul class="social_icon">               	
+								<li><a class="facebook" title="Facebook" href="https://www.facebook.com/YachtCloser" target="_blank"><span class="socicon socicon-facebook"></span></a></li><li><a class="twitter" title="Twitter" href="https://twitter.com/yachtcloser" target="_blank"><span class="socicon socicon-twitter"></span></a></li><li><a class="google" title="Google Plus" href="https://plus.google.com/b/104437041434625196887/+YachtCloser/posts" target="_blank"><span class="socicon socicon-google"></span></a></li><li><a class="linkedin" title="Linkedin" href="https://www.linkedin.com/company/yachtcloser-com" target="_blank"><span class="socicon socicon-linkedin"></span></a></li>
+							</ul>        
+						</div>
+						
+						<div class="topphone clearfixmain">
+							<a class="tel" href="tel:(954) 361-1322"><span>(954) 361-1322</span></a>
+						</div>						
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+		<!--Top Navigation-->
+		<div id="toggle"><a title="Menu" class="gn-icon-menu" href="javascript:void(0);"><span></span><menutitle>Menu</menutitle></a></div>
+		<div id="menu" class="menu clearfixmain">
+			<div class="container clearfixmain">   	
+				<ul class="nav-menu"><li><a href="..\..\..\..\index.htm">Home</a></li><li><a href="..\..\..\..\inventory.htm">Inventory<i class="fa fa-angle-down"></i></a><ul class="sub-menu">
+				<li><a href="..\..\..\..\featured-boats.htm">Featured Boats</a></li>
+				
+				<li><a href="..\..\..\..\new-inventory.htm">New Inventory</a></li>
+				
+				<li><a href="..\..\..\..\brokerage-inventory.htm">Brokerage Inventory</a></li>
+				
+				<li><a href="..\..\..\..\search-by-type.htm">Search By Type</a></li>
+				
+				<li><a href="..\..\..\..\search-by-brand.htm">Search By Brand</a></li>
+				
+				<li><a href="..\..\..\..\recently-sold.htm">Recently Sold</a></li>
+				
+				<li><a href="..\..\..\..\find-my-boat.htm">Find My Boat</a></li>
+				</ul></li><li class="current-menu-item"><a href="javascript:void(0);">New Yachts<i class="fa fa-angle-down"></i></a><ul class="sub-menu">
+				<li><a href="..\..\..\..\mjm-yacht.htm">MJM Yacht</a></li>
+				
+				<li><a href="..\..\..\..\san-juan-yachts.htm">San Juan Yachts</a></li>
+				
+				<li><a href="..\..\..\..\viking-yachts.htm">Viking Yachts</a></li>
+				</ul></li><li><a href="javascript:void(0);">Pages<i class="fa fa-angle-down"></i></a><ul class="sub-menu">
+				<li><a href="..\..\..\..\content.htm">Content</a></li>
+				
+				<li><a href="..\..\..\..\blog.htm">Blog</a></li>
+				
+				<li><a href="..\..\..\..\news.htm">News</a></li>
+				</ul></li><li><a href="javascript:void(0);">Forms<i class="fa fa-angle-down"></i></a><ul class="sub-menu">
+				<li><a href="..\..\..\..\contact-us.htm">Contact Us</a></li>
+				
+				<li><a href="..\..\..\..\sell-your-boat.htm">Sell Your Boat</a></li>
+				
+				<li><a href="..\..\..\..\trade-your-boat.htm">Trade Your Boat</a></li>
+				
+				<li><a href="..\..\..\..\insurance-quote.htm">Insurance Quote</a></li>
+				
+				<li><a href="..\..\..\..\finance-application.htm">Finance Application</a></li>
+				
+				<li><a href="..\..\..\..\transport-quote.htm">Transport Quote</a></li>
+				
+				<li><a href="..\..\..\..\service.htm">Service</a></li>
+				
+				<li><a href="..\..\..\..\we-buy-boats.htm">We Buy Boats</a></li>
+				</ul></li><li><a href="..\..\..\..\marketing.htm">Marketing</a></li><li><a href="..\..\..\..\about-us.htm">About Us<i class="fa fa-angle-down"></i></a><ul class="sub-menu nav_last">
+				<li><a href="..\..\..\..\our-team.htm">Our Team</a></li>
+				
+				<li><a href="..\..\..\..\locations.htm">Locations</a></li>
+				
+				<li><a href="..\..\..\..\customer-testimonials.htm">Customer Testimonials</a></li>
+				
+				<li><a href="..\..\..\..\share-testimonial.htm">Share Testimonial</a></li>
+				</ul></li></ul>
+			</div>
+		</div>
+		<!--Top Navigation end-->
+		<!--==============================header end=================================-->
+
+<!--Image Slider-->
+<!--Image Slider end-->
+
+<!--Main start-->
+<div class="main">
+<div class="container text_area">
+    <ul class="breadcrumbs"><li><a href="..\..\..\..\index.htm">Home</a></li><li><a href="javascript:void(0);">New Yachts</a></li><li><a href="..\..\..\..\mjm-yacht.htm">MJM Yacht</a></li><li><a href="javascript:void(0);">40z Express</a></li></ul>
+	  <div class="clear"></div>
+	       
+<div class="product-detail">
+	
+				<div class="product-detail-header">
+					<h1 class="title">2017 MJM Yachts 40z Express</h1>
+					<ul class="listing-meta"><li class="ft">40 ft</li><li class="cat">Express Cruiser</li></ul>
+				</div>
+				    <div class="clear"></div>
+    <div class="left-cell">
+    	
+            <div class="product-slider-wrap">
+                <ul class="product-slider">
+                <li><img src="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/H2ZM2EEPBN1RFY4RE4VUQXJHT5TYH721326825mm40-52(2)-1.jpg" title="" alt=""></li><li><img src="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/0X2UE15ZA1U4H7JMBTKMHUTS2TIU52F1326825mm40-52(2).jpg" title="" alt=""></li><li><img src="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/KFSWQ1TVU7G80CW3RN1P71YA60PG06F1326825mm40zExtendedBowRails-1(2).jpg" title="" alt=""></li><li><img src="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/BU2GANG2XH3MXT3A4NKTUH3ECEX8YVT1326825mm40zExtendedRails-1(2).jpg" title="" alt=""></li><li><img src="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/HG3UZN2U557Y305YJFB3B545HNHEWJM1326825mmBowandRails-1(2).jpg" title="" alt=""></li><li><img src="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/SRQCFFIHXHHSYQU3Y273WTCFZHM51GT1326825mmIn1copy.png" title="" alt=""></li><li><img src="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/7GJAANBQ6SHT7CIV67JS6IPIQ36S0NW1326825mmIn2copy.png" title="" alt=""></li><li><img src="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/J1AZ3UFRUG5J3R7VXTRI50BEV66F2IB1326825mmIn3copy.png" title="" alt=""></li><li><img src="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/RY7FA6Y8TKUWJRR6FK8Q5PSS3P0F4S81326825mmIn4copy.png" title="" alt=""></li><li><img src="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/X1XHNPG7EUMXSGHC84HKE5TRN7662ZJ1326825mmIn5copy.png" title="" alt=""></li>
+                </ul>
+				<a class="prev" href="#" title="Previous"></a><a class="next" href="#" title="Next"><span>next</span></a>
+				<div id="pager" class="pager"></div>
+            </div>
+                
+					
+				<div class="social righticoncol">
+				<ul>
+					<li><a href="https://data.yachtcloser.com/bsdownload/?fcapi=createmodelpdf&modelid=825&mfid=1326&siteid=65" title="Create a Brochure"><img src="https://data.yachtcloser.com/images/print.png" alt=""></a></li>
+					<li>
+		<div id="fb-root"></div>
+		<script>
+		window.fbAsyncInit = function() {
+		  // init the FB JS SDK
+		  FB.init({
+			appId      : '396027900547624',                        // App ID from the app dashboard			
+			status     : true,                                 // Check Facebook Login status
+			xfbml      : true                                  // Look for social plugins on the page
+		  });
+	  
+		  // Additional initialization code such as adding Event Listeners goes here
+		};
+	  
+		// Load the SDK asynchronously
+		(function(d, s, id){
+		   var js, fjs = d.getElementsByTagName(s)[0];
+		   if (d.getElementById(id)) {return;}
+		   js = d.createElement(s); js.id = id;
+		   js.src = "//connect.facebook.net/en_US/all.js";
+		   fjs.parentNode.insertBefore(js, fjs);
+		 }(document, 'script', 'facebook-jssdk'));
+		 
+		 function fb_share() {
+			FB.ui( {
+				method: 'feed',
+				name: "2017+MJM+Yachts+40z+Express",
+				link: "http%3A%2F%2Fdemo.ycwebservice.com%2Fmodel%2F2017%2Fmjm-yachts%2F40z-express%2F",
+				picture: "https://stackexchange.com/users/flair/557969.png",
+				caption: "Please+check+this+record."
+			}, function( response ) {
+				if ( response !== null && typeof response.post_id !== 'undefined' ) {
+					console.log( response );
+					// ajax call to save response
+				  $.post( 'http://www.webniraj.com/', { 'response': response }, function( result ) {
+						console.log( result );
+					}, 'json' );
+				}
+			} );
+		}
+		
+		$(document).ready(function(){
+		  $(".fbbtn").on( "click", fb_share );
+		});
+
+		</script>
+		<a class="fbbtn" title="Facebook Share" href="javascript:void(0);"><img src="https://data.yachtcloser.com/images/facebook.png" alt=""></a>
+		</li>
+					<li><a title="Google + Share" href="https://plusone.google.com/_/+1/confirm?hl=en&url=http%3A%2F%2Fdemo.ycwebservice.com%2Fmodel%2F2017%2Fmjm-yachts%2F40z-express%2F" target="_blank"><img src="https://data.yachtcloser.com/images/googleplus.png" alt=""></a></li>
+					<li><a title="Twitter Post" href="http://twitter.com/home?status=Please+check+this+record." target="_blank"><img src="https://data.yachtcloser.com/images/twitter.png" alt=""></a></li>
+					<li><a title="Linkedin Post" href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fdemo.ycwebservice.com%2Fmodel%2F2017%2Fmjm-yachts%2F40z-express%2F&title=2017+MJM+Yachts+40z+Express&summary=Please+check+this+record.&source=YachtCloser Data" target="_blank"><img src="https://data.yachtcloser.com/images/linkden.png" alt=""></a></li>
+					<li><a title="Pinterest Post" href="http://pinterest.com/pin/create/button/?url=&media=https%3A%2F%2Fdata.yachtcloser.com%2Fyachtimage%2FPlease+check+this+record.%2Fbigger%2Fhttp%3A%2F%2Fdemo.ycwebservice.com%2Fmodel%2F2017%2Fmjm-yachts%2F40z-express%2F&description=2017+MJM+Yachts+40z+Express" target="_blank"><img src="https://data.yachtcloser.com/images/pinterest.png" alt=""></a></li>					
+				</ul>
+				</div>
+				<div class="clear"></div>
+				
+				<div class="product-description-wrap">
+					<ul class="product-description-nav">
+						<li><a href="javascript:void(0);" ptabid="1" class="active">Overview</a></li>
+						<li><a href="javascript:void(0);" ptabid="2">Specifications</a></li>
+						<li><a href="javascript:void(0);" ptabid="3">Gallery</a></li>
+						<li><a href="javascript:void(0);" ptabid="4">Features</a></li>
+				<li><a href="javascript:void(0);" ptabid="5">Links</a></li>
+					</ul>
+					<div class="product-description">
+						<div class="description-tab" id="ptab1">
+							<h3 class="title">Overview</h3>
+							<div class="con">
+								<p>
+	<span style="color: rgb(85, 85, 85); font-family: Optima, Lucida, &quot;MgOpen Cosmetica&quot;, &quot;Lucida Sans Unicode&quot;, sans-serif; font-size: 18.2px; line-height: 18.2px; text-transform: uppercase;">MJM 40z Express Model</span></p>
+<p style="margin-top: 10px; margin-bottom: 10px; color: rgb(85, 85, 85); font-family: Optima, Lucida, 'MgOpen Cosmetica', 'Lucida Sans Unicode', sans-serif; font-size: 13px; line-height: 20px;">
+	The &ldquo;Express&rdquo; differs from the standard &ldquo;Downeast&rdquo; model only in pilothouse window styling. The side opening on the &ldquo;Express&rdquo; is divided in two parts. The lower section of safety glass has a small, opening vent window forward. This model has more hard glass enclosure if one prefers to partially open the sides in warm, rough conditions. The lower glass enclosure helps to contain small children on the pilothouse seats and also provides a lower handrail on the outside of the window frame by which small children can better work their way forward to the bowrail...instead of having to depend on the roof rails.</p>
+							</div>
+						</div>
+					
+						<div class="description-tab" id="ptab2">
+							<h3 class="title">Specifications</h3>
+							<div class="con specifications">
+								<h3>Basic Information</h3>
+								<div class="specifications-row"><div class="devider">
+										<div class="left-side">
+											<dl>
+												<dt>Manufacturer:</dt>
+												<dd>MJM Yachts</dd>
+											</dl>
+											<dl>
+												<dt>Model:</dt>
+												<dd>40z Express</dd>
+											</dl>
+											<dl>
+												<dt>Year:</dt>
+												<dd>2017</dd>
+											</dl>
+											<dl>
+												<dt>Category:</dt>
+												<dd>Power</dd>
+											</dl>										
+										</div>
+										<div class="right-side">										
+											<dl>
+												<dt>Boat Type:</dt>
+												<dd>Express Cruiser</dd>
+											</dl>
+											<dl>
+												<dt>Hull Material:</dt>
+												<dd>Fiberglass</dd>
+											</dl>
+											<dl>
+												<dt>Hull Type:</dt>
+												<dd>Modified Vee</dd>
+											</dl>										
+										</div>
+										<div class="clear"></div>
+									</div></div>
+								
+								<h3>Dimensions &amp; Weight</h3>
+								<div class="specifications-row"><div class="devider">
+										<div class="left-side">
+											<dl>
+												<dt>Length:</dt>
+												<dd>40 ft - 12.19 meter</dd>
+											</dl>
+											<dl>
+												<dt>LOA:</dt>
+												<dd>44 ft 2 in - 13.46 meter</dd>
+											</dl>
+											<dl>
+												<dt>Beam:</dt>
+												<dd>12 ft - 3.66 meter</dd>
+											</dl>
+										</div>
+										<div class="right-side">
+											<dl>
+												<dt>Draft - max:</dt>
+												<dd>3 ft 3 in - 0.99 meter</dd>
+											</dl>
+											<dl>
+												<dt>Bridge Clearance:</dt>
+												<dd>-</dd>
+											</dl>
+											<dl>
+												<dt>Dry Weight:</dt>
+												<dd>-</dd>
+											</dl>
+											<dl>
+												<dt>Deadrise Aft:</dt>
+												<dd>19.00 &deg;</dd>
+											</dl>
+										</div>
+										<div class="clear"></div>
+									</div></div>
+								
+				<h3>Standard Engine</h3>
+				<div class="specifications-row"><div class="devider">
+						<div class="left-side">
+							<dl>
+								<dt>Make:</dt>
+								<dd>Volvo</dd>
+							</dl>
+							<dl>
+								<dt>Model:</dt>
+								<dd>Volvo Penta D6 IPS500</dd>
+							</dl>
+							<dl>
+								<dt>Horsepower:</dt>
+								<dd>370</dd>
+							</dl>
+						</div>
+						<div class="right-side">
+							<dl>
+								<dt>Engine Type:</dt>
+								<dd>Inboard</dd>
+							</dl>
+							<dl>
+								<dt>Drive Type:</dt>
+								<dd></dd>
+							</dl>
+							<dl>
+								<dt>Fuel Type:</dt>
+								<dd>Diesel</dd>
+							</dl>
+						</div>
+						<div class="clear"></div>
+					</div></div>
+				
+								<h3>Tank Capacities</h3>
+								<div class="specifications-row"><div class="devider">
+										<div class="left-side">
+											<dl>
+												<dt>Fuel Tank:</dt>
+												<dd>350 gallons - 2 tank(s)</dd>
+											</dl>
+											<dl>
+												<dt>Fresh Water Tank:</dt>
+												<dd>100 gallons - 1 tank(s)</dd>
+											</dl>
+										</div>
+										<div class="right-side">
+											<dl>
+												<dt>Holding Tank:</dt>
+												<dd>30 gallons - 1 tank(s)</dd>
+											</dl>
+										</div>
+										<div class="clear"></div>
+									</div></div>
+								
+								<h3>Accommodations</h3>
+								<div class="specifications-row"><div class="devider">
+										<div class="left-side">
+											<dl>
+												<dt>Total Cabins:</dt>
+												<dd>1</dd>
+											</dl>
+											<dl>
+												<dt>Total Berths:</dt>
+												<dd>-</dd>
+											</dl>
+											<dl>
+												<dt>Total Sleeps:</dt>
+												<dd>-</dd>
+											</dl>
+											<dl>
+												<dt>Total Heads:</dt>
+												<dd>1</dd>
+											</dl>
+											<dl>
+												<dt>Captains Cabin:</dt>
+												<dd>No</dd>
+											</dl>
+										</div>
+										<div class="right-side">
+											<dl>
+												<dt>Crew Cabins:</dt>
+												<dd>-</dd>
+											</dl>
+											<dl>
+												<dt>Crew Berths:</dt>
+												<dd>-</dd>
+											</dl>
+											<dl>
+												<dt>Crew Sleeps:</dt>
+												<dd>-</dd>
+											</dl>
+											<dl>
+												<dt>Crew Heads:</dt>
+												<dd>-</dd>
+											</dl>
+										</div>
+										<div class="clear"></div>
+									</div></div>
+								
+							</div>
+						</div>
+						
+						<div class="description-tab" id="ptab3">
+							
+            <h3 class="title">Gallery</h3>
+            <div class="con">
+                <ul class="product-gallery">
+                <li><a class="fancybox" data-fancybox-group="gallery" href="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/H2ZM2EEPBN1RFY4RE4VUQXJHT5TYH721326825mm40-52(2)-1.jpg" title="" alt=""><img src="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/H2ZM2EEPBN1RFY4RE4VUQXJHT5TYH721326825mm40-52(2)-1.jpg"></a></li><li><a class="fancybox" data-fancybox-group="gallery" href="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/0X2UE15ZA1U4H7JMBTKMHUTS2TIU52F1326825mm40-52(2).jpg" title="" alt=""><img src="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/0X2UE15ZA1U4H7JMBTKMHUTS2TIU52F1326825mm40-52(2).jpg"></a></li><li><a class="fancybox" data-fancybox-group="gallery" href="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/KFSWQ1TVU7G80CW3RN1P71YA60PG06F1326825mm40zExtendedBowRails-1(2).jpg" title="" alt=""><img src="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/KFSWQ1TVU7G80CW3RN1P71YA60PG06F1326825mm40zExtendedBowRails-1(2).jpg"></a></li><li><a class="fancybox" data-fancybox-group="gallery" href="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/BU2GANG2XH3MXT3A4NKTUH3ECEX8YVT1326825mm40zExtendedRails-1(2).jpg" title="" alt=""><img src="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/BU2GANG2XH3MXT3A4NKTUH3ECEX8YVT1326825mm40zExtendedRails-1(2).jpg"></a></li><li><a class="fancybox" data-fancybox-group="gallery" href="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/HG3UZN2U557Y305YJFB3B545HNHEWJM1326825mmBowandRails-1(2).jpg" title="" alt=""><img src="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/HG3UZN2U557Y305YJFB3B545HNHEWJM1326825mmBowandRails-1(2).jpg"></a></li><li><a class="fancybox" data-fancybox-group="gallery" href="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/SRQCFFIHXHHSYQU3Y273WTCFZHM51GT1326825mmIn1copy.png" title="" alt=""><img src="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/SRQCFFIHXHHSYQU3Y273WTCFZHM51GT1326825mmIn1copy.png"></a></li><li><a class="fancybox" data-fancybox-group="gallery" href="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/7GJAANBQ6SHT7CIV67JS6IPIQ36S0NW1326825mmIn2copy.png" title="" alt=""><img src="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/7GJAANBQ6SHT7CIV67JS6IPIQ36S0NW1326825mmIn2copy.png"></a></li><li><a class="fancybox" data-fancybox-group="gallery" href="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/J1AZ3UFRUG5J3R7VXTRI50BEV66F2IB1326825mmIn3copy.png" title="" alt=""><img src="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/J1AZ3UFRUG5J3R7VXTRI50BEV66F2IB1326825mmIn3copy.png"></a></li><li><a class="fancybox" data-fancybox-group="gallery" href="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/RY7FA6Y8TKUWJRR6FK8Q5PSS3P0F4S81326825mmIn4copy.png" title="" alt=""><img src="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/RY7FA6Y8TKUWJRR6FK8Q5PSS3P0F4S81326825mmIn4copy.png"></a></li><li><a class="fancybox" data-fancybox-group="gallery" href="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/X1XHNPG7EUMXSGHC84HKE5TRN7662ZJ1326825mmIn5copy.png" title="" alt=""><img src="https://data.yachtcloser.com/manufacturerimage/modelimage/bigger/X1XHNPG7EUMXSGHC84HKE5TRN7662ZJ1326825mmIn5copy.png"></a></li>
+                </ul>
+               <div class="clear"></div>
+            </div>
+                
+						</div>
+						
+						<div class="description-tab" id="ptab4">
+							<h3 class="title">Features</h3>
+							<div class="con">
+								<h6>
+	<span style="font-family: Roboto, arial; font-size: 14px; font-weight: normal; line-height: 1.5;">HULL</span></h6>
+<div>
+	&bull; Modified deep-V, offshore hull design with sharp entry and moderate beam having dual lifting strakes, chine flats, 19-degree transom deadrise carried forward 13 feet, for stability at rest, a dry ride and level acceleration. &nbsp;</div>
+<div>
+	&bull; Hull, cove and chine stripe in Awlcraft 2000 color of choice w/3 coats of clear for abrasion repair.&nbsp;</div>
+<div>
+	&bull; ISO (CE Mark) Certified for Ocean Category A use and further engineered to meet ISO structural standards &nbsp;for a vessel capable of 45 knots in 21 ft. seas. &nbsp;</div>
+<div>
+	&bull; &ldquo;Quiet Chine&rdquo; modification to dampen wave slap.</div>
+<div>
+	&bull; Exceptionally strong &amp; light composite construction. Steel rollers outside the mold pre-impregnate stitched biaxial E-glass/Kevlar material under great pressure with Gougeon slow-set epoxy to a 60:40 ratio (glass to epoxy ratio). Damp, compressed material is transferred to and layered into the mold with 1&rdquo; CoreCell closed-cell foam core then vacuum-bagged to 14.7 psi to compress/bond the laminate and eliminate air voids prior to post-curing at 145F for 48 hours.&nbsp;</div>
+<div>
+	&bull; Solid keel, stem, and transom corners backed by a structural grid using unidirectional E-glass/epoxy GRP to minimize damage from impact.&nbsp;</div>
+<div>
+	&bull; Reinforcing of thru-hull and hardware attachments areas with solid glass or Penske-Board.&nbsp;</div>
+<div>
+	&bull; Side entry doors onto cockpit sole (2)&nbsp;</div>
+<div>
+	&bull; Transom door to swim platform.&nbsp;</div>
+<div>
+	&bull; Transferable 10-year osmotic blister warranty.&nbsp;</div>
+<div>
+	&bull; Bilges painted with smooth, gloss-white finish.&nbsp;</div>
+<div>
+	&bull; PVC guardrail and quarter-guard with high-polish stainless steel rub strips.&nbsp;</div>
+<div>
+	&bull; Atlantic 52 hull opening ports (4) in forward cabin and main saloon w/screens &amp; shades.&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	DECK&nbsp;</div>
+<div>
+	&bull; High-tech composite construction under vacuum using oven post-cured epoxy impregnated, stitched biaxial E-glass with a 1&rdquo; Alcan Airex C70 cross-linked, closed-cell PVC foam core.&nbsp;</div>
+<div>
+	&bull; Cook &ldquo;Armor Flex&rdquo; off-white gelcoat deck w/sand- textured non-skid. Color optional.&nbsp;</div>
+<div>
+	&bull; Molded swim platform with recessed dinghy cleats.&nbsp;</div>
+<div>
+	&bull; Custom Armstrong single post w/treads stainless swim ladder &amp; grab handle.&nbsp;</div>
+<div>
+	&bull; Hardware areas reinforced with solid glass, high compression Penske Board.&nbsp;</div>
+<div>
+	&bull; Backing plates for cleats and stanchions are epoxy G- 10 pressure- laminated composite.&nbsp;</div>
+<div>
+	&bull; Hull and deck fused together as monocoque structure with methacrylate adhesive with shear strength of 3,000 lbs. per square inch and with mechanical fasteners on 8-10&rdquo; centers.&nbsp;</div>
+<div>
+	&bull; 316L SS handrails (17) on pilothouse corner posts, hardtop, cabin top, under hardtop, on aft seat backs, &nbsp;galley overhead, outboard on console and either side of companionway entrance. &nbsp;</div>
+<div>
+	&bull; 29&rdquo; cockpit guardrail of 1.25&rdquo; round stainless.&nbsp;</div>
+<div>
+	&bull; 24&rdquo; bow rail of 1.25&rdquo; 316L stainless with 400,000 c.p. spotlight and varnished staff for 16&rdquo; burgee hoist.&nbsp;</div>
+<div>
+	&bull; 3&rsquo;x5&rsquo; National flag with teak staff and retainer pin.&nbsp;</div>
+<div>
+	&bull; Varnished teak burgee flagstaff on bow pulpit &nbsp;</div>
+<div>
+	&bull; Muir anchor windlass with deck and cockpit controls&nbsp;</div>
+<div>
+	&bull; Auto-launching polished stainless Lewmar claw anchor w/250&rsquo; of rode and 25&rsquo; of stainless chain.&nbsp;</div>
+<div>
+	&bull; Fresh water anchor and rode washer control at helm.&nbsp;</div>
+<div>
+	&bull; 40&#39; black braided 5/8&rdquo; docklines (5) and fenders (4) with black fleece covers and air pump.&nbsp;</div>
+<div>
+	&bull; Polished stainless steel bow guard&nbsp;</div>
+<div>
+	&bull; Molded Downeast Style windshield frame &amp; hardtop&nbsp;</div>
+<div>
+	&bull; Convertible pilothouse enclosed by un-zip-and-roll- up-in-place, Strataglas windows with Stamoid border.&nbsp;</div>
+<div>
+	&bull; Entry panel to cockpit w/dual window/screen&nbsp;</div>
+<div>
+	&bull; Deck drains divert dirt/soot/dew/rain into gray water system and out transom...not onto topsides.&nbsp;</div>
+<div>
+	&bull; Custom SS multi-directional bow chocks (2).&nbsp;</div>
+<div>
+	&bull; Engine room access hatches (3) with scuppers, overboard drains, gaskets and lockdowns. Main hatch has electric operated lift arm and manual back up.&nbsp;</div>
+<div>
+	&bull; Utility room access hatch in pilothouse with custom Armstrong telescoping ladder.&nbsp;</div>
+<div>
+	&bull; Varnished teak storage drawers w/locks under piloting seats. &nbsp;</div>
+<div>
+	&bull; Large pilothouse settee lockers P&amp;S w/piston- activated lockable lids, vinyl flooring and mesh organizer bags for power cords, hoses, bikes, hard luggage, dinghy and/or golf club storage.&nbsp;</div>
+<div>
+	&bull; Cockpit seat lockers (P&amp;S) for docklines, fenders, cleaning supplies and lubricants with UltraLeather back &amp; bottom cushions.&nbsp;</div>
+<div>
+	&bull; 36x16 single-leaf gloss-varnished teak table with fiddles w/pilothouse &amp; cockpit sockets. Opens to 32&rdquo;. &bull; Pilothouse settees w/UltraLeather covered natural latex, memory-foam bottom cushions...convert to 6.5- foot berths.&nbsp;</div>
+<div>
+	&bull; Drink holders (6) at piloting seats and transom seat&nbsp;</div>
+<div>
+	&bull; 8 Lewmar overhead deck hatches in forward cabin (2), head, shower, main saloon (2) and over piloting chairs (2)...all with Ocean dual action shade-screens.&nbsp;</div>
+<div>
+	&bull; 6 Cabin trunk opening ports w/screens in forward cabin, head, shower, galley and saloon.&nbsp;</div>
+<div>
+	&bull; Ocean Air combination screen/shades on hatches and pull shades on portlights.&nbsp;</div>
+<div>
+	&bull; Gloss-varnished, paneled &amp; louvered, lockable (from inside &amp; out) sliding teak companionway door with 4- section hinged cover with chartbook retainer fiddle. &nbsp;</div>
+<div>
+	&bull; Transom Seat with UltraLeather bolstered cushions having an easily removable 50z- style stainless framed chair to starboard in way of the transom door and a removable panel to port.</div>
+<div>
+	&nbsp;</div>
+<div>
+	PILOTING &amp; NAVIGATION</div>
+<div>
+	&bull; Matched Stidd 500 Wide Admiral low-back, 30&rdquo; wide, recliner piloting chairs in UltraLeather. Piloting chairs have swiveling bases and telescoping feature that lowers chair to create a comfortable all-weather inside social seating for 8 persons.</div>
+<div>
+	&bull; 24&rdquo; Edson destroyer wheel with varnished teak rim</div>
+<div>
+	&bull; Fully-opening windshields (3) w/wipers &amp; washers giving (a) exceptional ventilation in warm climates and (b) unrestricted visibility in fog or at night</div>
+<div>
+	&bull; Bi-level instrument console with gray anti-glare</div>
+<div>
+	&bull; Navigation station to port with angled 27x17 surface</div>
+<div>
+	&bull; Stryker 320,000 cd LED bowrail-mounted spotlight</div>
+<div>
+	&bull; Kahlenberg D-OA air horn w/auto fog and anchoring operation.</div>
+<div>
+	&bull; Ritchie SS-2000 4.5 Supersport compass.</div>
+<div>
+	&bull; Raymarine gS165 Hybrid Touch GPS plotter with Wi- Fi for iPad control with radar overlay.</div>
+<div>
+	&bull; Raymarine 4&rdquo; square Multi-Function i70 Display to display depth in large numbers.</div>
+<div>
+	&bull; Raymarine 4KW HD color radar w/dome</div>
+<div>
+	&bull; Raymarine 218 VHF on overhead at helm with hinged whip antenna and RAM control.</div>
+<div>
+	&bull; Raymarine AIS 650 Tracking System</div>
+<div>
+	&bull; Volvo Penta Autopilot Display.</div>
+<div>
+	&bull; Navionics Platinum+ XL3 mapping software in region of choice as well as US Raster Charts (NOAA Paper Chart) is included in Commissioning Package.</div>
+<div>
+	&nbsp;</div>
+<div>
+	PROPULSION</div>
+<div>
+	&bull; Twin Volvo-Penta D6 370 HP diesel engines with IPS 500 joystick docking system.</div>
+<div>
+	&bull; Volvo-Penta DPS (Dynamic Positioning System) that holds vessel in GPS location at current heading.</div>
+<div>
+	&bull; NEW - Volvo-Penta Line Cutters between Duo Props</div>
+<div>
+	&bull; Lectrotab Electric Trim Tabs</div>
+<div>
+	&bull; Engine spares kit and service manual.</div>
+<div>
+	&bull; UL approved fuel shutoff and fuel/air separators.</div>
+<div>
+	&bull; Racor fuel/water separators with spare cartridges</div>
+<div>
+	&bull; Two dedicated 175 gallon, bright-finished aluminum fuel tanks. WEMA SUF American standard fuel level sensors and interconnect line with shut-off valves.</div>
+<div>
+	&bull; Parker 221FR fire resistant USCG Class 1 high- tensile, steel-braid-reinforced, fuel hoses.</div>
+<div>
+	&bull; SS engine air intakes (4)</div>
+<div>
+	&bull; Dedicated sump below engine and transmission.</div>
+<div>
+	&bull; Seafire automatic fire suppressant system in engine and generator compartment</div>
+<div>
+	&bull; Custom Soundown insulated engine room.</div>
+<div>
+	&nbsp;</div>
+<div>
+	ELECTRICAL</div>
+<div>
+	&bull; Custom backlit electrical panel with 25-12v DC breakers and 12-110V AC breakers, stainless breaker guards and digital DC and AC monitors</div>
+<div>
+	&bull; 110V AC system w/Victron Energy Inverter/Charger</div>
+<div>
+	&bull; Shorepower system w/ 2-50&#39; white 30-Amp Marinco cords Stainless GFCI duplex outlets (6)</div>
+<div>
+	&bull; Volvo-Penta standard 125 amp alternators.</div>
+<div>
+	&bull; Blue Seas battery combiners</div>
+<div>
+	&bull; Galvanic isolator</div>
+<div>
+	&bull; LED cabin-reading lights (4) Overhead in galley (4) head (2) shower (2) saloon (4) forepeak (4) piloting console (2) and pilothouse (4) on 4 dimmer switches.</div>
+<div>
+	&bull; Courtesy lights (3) in cockpit and head.</div>
+<div>
+	&bull; Engine compartment lights.</div>
+<div>
+	&bull; 700-ampere hour absorbed glass-mat battery capacity with 2- Group 8D 245 AH house and 3-Group 31 105 AH engine and generator-start batteries.</div>
+<div>
+	&bull; LED navigation and anchoring lights.</div>
+<div>
+	&bull; Bonded electrical system and underwater fittings</div>
+<div>
+	&bull; Field serviceable electrical system with bundled &amp; numbered wires w/Deutsch O-ring waterproof connectors.</div>
+<div>
+	&bull; Dirt Devil central vacuum system</div>
+<div>
+	&nbsp;</div>
+<div>
+	ENTERTAINMENT</div>
+<div>
+	&bull; Fusion MS-AV750 stereo system with CD/DVD plus AM/FM/SIRIUS/VHF/WX/USB and iPod jack; 5 channel 1600 watt amplifier; wireless router; 6-7&rdquo; speakers; 2-3&rdquo; speakers and 8&rdquo; subwoofer in saloon, 400W amplifier, MP3/IPod jack. Starting with #57.</div>
+<div>
+	&nbsp;</div>
+<div>
+	PLUMBING</div>
+<div>
+	&bull; Pressure hot/cold water with Johnson Aqua Jet Duo variable-speed water pressure pump</div>
+<div>
+	&bull; 13-gallon stainless steel hot water heater.</div>
+<div>
+	&bull; 100-gallon polyethylene fresh water tank</div>
+<div>
+	&bull; Dockside water inlet w/check-valve and pressure regulator.</div>
+<div>
+	&bull; General Ecology Seagull IV purification system</div>
+<div>
+	&bull; Scanvik hot/cold shower on swim platform</div>
+<div>
+	&bull; High-pressure fresh water (washdown in port cockpit locker w/50 hose &amp; nozzle.</div>
+<div>
+	&bull; Jabsco Rule 1100 automatic bilge pumps (3)</div>
+<div>
+	&bull; Vacuflush head system with 30 gallon holding tank w/ pump out and macerator discharge.</div>
+<div>
+	&bull; Back-up Bosworth high-capacity cockpit-operated manual bilge pump.</div>
+<div>
+	&bull; Centralized gray water discharge system through transom to minimize thru-hulls.</div>
+<div>
+	&bull; Gray water sump w/inspection port for shower, head, icebox and AC condensate.</div>
+<div>
+	&bull; Marelon non-corrosive thru-hulls/seacocks with strainers and double-clamped hose.</div>
+<div>
+	&nbsp;</div>
+<div>
+	GALLEY</div>
+<div>
+	&bull; Corian counter-top with framed and paneled cherry cabinetry with push-button locks &amp; drawer handles and upper storage cabinets with offset inner shelf.</div>
+<div>
+	&bull; Recessed polished SS sink with removable Corian cover and Scanvik pullout faucet.</div>
+<div>
+	&bull; Flatware &amp; utensil drawers (3) w/Rubbermaid organizer.</div>
+<div>
+	&bull; Stainless Vitrofrigo 5.5 cu. ft. 2-drawer reefer/reefer.</div>
+<div>
+	&bull; B153 Freezer w/4 ice trays in lieu of previous dish drying compartment.</div>
+<div>
+	&bull; Dry goods cabinet w/sliding doors and intermediate shelf running length of galley w/LED lighting under.</div>
+<div>
+	&bull; Chinaware &amp; glass storage and rinsing compartment outboard of sink with drain &amp; vent.</div>
+<div>
+	&bull; Under counter storage locker for large pots/pans and cleaning supplies.</div>
+<div>
+	&bull; Flip lid access panel to large Rubbermaid trash bin.</div>
+<div>
+	&bull; Overhead safety handrail and towel drying bar.</div>
+<div>
+	&bull; Ceramic 2-burner electric stove w/pop-up retainers.</div>
+<div>
+	&bull; Sharp Double Grill 5-Way Convection Oven.</div>
+<div>
+	&bull; Double stainless hooks for hotpads and dishtowels.</div>
+<div>
+	&bull; Extended shelf with grab-rail fiddle above galley suitable for chart storage, cutting boards, etc.</div>
+<div>
+	&nbsp;</div>
+<div>
+	MAIN CABIN</div>
+<div>
+	&bull; Spacious dinette table lowers with electronic control to form 40-44&rdquo; wide, 78&rdquo; long berth. Heavy opaque linen curtain anchors to ceiling to form private double cabin with vertical zipper entry. 5&rdquo; UltraLeather covered memory foam insert is stored in vinyl bag.</div>
+<div>
+	&bull; Large hull opening ports (2) with screens, skylight hatches (2) and cabin portlights (2) to maximize ventilation, sense of space and light.</div>
+<div>
+	&bull; The companionway is designed for safety to function like a normal stairway with stainless grab rails and only 2 steps w/shoe locker &amp; tool storage under.</div>
+<div>
+	&bull; Headroom of 6&rsquo;4&rdquo; on centerline.</div>
+<div>
+	&bull; Clear Awlgrip gloss-finished teak &amp; holly cabin sole with storage compartment for large plastic bins.</div>
+<div>
+	&bull; Off-white Nevamar HPL paneling with cherry trim with foam backed vinyl headliner &amp; satin-varnished cherry ceiling battens.</div>
+<div>
+	&bull; Access door to dual entry head with integral shower.</div>
+<div>
+	&nbsp;</div>
+<div>
+	DUAL ENTRY HEAD</div>
+<div>
+	&bull; The portside combination head/shower is accessible from either forward or main cabin.</div>
+<div>
+	&bull; Corian counter with polished stainless oval sink having mixer valve spigot and pullout flexible hose with soft-spray to use as second shower. White Corian sinks to be installed in later models.</div>
+<div>
+	&bull; Paneled cherry storage locker outboard with sliding doors and towel storage shelf above.</div>
+<div>
+	&bull; Full-length mirrors inside door.</div>
+<div>
+	&bull; Locker under sink w/stainless TP holder</div>
+<div>
+	&bull; Towel rings and hooks.</div>
+<div>
+	&bull; Vent hatch and portlight.</div>
+<div>
+	&bull; Floor drain to gray water overboard system.</div>
+<div>
+	&nbsp;</div>
+<div>
+	FORWARD CABIN</div>
+<div>
+	&bull; Fixed 78&rdquo;x 60&rdquo; island berth having Latex memory foam mattress covered in durable, water resistant quilted Ultra- Leather.</div>
+<div>
+	&bull; Storage drawers (4) and below-berth storage bin.</div>
+<div>
+	&bull; Storage shelves over berth (P&amp;S) also serve as handholds when rising from berth.</div>
+<div>
+	&bull; Framed cherry wood forward bulkhead with recessed bookcases (2) and double access doors to large forepeak anchor locker.</div>
+<div>
+	&bull; Combination bureau/entertainment center with cabinet, drawer &amp; shoe locker, Corian counter and upper storage shelf. 26&rdquo; Flatscreen TV option would be mounted in lieu of cabinet door.</div>
+<div>
+	&bull; Hanging locker to port with storage shelf over.</div>
+<div>
+	&bull; Private access to head and ensuite shower.</div>
+<div>
+	&bull; Stainless double-hooks (3) for clothing</div>
+<div>
+	&bull; Dressing mirror on forward face of entry door.</div>
+<div>
+	&nbsp;</div>
+<div>
+	ENSUITE SHOWER</div>
+<div>
+	&bull; Separate stall shower to starboard with seat as well as towel &amp; toiletry storage bin outboard.</div>
+<div>
+	&bull; Wall mounted Scanvik shower hose w/turnoff.</div>
+<div>
+	&bull; Shaving mirror.</div>
+<div>
+	&bull; Towel rings and bathing suit hooks.</div>
+<div>
+	&bull; Opening vent hatch &amp; portlight w/screens &amp; shades</div>
+<div>
+	&bull; Floor drain to gray water overboard system.</div>
+<div>
+	&nbsp;</div>
+<div>
+	2nd HEAD OPTION. In lieu of the above shower, a 2nd head with sink and shower (wet head) is created by eliminating the door to the forward cabin as well as the passageway door to the port head&hellip;and locating an access door to this 2nd Head in the passageway.</div>							
+							</div>
+						</div>
+					
+						<div class="description-tab" id="ptab5">
+							<h3 class="title">Links</h3>
+							<div class="con">
+								
+			<h3 class="subtitle">External Links</h3>
+			<ul>
+			
+				<li>
+				<a href="http://www.mjmyachts.com/40z/virtual-tour" target="_blank">Virtual Tour</a><p>Virtual Tour of the MJM 40z Yacht</p>
+				</li>
+				
+			</ul>
+			
+								
+							</div>
+						</div>
+						
+					</div>
+				</div>
+				    </div>
+    <div class="right-cell scrollcol" parentdiv="product-detail">
+    	<section class="section broker-wrap">
+            
+        <h3>Presented by :</h3>
+        <div class="broker">
+            <img src="..\..\..\..\images\logo-blue.png" alt="">            
+            <div class="clear"></div>
+        </div>
+        
+		<div class="ph"><a class="tel" href="tel:(954) 361-1322"><span>(954) 361-1322</span></a></div>
+		<div class="cb cb2"><a href="..\..\..\..\contact-model\index-3.htm?m=825" class="contactbroker button contact" data-fancybox-type="iframe"><span>Contact Us</span></a></div>
+		<div class="cb cb2"><a href="..\..\..\..\make\mjm-yachts\condition\new\index.htm" class="button contact">New Inventory in Stock</a></div><div class="cb cb2"><a href="..\..\..\..\make\mjm-yachts\condition\used\index.htm" class="button contact">Used Boats</a></div>
+                </section>
+        
+        <section class="section">
+        
+				<h3>Our Locations :</h3>
+				<div class="locationholdersidebar clearfixmain">
+				<ul class="locationlist">
+				<li>
+					<h4><a href="..\..\..\..\locationprofile\fort-lauderdale\index.htm">Fort Lauderdale</a>
+					
+					<div class="locaddress">777 SE 20th Street, Suite 280</div>
+					<div class="locaddress">Fort Lauderdale, FL, US</div>
+					<div class="locphone"><a class="tel" href="tel:(954) 361-1322">(954) 361-1322</a></div>
+					
+				</h4></li>
+				</ul></div>        </section>
+        
+        <section class="section clearfixmain">
+	<h2>
+		Heading</h2>
+	<p>
+		Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s</p>
+</section>
+
+<h2 class="sidebartitle">Heading 2</h2>
+<div class="leftrightcolsection notopborder clearfixmain">
+<p>
+		Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s</p>
+</div>
+    </div>
+    <div class="clear"></div>
+</div>
+		
+                
+                
+                <div class="clear"></div>
+    </div>
+     
+	<div class="clear"></div> 
+	</div> 
+<!--Main end-->
+
+<!--Footer Start-->
+
+		<div class="footer clearfixmain">
+			<div class="container clearfixmain">
+				
+				<div class="footertop clearfixmain">
+					
+             <ul class="footermenu">
+            
+                 <li><a href="..\..\..\..\index.htm">Home</a></li>
+                 
+                 <li><a href="..\..\..\..\inventory.htm">Inventory</a></li>
+                 
+                 <li class="current_page_item"><a href="..\..\..\..\mjm-yacht.htm">New Yachts</a></li>
+                 
+                 <li><a href="..\..\..\..\content.htm">Pages</a></li>
+                 
+                 <li><a href="..\..\..\..\contact-us.htm">Forms</a></li>
+                 
+                 <li><a href="..\..\..\..\marketing.htm">Marketing</a></li>
+                 
+                 <li><a href="..\..\..\..\about-us.htm">About Us</a></li>
+                 
+                 <li><a href="..\..\..\..\login\index.htm">Login</a></li>
+                 
+            </ul>
+			<div class="clearfix"></div>
+            
+				</div>
+				
+				<div class="footerlogo"><img src="..\..\..\..\images\footer-logo.png" alt="YC Website Demo"></div>
+				
+				<div class="footerbottom clearfixmain">
+					<ul class="footercol">
+						<li>
+							<div class="bottomphone"><a class="tel" href="tel:(954) 361-1322">(954) 361-1322</a></div>
+						</li>
+						
+						<li>
+							<div class="bottomemail"><a href="mailto:websites@yachtcloser.com">websites@yachtcloser.com</a></div>
+						</li>
+						
+						<li>
+							<ul class="social_icon">               	
+								<li><a class="facebook" title="Facebook" href="https://www.facebook.com/YachtCloser" target="_blank"><span class="socicon socicon-facebook"></span></a></li><li><a class="twitter" title="Twitter" href="https://twitter.com/yachtcloser" target="_blank"><span class="socicon socicon-twitter"></span></a></li><li><a class="google" title="Google Plus" href="https://plus.google.com/b/104437041434625196887/+YachtCloser/posts" target="_blank"><span class="socicon socicon-google"></span></a></li><li><a class="linkedin" title="Linkedin" href="https://www.linkedin.com/company/yachtcloser-com" target="_blank"><span class="socicon socicon-linkedin"></span></a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				
+			</div>
+		</div>
+		
+		<div class="footerlast clearfixmain">
+			<div class="container clearfixmain">
+				<ul class="footerbox">
+					<li>&copy; Copyright <?php echo="" date("y");=""?> YC Website Demo.</li>            
+					<li>Powered by <a href="http://www.yachtcloser.com" target="_blank">YachtCloser</a></li>
+				</ul>
+			</div>
+		</div>
+		<!--Footer End-->
+
+<a href="javascript:void(0);" class="BackToTop">Top</a>
+<div id="fc_msg" class="errormessagepop">
+<script></script></div></body>
+</html>

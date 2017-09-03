@@ -1,0 +1,1677 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0;">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Finance Application</title>
+    <meta name="description" content="Yachtcloser Demo">
+    <meta name="keywords" content="Yachtcloser Demo">
+    <meta name="google-site-verification" content="#">
+    
+		  <meta property="og:title" content="Finance Application">
+		  <meta property="og:description" content="Yachtcloser Demo">
+		  <meta property="og:url" content="http://demo.ycwebservice.com/finance-application">
+		  <meta property="og:image" content="http://demo.ycwebservice.com/images/logoshare.png">	  
+		   
+    <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons\favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicons\favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons\favicon-16x16.png">
+    <link rel="manifest" href="favicons\manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <link href="css\font-awesome.min.css" rel="stylesheet">
+	<link href="css\socicon.css" rel="stylesheet">
+    <link href="css\jquery-ui.css" rel="stylesheet" type="text/css">
+    <link href="css\animate.css" rel="stylesheet" type="text/css">
+    <link href="css\camera.css" rel="stylesheet" type="text/css">
+    <link href="css\style.css" rel="stylesheet" type="text/css">
+    <link href="css\style-extend.css" rel="stylesheet" type="text/css">
+    <link href="css\menu.css" rel="stylesheet" type="text/css">    
+    <link href="css\jquery.timepicker.css" rel="stylesheet" type="text/css">
+    <link href="css\jquery.fancybox.css" rel="stylesheet" type="text/css">
+    <link href="css\responsive.css" rel="stylesheet" type="text/css">
+    <!--[if IE]>
+    <link rel="stylesheet" href="/css/ie.php?path=/" type="text/css" media="screen">
+    <![endif]-->
+
+    <script language="javascript" type="text/javascript">
+		var bkfolder = "/";
+		var siteurlfull = "http://demo.ycwebservice.com";
+	</script>
+    <script type="text/javascript" src="js\jquery.min.js"></script>
+    <script type="text/javascript" src="js\html5.js"></script>
+    <script type="text/javascript" src="js\jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js\jquery.ui.touch-punch.min.js"></script>
+    <script type="text/javascript" src="js\jquery.timepicker.min.js"></script>
+    <script type="text/javascript" src="js\jquery.cookie.js"></script>
+    <script type="text/javascript" src="js\jquery.carouFredSel-6.2.1-packed.js"></script>
+    <script type="text/javascript" src="js\jquery.cycle2.min.js"></script>
+    <script type="text/javascript" src="js\jquery.fancybox.js"></script>
+    <script type="text/javascript" src="js\jquery.sticky-kit.min.js"></script>
+    <script type="text/javascript" src="js\jquery.previewer.js"></script>
+    <script type="text/javascript" src="js\language.js"></script>
+    
+    <script type="text/javascript" src="js\jquery.mobile.customized.min.js"></script>
+    <script type="text/javascript" src="js\jquery.easing.1.3.js"></script> 
+    <script type="text/javascript" src="js\camera.js"></script>
+
+    <script type="text/javascript" src="js\validator.js"></script>
+    <script type="text/javascript" src="js\jquery.extra.js"></script>
+    <script type="text/javascript" src="js\creditapplication.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async="" defer=""></script>
+
+ 
+    
+    
+            
+    <script type="text/javascript" src="js\abclient.js"></script>
+	<script type="text/javascript" src="js\abjquery.js"></script>
+    
+    <script></script>    
+    <script type="text/javascript">
+	var airbrake = new airbrakeJs.Client({projectId: 117837, projectKey: 'de3d05543b28193078e680a0e845ae4a'});
+	if (window.jQuery) 
+	  airbrakeJs.instrumentation.jquery(airbrake, jQuery);
+	
+	function ___log__error(aMsg, aUrl, aLine, aCol, aErr) {
+	 airbrake.notify({
+		error:       aErr,
+		context:     { script: 'script-name', url : aUrl, line: aLine, col: aCol },
+		session:     { userid: 'userid-if-any' }
+	  });
+	   return false;
+	};
+	//window.onerror = ___log__error;
+	</script>        
+</head>
+<body>
+
+<!--==============================header start=================================-->
+
+		<noscript>
+			<div class="noscript">
+				<div class="noscript-inner">
+					<p><strong>JavaScript seem to be disabled in your browser.</strong></p>
+					<p>You must have JavaScript enabled in your browser to utilize the functionality of this website.</p>
+				</div>
+			</div>
+		</noscript>
+		
+		<div class="fcheader header gradient clearfixmain">
+			<div class="container clearfixmain">
+				<ul class="headercol">
+					<li><a href="index.htm" title="YC Website Demo"><img src="images\logo.png" alt="YC Website Demo"></a></li>
+					<li class="clearfixmain">
+						<div class="header-right-top clearfixmain">
+														
+						</div>
+						
+						<div class="topsocial clearfixmain"> 
+							<ul class="social_icon">               	
+								<li><a class="facebook" title="Facebook" href="https://www.facebook.com/YachtCloser" target="_blank"><span class="socicon socicon-facebook"></span></a></li><li><a class="twitter" title="Twitter" href="https://twitter.com/yachtcloser" target="_blank"><span class="socicon socicon-twitter"></span></a></li><li><a class="google" title="Google Plus" href="https://plus.google.com/b/104437041434625196887/+YachtCloser/posts" target="_blank"><span class="socicon socicon-google"></span></a></li><li><a class="linkedin" title="Linkedin" href="https://www.linkedin.com/company/yachtcloser-com" target="_blank"><span class="socicon socicon-linkedin"></span></a></li>
+							</ul>        
+						</div>
+						
+						<div class="topphone clearfixmain">
+							<a class="tel" href="tel:(954) 361-1322"><span>(954) 361-1322</span></a>
+						</div>						
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+		<!--Top Navigation-->
+		<div id="toggle"><a title="Menu" class="gn-icon-menu" href="javascript:void(0);"><span></span><menutitle>Menu</menutitle></a></div>
+		<div id="menu" class="menu clearfixmain">
+			<div class="container clearfixmain">   	
+				<ul class="nav-menu"><li><a href="index.htm">Home</a></li><li><a href="inventory.htm">Inventory<i class="fa fa-angle-down"></i></a><ul class="sub-menu">
+				<li><a href="featured-boats.htm">Featured Boats</a></li>
+				
+				<li><a href="new-inventory.htm">New Inventory</a></li>
+				
+				<li><a href="brokerage-inventory.htm">Brokerage Inventory</a></li>
+				
+				<li><a href="search-by-type.htm">Search By Type</a></li>
+				
+				<li><a href="search-by-brand.htm">Search By Brand</a></li>
+				
+				<li><a href="recently-sold.htm">Recently Sold</a></li>
+				
+				<li><a href="find-my-boat.htm">Find My Boat</a></li>
+				</ul></li><li><a href="javascript:void(0);">New Yachts<i class="fa fa-angle-down"></i></a><ul class="sub-menu">
+				<li><a href="mjm-yacht.htm">MJM Yacht</a></li>
+				
+				<li><a href="san-juan-yachts.htm">San Juan Yachts</a></li>
+				
+				<li><a href="viking-yachts.htm">Viking Yachts</a></li>
+				</ul></li><li><a href="javascript:void(0);">Pages<i class="fa fa-angle-down"></i></a><ul class="sub-menu">
+				<li><a href="content.htm">Content</a></li>
+				
+				<li><a href="blog.htm">Blog</a></li>
+				
+				<li><a href="news.htm">News</a></li>
+				</ul></li><li class="current-menu-item"><a href="javascript:void(0);">Forms<i class="fa fa-angle-down"></i></a><ul class="sub-menu">
+				<li><a href="contact-us.htm">Contact Us</a></li>
+				
+				<li><a href="sell-your-boat.htm">Sell Your Boat</a></li>
+				
+				<li><a href="trade-your-boat.htm">Trade Your Boat</a></li>
+				
+				<li><a href="insurance-quote.htm">Insurance Quote</a></li>
+				
+				<li><a href="finance-application.htm">Finance Application</a></li>
+				
+				<li><a href="transport-quote.htm">Transport Quote</a></li>
+				
+				<li><a href="service.htm">Service</a></li>
+				
+				<li><a href="we-buy-boats.htm">We Buy Boats</a></li>
+				</ul></li><li><a href="marketing.htm">Marketing</a></li><li><a href="about-us.htm">About Us<i class="fa fa-angle-down"></i></a><ul class="sub-menu nav_last">
+				<li><a href="our-team.htm">Our Team</a></li>
+				
+				<li><a href="locations.htm">Locations</a></li>
+				
+				<li><a href="customer-testimonials.htm">Customer Testimonials</a></li>
+				
+				<li><a href="share-testimonial.htm">Share Testimonial</a></li>
+				</ul></li></ul>
+			</div>
+		</div>
+		<!--Top Navigation end-->
+		<!--==============================header end=================================-->
+
+<!--Image Slider-->
+<!--Image Slider end-->
+
+<!--Main start-->
+<div class="main">
+<div class="container text_area">
+    <ul class="breadcrumbs"><li><a href="index.htm">Home</a></li><li><a href="javascript:void(0);">Forms</a></li><li><a href="javascript:void(0);">Finance Application</a></li></ul>
+	  <div class="clear"></div>
+	       
+<h1><span>Finance</span> Application</h1><div>
+	
+	  <div id="creditapplicationform" class="multistepform-main divborder">
+	  	   <div class="form-steps">    
+				<ul class="stephead">
+					<li class="s1 active">Applicant</li>
+					<li class="s2 com_none">Co-Applicant</li>
+					<li class="s3">Boat</li>
+					<li class="s4">Personal Financial Statement</li>
+					<li class="s5">Submit Application</li>
+				</ul>        
+				<div class="clearfix"></div>
+			</div>
+			<div class="multistepform-holder">
+	  
+	  <form method="post" action="/" id="creditapplication-ff" name="creditapplication-ff">
+	  <input type="hidden" id="s" name="s" type="text" value="1">
+	  <input class="finfo" id="email2" name="email2" type="text">
+	  <input type="hidden" id="fcapi" name="fcapi" value="creditapplication">	   	   
+	  
+	  <!--Step 1-->
+	  <div id="form1" class="formstep">
+	  
+	  <div class="singleblock"> 
+	  <div class="singleblock_heading"><span>Applicant</span><span class="requiredinfo">* Required</span></div> 
+	  <div class="singleblock_box singleblock_box_h">
+	  <ul class="form">
+	  		<li class="left" id="application_type_id_heading">
+				<p>Application Type <span class="requiredfieldindicate">*</span></p>
+				<select id="application_type_id" name="application_type_id" class="select">		
+					<option value="1" selected="selected">Individual<option value="2">Joint<option value="3">Company
+				</select>
+			</li>
+	  </ul>
+	    
+	  <ul class="form">	   		
+			<li class="left">
+				<p>First Name <span class="requiredfieldindicate">*</span></p>
+				<input type="text" id="fname" name="fname" value="" class="input">
+			</li>
+			<li class="right">
+				<p>Last Name <span class="requiredfieldindicate">*</span></p>
+				<input type="text" id="lname" name="lname" value="" class="input">
+			</li>
+			
+			<li class="left">
+				<p>Middle Name</p>
+				<input type="text" id="middle_name" name="middle_name" value="" class="input">
+			</li>			
+			<li class="right">
+				<p>Date of Birth (mm/dd/yyyy)</p>
+				<input defaultdateset="01/01/1980" rangeyear="1900:1999" type="text" id="dob" name="dob" value="" class="date-field-b input2">
+			</li>
+			
+			<li class="left corp_llc_trust com_none">
+				<p>Corp/LLC/Trust Name</p>
+				<input type="text" id="crop_llc_trust_name" name="crop_llc_trust_name" value="" class="input">
+			</li>
+			<li class="right corp_llc_trust com_none">
+				<p>EIN</p>
+				<input type="text" id="llc_ein" name="llc_ein" value="" class="input">
+			</li>
+			
+			<li class="left">
+				<p>Social Security # <span class="requiredfieldindicate">*</span></p>
+				<input type="text" id="social_security" name="social_security" value="" class="input">
+			</li>
+			<li class="right">
+				<p>Drivers License #</p>
+				<input type="text" id="drivers_license" name="drivers_license" value="" class="input">
+			</li>
+			
+			<li class="left">
+				<p>Drivers License State</p>
+				<select id="drivers_license_state" name="drivers_license_state" class="select">
+				<option value="">Select
+				<option value="1">Alabama<option value="2">Alaska<option value="3">Arizona<option value="4">Arkansas<option value="5">California<option value="6">Colorado<option value="7">Connecticut<option value="8">Delaware<option value="9">District of Columbia<option value="59">Federated States Of Micronesia<option value="10">Florida<option value="11">Georgia<option value="60">Guam<option value="12">Hawaii<option value="13">Idaho<option value="14">Illinois<option value="15">Indiana<option value="16">Iowa<option value="17">Kansas<option value="18">Kentucky<option value="19">Louisiana<option value="20">Maine<option value="61">Marshall Islands<option value="21">Maryland<option value="22">Massachusetts<option value="23">Michigan<option value="24">Minnesota<option value="25">Mississippi<option value="26">Missouri<option value="27">Montana<option value="28">Nebraska<option value="29">Nevada<option value="30">New Hampshire<option value="31">New Jersey<option value="32">New Mexico<option value="33">New York<option value="34">North Carolina<option value="35">North Dakota<option value="62">Northern Mariana Islands<option value="36">Ohio<option value="37">Oklahoma<option value="38">Oregon<option value="63">Palau<option value="39">Pennsylvania<option value="64">Puerto Rico<option value="40">Rhode Island<option value="41">South Carolina<option value="42">South Dakota<option value="43">Tennessee<option value="44">Texas<option value="45">Utah<option value="46">Vermont<option value="65">Virgin Islands<option value="47">Virginia<option value="48">Washington<option value="49">West Virginia<option value="50">Wisconsin<option value="51">Wyoming
+				</select>
+			</li>
+			<li class="right">
+				<p>Email Address <span class="requiredfieldindicate">*</span></p>
+				<input type="text" id="email" name="email" value="" class="input">
+			</li>
+						
+			<li class="left">
+				<p>Mobile Phone</p>
+				<input type="text" id="mobile" name="mobile" value="" class="input">
+			</li>
+			<li class="right">
+				<p>Work Phone</p>
+				<input type="text" id="phone" name="phone" value="" class="input">
+			</li>
+			
+			<li class="left">
+				<p>Home Phone</p>
+				<input type="text" id="home_phone" name="home_phone" value="" class="input">
+			</li>
+			<li class="right">
+				<p>U.S. Citizen</p>
+				<input type="checkbox" id="us_citizen" name="us_citizen" value="1" class="checkbox" checked="checked"> Yes
+			</li>
+	  </ul>
+	  
+	  <ul class="form citizencountry com_none">
+	  		<li class="left" id="citizen_country_heading">
+				<p>Country of Citizenship <span class="requiredfieldindicate">*</span></p>
+				<select id="citizen_country" name="citizen_country" class="select">
+				<option value="">Select
+				<option value="1">United States<option value="2">Canada<option value="3">Afghanistan<option value="5">Albania<option value="6">Algeria<option value="7">American Samoa<option value="8">Andorra<option value="9">Angola<option value="10">Anguilla<option value="11">Antarctica<option value="12">Antigua and Barbuda<option value="13">Argentina<option value="14">Armenia<option value="15">Aruba<option value="16">Australia<option value="17">Austria<option value="18">Azerbaijan<option value="19">Bahamas<option value="20">Bahrain<option value="21">Bangladesh<option value="22">Barbados<option value="23">Belarus<option value="24">Belgium<option value="25">Belize<option value="26">Benin<option value="27">Bermuda<option value="28">Bhutan<option value="29">Bolivia<option value="30">Bosnia and Herzegovina<option value="31">Botswana<option value="32">Bouvet Island<option value="33">Brazil<option value="34">British Indian Ocean Territory<option value="35">Brunei Darussalam<option value="36">Bulgaria<option value="37">Burkina Faso<option value="38">Burundi<option value="39">Cambodia<option value="40">Cameroon<option value="41">Cape Verde<option value="42">Caribbean Netherlands <option value="43">Cayman Islands<option value="44">Central African Republic<option value="45">Chad<option value="46">Chile<option value="47">China<option value="48">Christmas Island<option value="49">Cocos (Keeling) Islands<option value="50">Colombia<option value="51">Comoros<option value="52">Congo<option value="53">Congo, Democratic Republic of<option value="54">Cook Islands<option value="55">Costa Rica<option value="56">C<option value="57">Croatia<option value="58">Cuba<option value="59">Cura<option value="60">Cyprus<option value="61">Czech Republic<option value="62">Denmark<option value="63">Djibouti<option value="64">Dominica<option value="65">Dominican Republic<option value="66">Ecuador<option value="67">Egypt<option value="68">El Salvador<option value="69">Equatorial Guinea<option value="70">Eritrea<option value="71">Estonia<option value="72">Ethiopia<option value="73">Falkland Islands<option value="74">Faroe Islands<option value="75">Fiji<option value="76">Finland<option value="77">France<option value="78">French Guiana<option value="79">French Polynesia<option value="80">French Southern Territories<option value="81">Gabon<option value="82">Gambia<option value="83">Georgia<option value="84">Germany<option value="85">Ghana<option value="86">Gibraltar<option value="87">Greece<option value="88">Greenland<option value="89">Grenada<option value="90">Guadeloupe<option value="91">Guam<option value="92">Guatemala<option value="93">Guernsey<option value="94">Guinea<option value="95">Guinea-Bissau<option value="96">Guyana<option value="97">Haiti<option value="98">Heard and McDonald Islands<option value="99">Honduras<option value="100">Hong Kong<option value="101">Hungary<option value="102">Iceland<option value="103">India<option value="104">Indonesia<option value="105">Iran<option value="106">Iraq<option value="107">Ireland<option value="108">Isle of Man<option value="109">Israel<option value="110">Italy<option value="111">Jamaica<option value="112">Japan<option value="113">Jersey<option value="114">Jordan<option value="115">Kazakhstan<option value="116">Kenya<option value="117">Kiribati<option value="118">Kuwait<option value="119">Kyrgyzstan<option value="120">Lao People's Democratic Republic<option value="121">Latvia<option value="122">Lebanon<option value="123">Lesotho<option value="124">Liberia<option value="125">Libya<option value="126">Liechtenstein<option value="127">Lithuania<option value="128">Luxembourg<option value="129">Macau<option value="130">Macedonia<option value="131">Madagascar<option value="132">Malawi<option value="133">Malaysia<option value="134">Maldives<option value="135">Mali<option value="136">Malta<option value="137">Marshall Islands<option value="138">Martinique<option value="139">Mauritania<option value="140">Mauritius<option value="141">Mayotte<option value="142">Mexico<option value="143">Micronesia, Federated States of<option value="144">Moldova<option value="145">Monaco<option value="146">Mongolia<option value="147">Montenegro<option value="148">Montserrat<option value="149">Morocco<option value="150">Mozambique<option value="151">Myanmar<option value="152">Namibia<option value="153">Nauru<option value="154">Nepal<option value="155">New Caledonia<option value="156">New Zealand<option value="157">Nicaragua<option value="158">Niger<option value="159">Nigeria<option value="160">Niue<option value="161">Norfolk Island<option value="162">North Korea<option value="163">Northern Mariana Islands<option value="164">Norway<option value="165">Oman<option value="166">Pakistan<option value="167">Palau<option value="168">Palestinian Territory, Occupied<option value="169">Panama<option value="170">Papua New Guinea<option value="171">Paraguay<option value="172">Peru<option value="173">Philippines<option value="174">Pitcairn<option value="175">Poland<option value="176">Portugal<option value="177">Puerto Rico<option value="178">Qatar<option value="179">Reunion<option value="180">Romania<option value="181">Russian Federation<option value="182">Rwanda<option value="183">Saint Barth<option value="184">Saint Helena<option value="185">Saint Kitts and Nevis<option value="186">Saint Lucia<option value="187">Saint Vincent and the Grenadines<option value="188">Saint-Martin (France)<option value="189">Saint-Martin (Pays-Bas)<option value="190">Samoa<option value="191">San Marino<option value="192">Sao Tome and Principe<option value="193">Saudi Arabia<option value="194">Senegal<option value="195">Serbia<option value="196">Seychelles<option value="197">Sierra Leone<option value="198">Singapore<option value="199">Slovakia (Slovak Republic)<option value="200">Slovenia<option value="201">Solomon Islands<option value="202">Somalia<option value="203">South Africa<option value="204">South Georgia and South Sandwich Islands<option value="205">South Korea<option value="206">South Sudan<option value="207">Spain<option value="208">Sri Lanka<option value="209">St. Pierre and Miquelon<option value="210">Sudan<option value="211">Suriname<option value="212">Svalbard and Jan Mayen Islands<option value="213">Swaziland<option value="214">Sweden<option value="215">Switzerland<option value="216">Syria<option value="217">Taiwan<option value="218">Tajikistan<option value="219">Tanzania<option value="220">Thailand<option value="221">The Netherlands<option value="222">Timor-Leste<option value="223">Togo<option value="224">Tokelau<option value="225">Tonga<option value="226">Trinidad and Tobago<option value="227">Tunisia<option value="228">Turkey<option value="229">Turkmenistan<option value="230">Turks and Caicos Islands<option value="231">Tuvalu<option value="232">Uganda<option value="233">Ukraine<option value="234">United Arab Emirates<option value="235">United Kingdom<option value="236">United States Minor Outlying Islands<option value="237">Uruguay<option value="238">Uzbekistan<option value="239">Vanuatu<option value="240">Vatican<option value="241">Venezuela<option value="242">Vietnam<option value="243">Virgin Islands (British)<option value="244">Virgin Islands (U.S.)<option value="245">Wallis and Futuna Islands<option value="246">Western Sahara<option value="247">Yemen<option value="248">Zambia<option value="249">Zimbabwe
+				</select>
+			</li>
+	  </ul>
+	  <div class="clear"></div>
+	  </div>
+	  </div>
+	  
+	  <div class="singleblock"> 
+	  <div class="singleblock_heading"><span>Current Address</span></div> 
+	  <div class="singleblock_box singleblock_box_h">	   
+	  <ul class="form">	   		
+			<li class="left">
+				<p>Address</p>
+				<input type="text" id="address" name="address" value="" class="input">
+			</li>
+			<li class="right">
+				<p>City</p>
+				<input type="text" id="city" name="city" value="" class="input">
+			</li>
+			
+			<li class="left">
+				<p>State</p>
+				<input type="text" id="state" name="state" value="" class="input">
+			</li>
+			<li class="right">
+				<p>Postal Code</p>
+				<input type="text" id="zip" name="zip" value="" class="input">
+			</li>
+			
+			<li class="left" id="country_heading">
+				<p>Country</p>
+				<select id="country" name="country" class="select">
+				<option value="">Select
+				<option value="1">United States<option value="2">Canada<option value="3">Afghanistan<option value="5">Albania<option value="6">Algeria<option value="7">American Samoa<option value="8">Andorra<option value="9">Angola<option value="10">Anguilla<option value="11">Antarctica<option value="12">Antigua and Barbuda<option value="13">Argentina<option value="14">Armenia<option value="15">Aruba<option value="16">Australia<option value="17">Austria<option value="18">Azerbaijan<option value="19">Bahamas<option value="20">Bahrain<option value="21">Bangladesh<option value="22">Barbados<option value="23">Belarus<option value="24">Belgium<option value="25">Belize<option value="26">Benin<option value="27">Bermuda<option value="28">Bhutan<option value="29">Bolivia<option value="30">Bosnia and Herzegovina<option value="31">Botswana<option value="32">Bouvet Island<option value="33">Brazil<option value="34">British Indian Ocean Territory<option value="35">Brunei Darussalam<option value="36">Bulgaria<option value="37">Burkina Faso<option value="38">Burundi<option value="39">Cambodia<option value="40">Cameroon<option value="41">Cape Verde<option value="42">Caribbean Netherlands <option value="43">Cayman Islands<option value="44">Central African Republic<option value="45">Chad<option value="46">Chile<option value="47">China<option value="48">Christmas Island<option value="49">Cocos (Keeling) Islands<option value="50">Colombia<option value="51">Comoros<option value="52">Congo<option value="53">Congo, Democratic Republic of<option value="54">Cook Islands<option value="55">Costa Rica<option value="56">C<option value="57">Croatia<option value="58">Cuba<option value="59">Cura<option value="60">Cyprus<option value="61">Czech Republic<option value="62">Denmark<option value="63">Djibouti<option value="64">Dominica<option value="65">Dominican Republic<option value="66">Ecuador<option value="67">Egypt<option value="68">El Salvador<option value="69">Equatorial Guinea<option value="70">Eritrea<option value="71">Estonia<option value="72">Ethiopia<option value="73">Falkland Islands<option value="74">Faroe Islands<option value="75">Fiji<option value="76">Finland<option value="77">France<option value="78">French Guiana<option value="79">French Polynesia<option value="80">French Southern Territories<option value="81">Gabon<option value="82">Gambia<option value="83">Georgia<option value="84">Germany<option value="85">Ghana<option value="86">Gibraltar<option value="87">Greece<option value="88">Greenland<option value="89">Grenada<option value="90">Guadeloupe<option value="91">Guam<option value="92">Guatemala<option value="93">Guernsey<option value="94">Guinea<option value="95">Guinea-Bissau<option value="96">Guyana<option value="97">Haiti<option value="98">Heard and McDonald Islands<option value="99">Honduras<option value="100">Hong Kong<option value="101">Hungary<option value="102">Iceland<option value="103">India<option value="104">Indonesia<option value="105">Iran<option value="106">Iraq<option value="107">Ireland<option value="108">Isle of Man<option value="109">Israel<option value="110">Italy<option value="111">Jamaica<option value="112">Japan<option value="113">Jersey<option value="114">Jordan<option value="115">Kazakhstan<option value="116">Kenya<option value="117">Kiribati<option value="118">Kuwait<option value="119">Kyrgyzstan<option value="120">Lao People's Democratic Republic<option value="121">Latvia<option value="122">Lebanon<option value="123">Lesotho<option value="124">Liberia<option value="125">Libya<option value="126">Liechtenstein<option value="127">Lithuania<option value="128">Luxembourg<option value="129">Macau<option value="130">Macedonia<option value="131">Madagascar<option value="132">Malawi<option value="133">Malaysia<option value="134">Maldives<option value="135">Mali<option value="136">Malta<option value="137">Marshall Islands<option value="138">Martinique<option value="139">Mauritania<option value="140">Mauritius<option value="141">Mayotte<option value="142">Mexico<option value="143">Micronesia, Federated States of<option value="144">Moldova<option value="145">Monaco<option value="146">Mongolia<option value="147">Montenegro<option value="148">Montserrat<option value="149">Morocco<option value="150">Mozambique<option value="151">Myanmar<option value="152">Namibia<option value="153">Nauru<option value="154">Nepal<option value="155">New Caledonia<option value="156">New Zealand<option value="157">Nicaragua<option value="158">Niger<option value="159">Nigeria<option value="160">Niue<option value="161">Norfolk Island<option value="162">North Korea<option value="163">Northern Mariana Islands<option value="164">Norway<option value="165">Oman<option value="166">Pakistan<option value="167">Palau<option value="168">Palestinian Territory, Occupied<option value="169">Panama<option value="170">Papua New Guinea<option value="171">Paraguay<option value="172">Peru<option value="173">Philippines<option value="174">Pitcairn<option value="175">Poland<option value="176">Portugal<option value="177">Puerto Rico<option value="178">Qatar<option value="179">Reunion<option value="180">Romania<option value="181">Russian Federation<option value="182">Rwanda<option value="183">Saint Barth<option value="184">Saint Helena<option value="185">Saint Kitts and Nevis<option value="186">Saint Lucia<option value="187">Saint Vincent and the Grenadines<option value="188">Saint-Martin (France)<option value="189">Saint-Martin (Pays-Bas)<option value="190">Samoa<option value="191">San Marino<option value="192">Sao Tome and Principe<option value="193">Saudi Arabia<option value="194">Senegal<option value="195">Serbia<option value="196">Seychelles<option value="197">Sierra Leone<option value="198">Singapore<option value="199">Slovakia (Slovak Republic)<option value="200">Slovenia<option value="201">Solomon Islands<option value="202">Somalia<option value="203">South Africa<option value="204">South Georgia and South Sandwich Islands<option value="205">South Korea<option value="206">South Sudan<option value="207">Spain<option value="208">Sri Lanka<option value="209">St. Pierre and Miquelon<option value="210">Sudan<option value="211">Suriname<option value="212">Svalbard and Jan Mayen Islands<option value="213">Swaziland<option value="214">Sweden<option value="215">Switzerland<option value="216">Syria<option value="217">Taiwan<option value="218">Tajikistan<option value="219">Tanzania<option value="220">Thailand<option value="221">The Netherlands<option value="222">Timor-Leste<option value="223">Togo<option value="224">Tokelau<option value="225">Tonga<option value="226">Trinidad and Tobago<option value="227">Tunisia<option value="228">Turkey<option value="229">Turkmenistan<option value="230">Turks and Caicos Islands<option value="231">Tuvalu<option value="232">Uganda<option value="233">Ukraine<option value="234">United Arab Emirates<option value="235">United Kingdom<option value="236">United States Minor Outlying Islands<option value="237">Uruguay<option value="238">Uzbekistan<option value="239">Vanuatu<option value="240">Vatican<option value="241">Venezuela<option value="242">Vietnam<option value="243">Virgin Islands (British)<option value="244">Virgin Islands (U.S.)<option value="245">Wallis and Futuna Islands<option value="246">Western Sahara<option value="247">Yemen<option value="248">Zambia<option value="249">Zimbabwe
+				</select>
+			</li>
+			<li class="right">
+				<p>Years at Address</p>
+				<div class="leftfield"><input type="text" id="address_year" name="address_year" value="" class="input" placeholder="Years"></div>
+				<div class="rightfield"><input type="text" id="address_month" name="address_month" value="" class="input" placeholder="Months"></div>
+			</li>
+			
+			<li class="left">
+				<p>Own or Rent</p>
+				<input type="radio" id="own_rent1" name="own_rent" value="Own" class="radiobutton" checked="checked">&nbsp;Own&nbsp;&nbsp;&nbsp;
+				<input type="radio" id="own_rent2" name="own_rent" value="Rent" class="radiobutton">&nbsp;Rent
+			</li>
+			<li class="right">
+				<p>Monthly Payment [$]</p>
+				<input type="text" id="monthly_payment" name="monthly_payment" value="" class="input">
+			</li>		
+	  </ul>
+	  <div class="clear"></div>
+	  </div>
+	  </div>
+	  
+	  <div id="pevious_address" class="singleblock com_none"> 
+	  <div class="singleblock_heading"><span>Previous Address</span></div> 
+	  <div class="singleblock_box singleblock_box_h">	   
+	  <ul class="form">	   		
+			<li class="left">
+				<p>Address</p>
+				<input type="text" id="prev_address" name="prev_address" value="" class="input">
+			</li>
+			<li class="right">
+				<p>City</p>
+				<input type="text" id="prev_city" name="prev_city" value="" class="input">
+			</li>
+			
+			<li class="left">
+				<p>State</p>
+				<input type="text" id="prev_state" name="prev_state" value="" class="input">
+			</li>
+			<li class="right">
+				<p>Postal Code</p>
+				<input type="text" id="prev_zip" name="prev_zip" value="" class="input">
+			</li>
+			
+			<li class="left" id="prev_country_heading">
+				<p>Country</p>
+				<select id="prev_country" name="prev_country" class="select">
+				<option value="">Select
+				<option value="1">United States<option value="2">Canada<option value="3">Afghanistan<option value="5">Albania<option value="6">Algeria<option value="7">American Samoa<option value="8">Andorra<option value="9">Angola<option value="10">Anguilla<option value="11">Antarctica<option value="12">Antigua and Barbuda<option value="13">Argentina<option value="14">Armenia<option value="15">Aruba<option value="16">Australia<option value="17">Austria<option value="18">Azerbaijan<option value="19">Bahamas<option value="20">Bahrain<option value="21">Bangladesh<option value="22">Barbados<option value="23">Belarus<option value="24">Belgium<option value="25">Belize<option value="26">Benin<option value="27">Bermuda<option value="28">Bhutan<option value="29">Bolivia<option value="30">Bosnia and Herzegovina<option value="31">Botswana<option value="32">Bouvet Island<option value="33">Brazil<option value="34">British Indian Ocean Territory<option value="35">Brunei Darussalam<option value="36">Bulgaria<option value="37">Burkina Faso<option value="38">Burundi<option value="39">Cambodia<option value="40">Cameroon<option value="41">Cape Verde<option value="42">Caribbean Netherlands <option value="43">Cayman Islands<option value="44">Central African Republic<option value="45">Chad<option value="46">Chile<option value="47">China<option value="48">Christmas Island<option value="49">Cocos (Keeling) Islands<option value="50">Colombia<option value="51">Comoros<option value="52">Congo<option value="53">Congo, Democratic Republic of<option value="54">Cook Islands<option value="55">Costa Rica<option value="56">C<option value="57">Croatia<option value="58">Cuba<option value="59">Cura<option value="60">Cyprus<option value="61">Czech Republic<option value="62">Denmark<option value="63">Djibouti<option value="64">Dominica<option value="65">Dominican Republic<option value="66">Ecuador<option value="67">Egypt<option value="68">El Salvador<option value="69">Equatorial Guinea<option value="70">Eritrea<option value="71">Estonia<option value="72">Ethiopia<option value="73">Falkland Islands<option value="74">Faroe Islands<option value="75">Fiji<option value="76">Finland<option value="77">France<option value="78">French Guiana<option value="79">French Polynesia<option value="80">French Southern Territories<option value="81">Gabon<option value="82">Gambia<option value="83">Georgia<option value="84">Germany<option value="85">Ghana<option value="86">Gibraltar<option value="87">Greece<option value="88">Greenland<option value="89">Grenada<option value="90">Guadeloupe<option value="91">Guam<option value="92">Guatemala<option value="93">Guernsey<option value="94">Guinea<option value="95">Guinea-Bissau<option value="96">Guyana<option value="97">Haiti<option value="98">Heard and McDonald Islands<option value="99">Honduras<option value="100">Hong Kong<option value="101">Hungary<option value="102">Iceland<option value="103">India<option value="104">Indonesia<option value="105">Iran<option value="106">Iraq<option value="107">Ireland<option value="108">Isle of Man<option value="109">Israel<option value="110">Italy<option value="111">Jamaica<option value="112">Japan<option value="113">Jersey<option value="114">Jordan<option value="115">Kazakhstan<option value="116">Kenya<option value="117">Kiribati<option value="118">Kuwait<option value="119">Kyrgyzstan<option value="120">Lao People's Democratic Republic<option value="121">Latvia<option value="122">Lebanon<option value="123">Lesotho<option value="124">Liberia<option value="125">Libya<option value="126">Liechtenstein<option value="127">Lithuania<option value="128">Luxembourg<option value="129">Macau<option value="130">Macedonia<option value="131">Madagascar<option value="132">Malawi<option value="133">Malaysia<option value="134">Maldives<option value="135">Mali<option value="136">Malta<option value="137">Marshall Islands<option value="138">Martinique<option value="139">Mauritania<option value="140">Mauritius<option value="141">Mayotte<option value="142">Mexico<option value="143">Micronesia, Federated States of<option value="144">Moldova<option value="145">Monaco<option value="146">Mongolia<option value="147">Montenegro<option value="148">Montserrat<option value="149">Morocco<option value="150">Mozambique<option value="151">Myanmar<option value="152">Namibia<option value="153">Nauru<option value="154">Nepal<option value="155">New Caledonia<option value="156">New Zealand<option value="157">Nicaragua<option value="158">Niger<option value="159">Nigeria<option value="160">Niue<option value="161">Norfolk Island<option value="162">North Korea<option value="163">Northern Mariana Islands<option value="164">Norway<option value="165">Oman<option value="166">Pakistan<option value="167">Palau<option value="168">Palestinian Territory, Occupied<option value="169">Panama<option value="170">Papua New Guinea<option value="171">Paraguay<option value="172">Peru<option value="173">Philippines<option value="174">Pitcairn<option value="175">Poland<option value="176">Portugal<option value="177">Puerto Rico<option value="178">Qatar<option value="179">Reunion<option value="180">Romania<option value="181">Russian Federation<option value="182">Rwanda<option value="183">Saint Barth<option value="184">Saint Helena<option value="185">Saint Kitts and Nevis<option value="186">Saint Lucia<option value="187">Saint Vincent and the Grenadines<option value="188">Saint-Martin (France)<option value="189">Saint-Martin (Pays-Bas)<option value="190">Samoa<option value="191">San Marino<option value="192">Sao Tome and Principe<option value="193">Saudi Arabia<option value="194">Senegal<option value="195">Serbia<option value="196">Seychelles<option value="197">Sierra Leone<option value="198">Singapore<option value="199">Slovakia (Slovak Republic)<option value="200">Slovenia<option value="201">Solomon Islands<option value="202">Somalia<option value="203">South Africa<option value="204">South Georgia and South Sandwich Islands<option value="205">South Korea<option value="206">South Sudan<option value="207">Spain<option value="208">Sri Lanka<option value="209">St. Pierre and Miquelon<option value="210">Sudan<option value="211">Suriname<option value="212">Svalbard and Jan Mayen Islands<option value="213">Swaziland<option value="214">Sweden<option value="215">Switzerland<option value="216">Syria<option value="217">Taiwan<option value="218">Tajikistan<option value="219">Tanzania<option value="220">Thailand<option value="221">The Netherlands<option value="222">Timor-Leste<option value="223">Togo<option value="224">Tokelau<option value="225">Tonga<option value="226">Trinidad and Tobago<option value="227">Tunisia<option value="228">Turkey<option value="229">Turkmenistan<option value="230">Turks and Caicos Islands<option value="231">Tuvalu<option value="232">Uganda<option value="233">Ukraine<option value="234">United Arab Emirates<option value="235">United Kingdom<option value="236">United States Minor Outlying Islands<option value="237">Uruguay<option value="238">Uzbekistan<option value="239">Vanuatu<option value="240">Vatican<option value="241">Venezuela<option value="242">Vietnam<option value="243">Virgin Islands (British)<option value="244">Virgin Islands (U.S.)<option value="245">Wallis and Futuna Islands<option value="246">Western Sahara<option value="247">Yemen<option value="248">Zambia<option value="249">Zimbabwe
+				</select>				
+			</li>
+			<li class="right">
+				<p>Years at Address</p>
+				<div class="leftfield"><input type="text" id="prev_address_year" name="prev_address_year" value="" class="input" placeholder="Years"></div>
+				<div class="rightfield"><input type="text" id="prev_address_month" name="prev_address_month" value="" class="input" placeholder="Months"></div>
+			</li>
+			
+			<li class="left">
+				<p>Own or Rent</p>
+				<input type="radio" id="prev_own_rent1" name="prev_own_rent" value="Own" class="radiobutton" checked="checked">&nbsp;Own&nbsp;&nbsp;&nbsp;
+				<input type="radio" id="prev_own_rent2" name="prev_own_rent" value="Rent" class="radiobutton">&nbsp;Rent
+			</li>
+			<li class="right">
+				<p>Monthly Payment [$]</p>
+				<input type="text" id="prev_monthly_payment" name="prev_monthly_payment" value="" class="input">
+			</li>		
+	  </ul>
+	  <div class="clear"></div>
+	  </div>
+	  </div>
+	  
+	  <div class="singleblock"> 
+	  <div class="singleblock_heading"><span>Current Employer</span></div> 
+	  <div class="singleblock_box singleblock_box_h">	   
+	  <ul class="form">	   		
+			<li class="left">
+				<p>Employer</p>
+				<input type="text" id="employer" name="employer" value="" class="input">
+			</li>
+			<li class="right">
+				<p>Address</p>
+				<input type="text" id="emp_address" name="emp_address" value="" class="input">
+			</li>
+			
+			<li class="left">
+				<p>City</p>
+				<input type="text" id="emp_city" name="emp_city" value="" class="input">
+			</li>			
+			<li class="right">
+				<p>State</p>
+				<input type="text" id="emp_state" name="emp_state" value="" class="input">
+			</li>
+			
+			<li class="left">
+				<p>Postal Code</p>
+				<input type="text" id="emp_zip" name="emp_zip" value="" class="input">
+			</li>
+			<li class="right" id="emp_country_heading">
+				<p>Country</p>
+				<select id="emp_country" name="emp_country" class="select">
+				<option value="">Select
+				<option value="1">United States<option value="2">Canada<option value="3">Afghanistan<option value="5">Albania<option value="6">Algeria<option value="7">American Samoa<option value="8">Andorra<option value="9">Angola<option value="10">Anguilla<option value="11">Antarctica<option value="12">Antigua and Barbuda<option value="13">Argentina<option value="14">Armenia<option value="15">Aruba<option value="16">Australia<option value="17">Austria<option value="18">Azerbaijan<option value="19">Bahamas<option value="20">Bahrain<option value="21">Bangladesh<option value="22">Barbados<option value="23">Belarus<option value="24">Belgium<option value="25">Belize<option value="26">Benin<option value="27">Bermuda<option value="28">Bhutan<option value="29">Bolivia<option value="30">Bosnia and Herzegovina<option value="31">Botswana<option value="32">Bouvet Island<option value="33">Brazil<option value="34">British Indian Ocean Territory<option value="35">Brunei Darussalam<option value="36">Bulgaria<option value="37">Burkina Faso<option value="38">Burundi<option value="39">Cambodia<option value="40">Cameroon<option value="41">Cape Verde<option value="42">Caribbean Netherlands <option value="43">Cayman Islands<option value="44">Central African Republic<option value="45">Chad<option value="46">Chile<option value="47">China<option value="48">Christmas Island<option value="49">Cocos (Keeling) Islands<option value="50">Colombia<option value="51">Comoros<option value="52">Congo<option value="53">Congo, Democratic Republic of<option value="54">Cook Islands<option value="55">Costa Rica<option value="56">C<option value="57">Croatia<option value="58">Cuba<option value="59">Cura<option value="60">Cyprus<option value="61">Czech Republic<option value="62">Denmark<option value="63">Djibouti<option value="64">Dominica<option value="65">Dominican Republic<option value="66">Ecuador<option value="67">Egypt<option value="68">El Salvador<option value="69">Equatorial Guinea<option value="70">Eritrea<option value="71">Estonia<option value="72">Ethiopia<option value="73">Falkland Islands<option value="74">Faroe Islands<option value="75">Fiji<option value="76">Finland<option value="77">France<option value="78">French Guiana<option value="79">French Polynesia<option value="80">French Southern Territories<option value="81">Gabon<option value="82">Gambia<option value="83">Georgia<option value="84">Germany<option value="85">Ghana<option value="86">Gibraltar<option value="87">Greece<option value="88">Greenland<option value="89">Grenada<option value="90">Guadeloupe<option value="91">Guam<option value="92">Guatemala<option value="93">Guernsey<option value="94">Guinea<option value="95">Guinea-Bissau<option value="96">Guyana<option value="97">Haiti<option value="98">Heard and McDonald Islands<option value="99">Honduras<option value="100">Hong Kong<option value="101">Hungary<option value="102">Iceland<option value="103">India<option value="104">Indonesia<option value="105">Iran<option value="106">Iraq<option value="107">Ireland<option value="108">Isle of Man<option value="109">Israel<option value="110">Italy<option value="111">Jamaica<option value="112">Japan<option value="113">Jersey<option value="114">Jordan<option value="115">Kazakhstan<option value="116">Kenya<option value="117">Kiribati<option value="118">Kuwait<option value="119">Kyrgyzstan<option value="120">Lao People's Democratic Republic<option value="121">Latvia<option value="122">Lebanon<option value="123">Lesotho<option value="124">Liberia<option value="125">Libya<option value="126">Liechtenstein<option value="127">Lithuania<option value="128">Luxembourg<option value="129">Macau<option value="130">Macedonia<option value="131">Madagascar<option value="132">Malawi<option value="133">Malaysia<option value="134">Maldives<option value="135">Mali<option value="136">Malta<option value="137">Marshall Islands<option value="138">Martinique<option value="139">Mauritania<option value="140">Mauritius<option value="141">Mayotte<option value="142">Mexico<option value="143">Micronesia, Federated States of<option value="144">Moldova<option value="145">Monaco<option value="146">Mongolia<option value="147">Montenegro<option value="148">Montserrat<option value="149">Morocco<option value="150">Mozambique<option value="151">Myanmar<option value="152">Namibia<option value="153">Nauru<option value="154">Nepal<option value="155">New Caledonia<option value="156">New Zealand<option value="157">Nicaragua<option value="158">Niger<option value="159">Nigeria<option value="160">Niue<option value="161">Norfolk Island<option value="162">North Korea<option value="163">Northern Mariana Islands<option value="164">Norway<option value="165">Oman<option value="166">Pakistan<option value="167">Palau<option value="168">Palestinian Territory, Occupied<option value="169">Panama<option value="170">Papua New Guinea<option value="171">Paraguay<option value="172">Peru<option value="173">Philippines<option value="174">Pitcairn<option value="175">Poland<option value="176">Portugal<option value="177">Puerto Rico<option value="178">Qatar<option value="179">Reunion<option value="180">Romania<option value="181">Russian Federation<option value="182">Rwanda<option value="183">Saint Barth<option value="184">Saint Helena<option value="185">Saint Kitts and Nevis<option value="186">Saint Lucia<option value="187">Saint Vincent and the Grenadines<option value="188">Saint-Martin (France)<option value="189">Saint-Martin (Pays-Bas)<option value="190">Samoa<option value="191">San Marino<option value="192">Sao Tome and Principe<option value="193">Saudi Arabia<option value="194">Senegal<option value="195">Serbia<option value="196">Seychelles<option value="197">Sierra Leone<option value="198">Singapore<option value="199">Slovakia (Slovak Republic)<option value="200">Slovenia<option value="201">Solomon Islands<option value="202">Somalia<option value="203">South Africa<option value="204">South Georgia and South Sandwich Islands<option value="205">South Korea<option value="206">South Sudan<option value="207">Spain<option value="208">Sri Lanka<option value="209">St. Pierre and Miquelon<option value="210">Sudan<option value="211">Suriname<option value="212">Svalbard and Jan Mayen Islands<option value="213">Swaziland<option value="214">Sweden<option value="215">Switzerland<option value="216">Syria<option value="217">Taiwan<option value="218">Tajikistan<option value="219">Tanzania<option value="220">Thailand<option value="221">The Netherlands<option value="222">Timor-Leste<option value="223">Togo<option value="224">Tokelau<option value="225">Tonga<option value="226">Trinidad and Tobago<option value="227">Tunisia<option value="228">Turkey<option value="229">Turkmenistan<option value="230">Turks and Caicos Islands<option value="231">Tuvalu<option value="232">Uganda<option value="233">Ukraine<option value="234">United Arab Emirates<option value="235">United Kingdom<option value="236">United States Minor Outlying Islands<option value="237">Uruguay<option value="238">Uzbekistan<option value="239">Vanuatu<option value="240">Vatican<option value="241">Venezuela<option value="242">Vietnam<option value="243">Virgin Islands (British)<option value="244">Virgin Islands (U.S.)<option value="245">Wallis and Futuna Islands<option value="246">Western Sahara<option value="247">Yemen<option value="248">Zambia<option value="249">Zimbabwe
+				</select>
+			</li>
+			
+			<li class="left">
+				<p>Phone</p>
+				<input type="text" id="emp_phone" name="emp_phone" value="" class="input">
+			</li>
+			<li class="right">
+				<p>Length of Employment</p>
+				<div class="leftfield"><input type="text" id="emp_year" name="emp_year" value="" class="input" placeholder="Years"></div>
+				<div class="rightfield"><input type="text" id="emp_month" name="emp_month" value="" class="input" placeholder="Months"></div>
+			</li>
+			
+			<li class="left">
+				<p>Position / Title</p>
+				<input type="text" id="emp_position" name="emp_position" value="" class="input">
+			</li>
+			<li class="right">
+				<p>Supervisor</p>
+				<input type="text" id="emp_supervisor" name="emp_supervisor" value="" class="input">
+			</li>		
+	  </ul>
+	  <div class="clear"></div>
+	  </div>
+	  </div>
+	  
+	  <div id="pevious_employer" class="singleblock com_none">
+	  <div class="singleblock_heading"><span>Previous Employer</span></div> 
+	  <div class="singleblock_box singleblock_box_h">	   
+	  <ul class="form">	   		
+			<li class="left">
+				<p>Employer</p>
+				<input type="text" id="prev_employer" name="prev_employer" value="" class="input">
+			</li>
+			<li class="right">
+				<p>Address</p>
+				<input type="text" id="prev_emp_address" name="prev_emp_address" value="" class="input">
+			</li>
+			
+			<li class="left">
+				<p>City</p>
+				<input type="text" id="prev_emp_city" name="prev_emp_city" value="" class="input">
+			</li>			
+			<li class="right">
+				<p>State</p>
+				<input type="text" id="prev_emp_state" name="prev_emp_state" value="" class="input">
+			</li>
+			
+			<li class="left">
+				<p>Postal Code</p>
+				<input type="text" id="prev_emp_zip" name="prev_emp_zip" value="" class="input">
+			</li>
+			<li class="right" id="prev_emp_country_heading">
+				<p>Country</p>
+				<select id="prev_emp_country" name="prev_emp_country" class="select">
+				<option value="">Select
+				<option value="1">United States<option value="2">Canada<option value="3">Afghanistan<option value="5">Albania<option value="6">Algeria<option value="7">American Samoa<option value="8">Andorra<option value="9">Angola<option value="10">Anguilla<option value="11">Antarctica<option value="12">Antigua and Barbuda<option value="13">Argentina<option value="14">Armenia<option value="15">Aruba<option value="16">Australia<option value="17">Austria<option value="18">Azerbaijan<option value="19">Bahamas<option value="20">Bahrain<option value="21">Bangladesh<option value="22">Barbados<option value="23">Belarus<option value="24">Belgium<option value="25">Belize<option value="26">Benin<option value="27">Bermuda<option value="28">Bhutan<option value="29">Bolivia<option value="30">Bosnia and Herzegovina<option value="31">Botswana<option value="32">Bouvet Island<option value="33">Brazil<option value="34">British Indian Ocean Territory<option value="35">Brunei Darussalam<option value="36">Bulgaria<option value="37">Burkina Faso<option value="38">Burundi<option value="39">Cambodia<option value="40">Cameroon<option value="41">Cape Verde<option value="42">Caribbean Netherlands <option value="43">Cayman Islands<option value="44">Central African Republic<option value="45">Chad<option value="46">Chile<option value="47">China<option value="48">Christmas Island<option value="49">Cocos (Keeling) Islands<option value="50">Colombia<option value="51">Comoros<option value="52">Congo<option value="53">Congo, Democratic Republic of<option value="54">Cook Islands<option value="55">Costa Rica<option value="56">C<option value="57">Croatia<option value="58">Cuba<option value="59">Cura<option value="60">Cyprus<option value="61">Czech Republic<option value="62">Denmark<option value="63">Djibouti<option value="64">Dominica<option value="65">Dominican Republic<option value="66">Ecuador<option value="67">Egypt<option value="68">El Salvador<option value="69">Equatorial Guinea<option value="70">Eritrea<option value="71">Estonia<option value="72">Ethiopia<option value="73">Falkland Islands<option value="74">Faroe Islands<option value="75">Fiji<option value="76">Finland<option value="77">France<option value="78">French Guiana<option value="79">French Polynesia<option value="80">French Southern Territories<option value="81">Gabon<option value="82">Gambia<option value="83">Georgia<option value="84">Germany<option value="85">Ghana<option value="86">Gibraltar<option value="87">Greece<option value="88">Greenland<option value="89">Grenada<option value="90">Guadeloupe<option value="91">Guam<option value="92">Guatemala<option value="93">Guernsey<option value="94">Guinea<option value="95">Guinea-Bissau<option value="96">Guyana<option value="97">Haiti<option value="98">Heard and McDonald Islands<option value="99">Honduras<option value="100">Hong Kong<option value="101">Hungary<option value="102">Iceland<option value="103">India<option value="104">Indonesia<option value="105">Iran<option value="106">Iraq<option value="107">Ireland<option value="108">Isle of Man<option value="109">Israel<option value="110">Italy<option value="111">Jamaica<option value="112">Japan<option value="113">Jersey<option value="114">Jordan<option value="115">Kazakhstan<option value="116">Kenya<option value="117">Kiribati<option value="118">Kuwait<option value="119">Kyrgyzstan<option value="120">Lao People's Democratic Republic<option value="121">Latvia<option value="122">Lebanon<option value="123">Lesotho<option value="124">Liberia<option value="125">Libya<option value="126">Liechtenstein<option value="127">Lithuania<option value="128">Luxembourg<option value="129">Macau<option value="130">Macedonia<option value="131">Madagascar<option value="132">Malawi<option value="133">Malaysia<option value="134">Maldives<option value="135">Mali<option value="136">Malta<option value="137">Marshall Islands<option value="138">Martinique<option value="139">Mauritania<option value="140">Mauritius<option value="141">Mayotte<option value="142">Mexico<option value="143">Micronesia, Federated States of<option value="144">Moldova<option value="145">Monaco<option value="146">Mongolia<option value="147">Montenegro<option value="148">Montserrat<option value="149">Morocco<option value="150">Mozambique<option value="151">Myanmar<option value="152">Namibia<option value="153">Nauru<option value="154">Nepal<option value="155">New Caledonia<option value="156">New Zealand<option value="157">Nicaragua<option value="158">Niger<option value="159">Nigeria<option value="160">Niue<option value="161">Norfolk Island<option value="162">North Korea<option value="163">Northern Mariana Islands<option value="164">Norway<option value="165">Oman<option value="166">Pakistan<option value="167">Palau<option value="168">Palestinian Territory, Occupied<option value="169">Panama<option value="170">Papua New Guinea<option value="171">Paraguay<option value="172">Peru<option value="173">Philippines<option value="174">Pitcairn<option value="175">Poland<option value="176">Portugal<option value="177">Puerto Rico<option value="178">Qatar<option value="179">Reunion<option value="180">Romania<option value="181">Russian Federation<option value="182">Rwanda<option value="183">Saint Barth<option value="184">Saint Helena<option value="185">Saint Kitts and Nevis<option value="186">Saint Lucia<option value="187">Saint Vincent and the Grenadines<option value="188">Saint-Martin (France)<option value="189">Saint-Martin (Pays-Bas)<option value="190">Samoa<option value="191">San Marino<option value="192">Sao Tome and Principe<option value="193">Saudi Arabia<option value="194">Senegal<option value="195">Serbia<option value="196">Seychelles<option value="197">Sierra Leone<option value="198">Singapore<option value="199">Slovakia (Slovak Republic)<option value="200">Slovenia<option value="201">Solomon Islands<option value="202">Somalia<option value="203">South Africa<option value="204">South Georgia and South Sandwich Islands<option value="205">South Korea<option value="206">South Sudan<option value="207">Spain<option value="208">Sri Lanka<option value="209">St. Pierre and Miquelon<option value="210">Sudan<option value="211">Suriname<option value="212">Svalbard and Jan Mayen Islands<option value="213">Swaziland<option value="214">Sweden<option value="215">Switzerland<option value="216">Syria<option value="217">Taiwan<option value="218">Tajikistan<option value="219">Tanzania<option value="220">Thailand<option value="221">The Netherlands<option value="222">Timor-Leste<option value="223">Togo<option value="224">Tokelau<option value="225">Tonga<option value="226">Trinidad and Tobago<option value="227">Tunisia<option value="228">Turkey<option value="229">Turkmenistan<option value="230">Turks and Caicos Islands<option value="231">Tuvalu<option value="232">Uganda<option value="233">Ukraine<option value="234">United Arab Emirates<option value="235">United Kingdom<option value="236">United States Minor Outlying Islands<option value="237">Uruguay<option value="238">Uzbekistan<option value="239">Vanuatu<option value="240">Vatican<option value="241">Venezuela<option value="242">Vietnam<option value="243">Virgin Islands (British)<option value="244">Virgin Islands (U.S.)<option value="245">Wallis and Futuna Islands<option value="246">Western Sahara<option value="247">Yemen<option value="248">Zambia<option value="249">Zimbabwe
+				</select>
+			</li>
+			
+			<li class="left">
+				<p>Phone</p>
+				<input type="text" id="prev_emp_phone" name="prev_emp_phone" value="" class="input">
+			</li>
+			<li class="right">
+				<p>Length of Employment</p>
+				<div class="leftfield"><input type="text" id="prev_emp_year" name="prev_emp_year" value="" class="input" placeholder="Years"></div>
+				<div class="rightfield"><input type="text" id="prev_emp_month" name="prev_emp_month" value="" class="input" placeholder="Months"></div>
+			</li>		
+	  </ul>
+	  <div class="clear"></div>
+	  </div>
+	  </div>
+	  
+	  <div class="singleblock">
+	  <div class="singleblock_heading"><span>Income</span></div> 
+	  <div class="singleblock_box singleblock_box_h">	   
+	  <ul class="form">	   		
+			<li class="left">
+				<p>Wages [$]</p>
+				<input type="text" id="wages" name="wages" value="" class="input">
+			</li>
+			<li class="right">
+				<p>Paid</p>
+				<input type="radio" id="paid1" name="paid" value="Monthly" class="radiobutton" checked="checked">&nbsp;Monthly&nbsp;&nbsp;&nbsp;
+				<input type="radio" id="paid2" name="paid" value="Annually" class="radiobutton">&nbsp;Annually
+			</li>
+	  </ul>
+	  <ul class="form">		
+			<li class="left">
+				<p>Other Income [$]</p>
+				<input type="text" id="oth_income" name="oth_income" value="" class="input">
+			</li>			
+			<li class="right">
+				<p>Paid</p>
+				<input type="radio" id="oth_income_paid1" name="oth_income_paid" value="Monthly" class="radiobutton" checked="checked">&nbsp;Monthly&nbsp;&nbsp;&nbsp;
+				<input type="radio" id="oth_income_paid1" name="oth_income_paid" value="Annually" class="radiobutton">&nbsp;Annually
+			</li>
+			
+			<li>
+				<p>Other Income Description</p>
+				<textarea name="oth_income_description" id="oth_income_description" rows="1" cols="1" class="comments"></textarea>
+				<p class="smalltext">Applicant does not need to disclose income from alimony, child support, or separate maintenance, unless applicant desires this income included in determining creditworthiness.</p>
+			</li>
+	  </ul>	  
+	  <div class="clear"></div>
+	  </div>
+	  </div>
+	  
+	  <div class="singleblock">
+	  <div class="singleblock_heading"><span>Other Information</span></div> 
+	  <div class="singleblock_box singleblock_box_h">	
+	  <ul class="form">	
+      		<li class="left">
+				<p>Prior Bankruptcy</p>
+				<input type="radio" id="prior_bankruptcy1" name="prior_bankruptcy" value="1" class="prior_bankruptcy radiobutton"> Yes &nbsp;&nbsp;
+				<input type="radio" id="prior_bankruptcy2" name="prior_bankruptcy" value="0" class="prior_bankruptcy radiobutton" checked="checked"> No
+			</li>
+            <li class="right bankruptcyyear com_none">
+				<p>Bankruptcy Year <span class="requiredfieldindicate">*</span></p>
+				<input type="text" id="bankruptcy_year" name="bankruptcy_year" value="" class="input">
+			</li>
+      </ul>   
+	  <ul class="form">	   		
+			<li class="left">
+				<p>Nearest Relative - not living with you</p>
+				<input type="text" id="nearest_relative" name="nearest_relative" value="" class="input">
+			</li>
+			<li class="right">
+				<p>Relationship</p>
+				<input type="text" id="nearest_relative_relationship" name="nearest_relative_relationship" value="" class="input">
+			</li>
+	  </ul>
+	  <ul class="form">		
+			<li class="left">
+				<p>Phone</p>
+				<input type="text" id="nearest_relative_phone" name="nearest_relative_phone" value="" class="input">
+			</li>	
+	  </ul>
+	  <div class="clear"></div>
+	  </div>
+	  </div>
+	  
+	  <div class="clearfix"></div>
+	  <div class="multistepformbutton">
+		<button type="button" class="button nextbutton" nextstep="2"><span>Next</span></button>
+	  </div>
+	  
+	  </div>
+	  <!--Step 1 End-->
+	  
+	  <!--Step 2-->
+	  <div id="form2" class="formstep com_none">
+	  
+	  <div class="singleblock"> 
+	  <div class="singleblock_heading"><span>Co-Applicant</span><span class="requiredinfo">* Required</span></div> 
+	  <div class="singleblock_box singleblock_box_h">	   
+	  <ul class="form">	   		
+			<li class="left">
+				<p>First Name <span class="requiredfieldindicate">*</span></p>
+				<input type="text" id="co_app_fname" name="co_app_fname" value="" class="input">
+			</li>
+			<li class="right">
+				<p>Last Name <span class="requiredfieldindicate">*</span></p>
+				<input type="text" id="co_app_lname" name="co_app_lname" value="" class="input">
+			</li>
+			
+			<li class="left">
+				<p>Middle Name</p>
+				<input type="text" id="co_app_middle_name" name="co_app_middle_name" value="" class="input">
+			</li>			
+			<li class="right">
+				<p>Date of Birth (mm/dd/yyyy)</p>
+				<input defaultdateset="01/01/1980" rangeyear="1900:1999" type="text" id="co_app_dob" name="co_app_dob" value="" class="date-field-b input2">
+			</li>
+			
+			<li class="left">
+				<p>Social Security # <span class="requiredfieldindicate">*</span></p>
+				<input type="text" id="co_app_social_security" name="co_app_social_security" value="" class="input">
+			</li>
+			<li class="right">
+				<p>Drivers License #</p>
+				<input type="text" id="co_app_drivers_license" name="co_app_drivers_license" value="" class="input">
+			</li>
+			
+			<li class="left">
+				<p>Drivers License State</p>
+				<select id="co_app_drivers_license_state" name="co_app_drivers_license_state" class="select">
+				<option value="">Select
+				<option value="1">Alabama<option value="2">Alaska<option value="3">Arizona<option value="4">Arkansas<option value="5">California<option value="6">Colorado<option value="7">Connecticut<option value="8">Delaware<option value="9">District of Columbia<option value="59">Federated States Of Micronesia<option value="10">Florida<option value="11">Georgia<option value="60">Guam<option value="12">Hawaii<option value="13">Idaho<option value="14">Illinois<option value="15">Indiana<option value="16">Iowa<option value="17">Kansas<option value="18">Kentucky<option value="19">Louisiana<option value="20">Maine<option value="61">Marshall Islands<option value="21">Maryland<option value="22">Massachusetts<option value="23">Michigan<option value="24">Minnesota<option value="25">Mississippi<option value="26">Missouri<option value="27">Montana<option value="28">Nebraska<option value="29">Nevada<option value="30">New Hampshire<option value="31">New Jersey<option value="32">New Mexico<option value="33">New York<option value="34">North Carolina<option value="35">North Dakota<option value="62">Northern Mariana Islands<option value="36">Ohio<option value="37">Oklahoma<option value="38">Oregon<option value="63">Palau<option value="39">Pennsylvania<option value="64">Puerto Rico<option value="40">Rhode Island<option value="41">South Carolina<option value="42">South Dakota<option value="43">Tennessee<option value="44">Texas<option value="45">Utah<option value="46">Vermont<option value="65">Virgin Islands<option value="47">Virginia<option value="48">Washington<option value="49">West Virginia<option value="50">Wisconsin<option value="51">Wyoming
+				</select>
+			</li>
+			<li class="right">
+				<p>Email Address <span class="requiredfieldindicate">*</span></p>
+				<input type="text" id="co_app_email" name="co_app_email" value="" class="input">
+			</li>
+						
+			<li class="left">
+				<p>Mobile Phone</p>
+				<input type="text" id="co_app_mobile" name="co_app_mobile" value="" class="input">
+			</li>
+			<li class="right">
+				<p>Work Phone</p>
+				<input type="text" id="co_app_app_phone" name="co_app_app_phone" value="" class="input">
+			</li>
+			
+			<li class="left">
+				<p>Home Phone</p>
+				<input type="text" id="co_app_home_phone" name="co_app_home_phone" value="" class="input">
+			</li>
+	  </ul>
+	  <div class="clear"></div>
+	  </div>
+	  </div>
+	  
+	  <div class="singleblock"> 
+	  <div class="singleblock_heading"><span>Current Address</span></div> 
+	  <div class="singleblock_box singleblock_box_h">	   
+	  <ul class="form">	   		
+			<li class="left">
+				<p>Address</p>
+				<input type="text" id="co_app_address" name="co_app_address" value="" class="input">
+			</li>
+			<li class="right">
+				<p>City</p>
+				<input type="text" id="co_app_city" name="co_app_city" value="" class="input">
+			</li>
+			
+			<li class="left">
+				<p>State</p>
+				<input type="text" id="co_app_state" name="co_app_state" value="" class="input">
+			</li>
+			<li class="right">
+				<p>Postal Code</p>
+				<input type="text" id="co_app_zip" name="co_app_zip" value="" class="input">
+			</li>
+			
+			<li class="left" id="co_app_country_heading">
+				<p>Country</p>
+				<select id="co_app_country" name="co_app_country" class="select">
+				<option value="">Select
+				<option value="1">United States<option value="2">Canada<option value="3">Afghanistan<option value="5">Albania<option value="6">Algeria<option value="7">American Samoa<option value="8">Andorra<option value="9">Angola<option value="10">Anguilla<option value="11">Antarctica<option value="12">Antigua and Barbuda<option value="13">Argentina<option value="14">Armenia<option value="15">Aruba<option value="16">Australia<option value="17">Austria<option value="18">Azerbaijan<option value="19">Bahamas<option value="20">Bahrain<option value="21">Bangladesh<option value="22">Barbados<option value="23">Belarus<option value="24">Belgium<option value="25">Belize<option value="26">Benin<option value="27">Bermuda<option value="28">Bhutan<option value="29">Bolivia<option value="30">Bosnia and Herzegovina<option value="31">Botswana<option value="32">Bouvet Island<option value="33">Brazil<option value="34">British Indian Ocean Territory<option value="35">Brunei Darussalam<option value="36">Bulgaria<option value="37">Burkina Faso<option value="38">Burundi<option value="39">Cambodia<option value="40">Cameroon<option value="41">Cape Verde<option value="42">Caribbean Netherlands <option value="43">Cayman Islands<option value="44">Central African Republic<option value="45">Chad<option value="46">Chile<option value="47">China<option value="48">Christmas Island<option value="49">Cocos (Keeling) Islands<option value="50">Colombia<option value="51">Comoros<option value="52">Congo<option value="53">Congo, Democratic Republic of<option value="54">Cook Islands<option value="55">Costa Rica<option value="56">C<option value="57">Croatia<option value="58">Cuba<option value="59">Cura<option value="60">Cyprus<option value="61">Czech Republic<option value="62">Denmark<option value="63">Djibouti<option value="64">Dominica<option value="65">Dominican Republic<option value="66">Ecuador<option value="67">Egypt<option value="68">El Salvador<option value="69">Equatorial Guinea<option value="70">Eritrea<option value="71">Estonia<option value="72">Ethiopia<option value="73">Falkland Islands<option value="74">Faroe Islands<option value="75">Fiji<option value="76">Finland<option value="77">France<option value="78">French Guiana<option value="79">French Polynesia<option value="80">French Southern Territories<option value="81">Gabon<option value="82">Gambia<option value="83">Georgia<option value="84">Germany<option value="85">Ghana<option value="86">Gibraltar<option value="87">Greece<option value="88">Greenland<option value="89">Grenada<option value="90">Guadeloupe<option value="91">Guam<option value="92">Guatemala<option value="93">Guernsey<option value="94">Guinea<option value="95">Guinea-Bissau<option value="96">Guyana<option value="97">Haiti<option value="98">Heard and McDonald Islands<option value="99">Honduras<option value="100">Hong Kong<option value="101">Hungary<option value="102">Iceland<option value="103">India<option value="104">Indonesia<option value="105">Iran<option value="106">Iraq<option value="107">Ireland<option value="108">Isle of Man<option value="109">Israel<option value="110">Italy<option value="111">Jamaica<option value="112">Japan<option value="113">Jersey<option value="114">Jordan<option value="115">Kazakhstan<option value="116">Kenya<option value="117">Kiribati<option value="118">Kuwait<option value="119">Kyrgyzstan<option value="120">Lao People's Democratic Republic<option value="121">Latvia<option value="122">Lebanon<option value="123">Lesotho<option value="124">Liberia<option value="125">Libya<option value="126">Liechtenstein<option value="127">Lithuania<option value="128">Luxembourg<option value="129">Macau<option value="130">Macedonia<option value="131">Madagascar<option value="132">Malawi<option value="133">Malaysia<option value="134">Maldives<option value="135">Mali<option value="136">Malta<option value="137">Marshall Islands<option value="138">Martinique<option value="139">Mauritania<option value="140">Mauritius<option value="141">Mayotte<option value="142">Mexico<option value="143">Micronesia, Federated States of<option value="144">Moldova<option value="145">Monaco<option value="146">Mongolia<option value="147">Montenegro<option value="148">Montserrat<option value="149">Morocco<option value="150">Mozambique<option value="151">Myanmar<option value="152">Namibia<option value="153">Nauru<option value="154">Nepal<option value="155">New Caledonia<option value="156">New Zealand<option value="157">Nicaragua<option value="158">Niger<option value="159">Nigeria<option value="160">Niue<option value="161">Norfolk Island<option value="162">North Korea<option value="163">Northern Mariana Islands<option value="164">Norway<option value="165">Oman<option value="166">Pakistan<option value="167">Palau<option value="168">Palestinian Territory, Occupied<option value="169">Panama<option value="170">Papua New Guinea<option value="171">Paraguay<option value="172">Peru<option value="173">Philippines<option value="174">Pitcairn<option value="175">Poland<option value="176">Portugal<option value="177">Puerto Rico<option value="178">Qatar<option value="179">Reunion<option value="180">Romania<option value="181">Russian Federation<option value="182">Rwanda<option value="183">Saint Barth<option value="184">Saint Helena<option value="185">Saint Kitts and Nevis<option value="186">Saint Lucia<option value="187">Saint Vincent and the Grenadines<option value="188">Saint-Martin (France)<option value="189">Saint-Martin (Pays-Bas)<option value="190">Samoa<option value="191">San Marino<option value="192">Sao Tome and Principe<option value="193">Saudi Arabia<option value="194">Senegal<option value="195">Serbia<option value="196">Seychelles<option value="197">Sierra Leone<option value="198">Singapore<option value="199">Slovakia (Slovak Republic)<option value="200">Slovenia<option value="201">Solomon Islands<option value="202">Somalia<option value="203">South Africa<option value="204">South Georgia and South Sandwich Islands<option value="205">South Korea<option value="206">South Sudan<option value="207">Spain<option value="208">Sri Lanka<option value="209">St. Pierre and Miquelon<option value="210">Sudan<option value="211">Suriname<option value="212">Svalbard and Jan Mayen Islands<option value="213">Swaziland<option value="214">Sweden<option value="215">Switzerland<option value="216">Syria<option value="217">Taiwan<option value="218">Tajikistan<option value="219">Tanzania<option value="220">Thailand<option value="221">The Netherlands<option value="222">Timor-Leste<option value="223">Togo<option value="224">Tokelau<option value="225">Tonga<option value="226">Trinidad and Tobago<option value="227">Tunisia<option value="228">Turkey<option value="229">Turkmenistan<option value="230">Turks and Caicos Islands<option value="231">Tuvalu<option value="232">Uganda<option value="233">Ukraine<option value="234">United Arab Emirates<option value="235">United Kingdom<option value="236">United States Minor Outlying Islands<option value="237">Uruguay<option value="238">Uzbekistan<option value="239">Vanuatu<option value="240">Vatican<option value="241">Venezuela<option value="242">Vietnam<option value="243">Virgin Islands (British)<option value="244">Virgin Islands (U.S.)<option value="245">Wallis and Futuna Islands<option value="246">Western Sahara<option value="247">Yemen<option value="248">Zambia<option value="249">Zimbabwe
+				</select>
+			</li>
+			<li class="right">
+				<p>Years at Address</p>
+				<div class="leftfield"><input type="text" id="co_app_address_year" name="co_app_address_year" value="" class="input" placeholder="Years"></div>
+				<div class="rightfield"><input type="text" id="co_app_address_month" name="co_app_address_month" value="" class="input" placeholder="Months"></div>
+			</li>
+			
+			<li class="left">
+				<p>Own or Rent</p>
+				<input type="radio" id="co_app_own_rent1" name="co_app_own_rent" value="Own" class="radiobutton" checked="checked">&nbsp;Own&nbsp;&nbsp;&nbsp;
+				<input type="radio" id="co_app_own_rent2" name="co_app_own_rent" value="Rent" class="radiobutton">&nbsp;Rent
+			</li>
+			<li class="right">
+				<p>Monthly Payment [$]</p>
+				<input type="text" id="co_app_monthly_payment" name="co_app_monthly_payment" value="" class="input">
+			</li>		
+	  </ul>
+	  <div class="clear"></div>
+	  </div>
+	  </div>
+	  
+	  <div id="co_app_pevious_address" class="singleblock com_none"> 
+	  <div class="singleblock_heading"><span>Previous Address</span></div> 
+	  <div class="singleblock_box singleblock_box_h">	   
+	  <ul class="form">	   		
+			<li class="left">
+				<p>Address</p>
+				<input type="text" id="co_app_prev_address" name="co_app_prev_address" value="" class="input">
+			</li>
+			<li class="right">
+				<p>City</p>
+				<input type="text" id="co_app_prev_city" name="co_app_prev_city" value="" class="input">
+			</li>
+			
+			<li class="left">
+				<p>State</p>
+				<input type="text" id="co_app_prev_state" name="co_app_prev_state" value="" class="input">
+			</li>
+			<li class="right">
+				<p>Postal Code</p>
+				<input type="text" id="co_app_prev_zip" name="co_app_prev_zip" value="" class="input">
+			</li>
+			
+			<li class="left" id="co_app_prev_country_heading">
+				<p>Country</p>
+				<select id="co_app_prev_country" name="co_app_prev_country" class="select">
+				<option value="">Select
+				<option value="1">United States<option value="2">Canada<option value="3">Afghanistan<option value="5">Albania<option value="6">Algeria<option value="7">American Samoa<option value="8">Andorra<option value="9">Angola<option value="10">Anguilla<option value="11">Antarctica<option value="12">Antigua and Barbuda<option value="13">Argentina<option value="14">Armenia<option value="15">Aruba<option value="16">Australia<option value="17">Austria<option value="18">Azerbaijan<option value="19">Bahamas<option value="20">Bahrain<option value="21">Bangladesh<option value="22">Barbados<option value="23">Belarus<option value="24">Belgium<option value="25">Belize<option value="26">Benin<option value="27">Bermuda<option value="28">Bhutan<option value="29">Bolivia<option value="30">Bosnia and Herzegovina<option value="31">Botswana<option value="32">Bouvet Island<option value="33">Brazil<option value="34">British Indian Ocean Territory<option value="35">Brunei Darussalam<option value="36">Bulgaria<option value="37">Burkina Faso<option value="38">Burundi<option value="39">Cambodia<option value="40">Cameroon<option value="41">Cape Verde<option value="42">Caribbean Netherlands <option value="43">Cayman Islands<option value="44">Central African Republic<option value="45">Chad<option value="46">Chile<option value="47">China<option value="48">Christmas Island<option value="49">Cocos (Keeling) Islands<option value="50">Colombia<option value="51">Comoros<option value="52">Congo<option value="53">Congo, Democratic Republic of<option value="54">Cook Islands<option value="55">Costa Rica<option value="56">C<option value="57">Croatia<option value="58">Cuba<option value="59">Cura<option value="60">Cyprus<option value="61">Czech Republic<option value="62">Denmark<option value="63">Djibouti<option value="64">Dominica<option value="65">Dominican Republic<option value="66">Ecuador<option value="67">Egypt<option value="68">El Salvador<option value="69">Equatorial Guinea<option value="70">Eritrea<option value="71">Estonia<option value="72">Ethiopia<option value="73">Falkland Islands<option value="74">Faroe Islands<option value="75">Fiji<option value="76">Finland<option value="77">France<option value="78">French Guiana<option value="79">French Polynesia<option value="80">French Southern Territories<option value="81">Gabon<option value="82">Gambia<option value="83">Georgia<option value="84">Germany<option value="85">Ghana<option value="86">Gibraltar<option value="87">Greece<option value="88">Greenland<option value="89">Grenada<option value="90">Guadeloupe<option value="91">Guam<option value="92">Guatemala<option value="93">Guernsey<option value="94">Guinea<option value="95">Guinea-Bissau<option value="96">Guyana<option value="97">Haiti<option value="98">Heard and McDonald Islands<option value="99">Honduras<option value="100">Hong Kong<option value="101">Hungary<option value="102">Iceland<option value="103">India<option value="104">Indonesia<option value="105">Iran<option value="106">Iraq<option value="107">Ireland<option value="108">Isle of Man<option value="109">Israel<option value="110">Italy<option value="111">Jamaica<option value="112">Japan<option value="113">Jersey<option value="114">Jordan<option value="115">Kazakhstan<option value="116">Kenya<option value="117">Kiribati<option value="118">Kuwait<option value="119">Kyrgyzstan<option value="120">Lao People's Democratic Republic<option value="121">Latvia<option value="122">Lebanon<option value="123">Lesotho<option value="124">Liberia<option value="125">Libya<option value="126">Liechtenstein<option value="127">Lithuania<option value="128">Luxembourg<option value="129">Macau<option value="130">Macedonia<option value="131">Madagascar<option value="132">Malawi<option value="133">Malaysia<option value="134">Maldives<option value="135">Mali<option value="136">Malta<option value="137">Marshall Islands<option value="138">Martinique<option value="139">Mauritania<option value="140">Mauritius<option value="141">Mayotte<option value="142">Mexico<option value="143">Micronesia, Federated States of<option value="144">Moldova<option value="145">Monaco<option value="146">Mongolia<option value="147">Montenegro<option value="148">Montserrat<option value="149">Morocco<option value="150">Mozambique<option value="151">Myanmar<option value="152">Namibia<option value="153">Nauru<option value="154">Nepal<option value="155">New Caledonia<option value="156">New Zealand<option value="157">Nicaragua<option value="158">Niger<option value="159">Nigeria<option value="160">Niue<option value="161">Norfolk Island<option value="162">North Korea<option value="163">Northern Mariana Islands<option value="164">Norway<option value="165">Oman<option value="166">Pakistan<option value="167">Palau<option value="168">Palestinian Territory, Occupied<option value="169">Panama<option value="170">Papua New Guinea<option value="171">Paraguay<option value="172">Peru<option value="173">Philippines<option value="174">Pitcairn<option value="175">Poland<option value="176">Portugal<option value="177">Puerto Rico<option value="178">Qatar<option value="179">Reunion<option value="180">Romania<option value="181">Russian Federation<option value="182">Rwanda<option value="183">Saint Barth<option value="184">Saint Helena<option value="185">Saint Kitts and Nevis<option value="186">Saint Lucia<option value="187">Saint Vincent and the Grenadines<option value="188">Saint-Martin (France)<option value="189">Saint-Martin (Pays-Bas)<option value="190">Samoa<option value="191">San Marino<option value="192">Sao Tome and Principe<option value="193">Saudi Arabia<option value="194">Senegal<option value="195">Serbia<option value="196">Seychelles<option value="197">Sierra Leone<option value="198">Singapore<option value="199">Slovakia (Slovak Republic)<option value="200">Slovenia<option value="201">Solomon Islands<option value="202">Somalia<option value="203">South Africa<option value="204">South Georgia and South Sandwich Islands<option value="205">South Korea<option value="206">South Sudan<option value="207">Spain<option value="208">Sri Lanka<option value="209">St. Pierre and Miquelon<option value="210">Sudan<option value="211">Suriname<option value="212">Svalbard and Jan Mayen Islands<option value="213">Swaziland<option value="214">Sweden<option value="215">Switzerland<option value="216">Syria<option value="217">Taiwan<option value="218">Tajikistan<option value="219">Tanzania<option value="220">Thailand<option value="221">The Netherlands<option value="222">Timor-Leste<option value="223">Togo<option value="224">Tokelau<option value="225">Tonga<option value="226">Trinidad and Tobago<option value="227">Tunisia<option value="228">Turkey<option value="229">Turkmenistan<option value="230">Turks and Caicos Islands<option value="231">Tuvalu<option value="232">Uganda<option value="233">Ukraine<option value="234">United Arab Emirates<option value="235">United Kingdom<option value="236">United States Minor Outlying Islands<option value="237">Uruguay<option value="238">Uzbekistan<option value="239">Vanuatu<option value="240">Vatican<option value="241">Venezuela<option value="242">Vietnam<option value="243">Virgin Islands (British)<option value="244">Virgin Islands (U.S.)<option value="245">Wallis and Futuna Islands<option value="246">Western Sahara<option value="247">Yemen<option value="248">Zambia<option value="249">Zimbabwe
+				</select>
+			</li>
+			<li class="right">
+				<p>Years at Address</p>
+				<div class="leftfield"><input type="text" id="co_app_prev_address_year" name="co_app_prev_address_year" value="" class="input" placeholder="Years"></div>
+				<div class="rightfield"><input type="text" id="co_app_prev_address_month" name="co_app_prev_address_month" value="" class="input" placeholder="Months"></div>
+			</li>
+			
+			<li class="left">
+				<p>Own or Rent</p>
+				<input type="radio" id="co_app_prev_own_rent1" name="co_app_prev_own_rent" value="Own" class="radiobutton" checked="checked">&nbsp;Own&nbsp;&nbsp;&nbsp;
+				<input type="radio" id="co_app_prev_own_rent2" name="co_app_prev_own_rent" value="Rent" class="radiobutton">&nbsp;Rent
+			</li>
+			<li class="right">
+				<p>Monthly Payment [$]</p>
+				<input type="text" id="co_app_prev_monthly_payment" name="co_app_prev_monthly_payment" value="" class="input">
+			</li>		
+	  </ul>
+	  <div class="clear"></div>
+	  </div>
+	  </div>
+	  
+	  <div class="singleblock"> 
+	  <div class="singleblock_heading"><span>Current Employer</span></div> 
+	  <div class="singleblock_box singleblock_box_h">	   
+	  <ul class="form">	   		
+			<li class="left">
+				<p>Employer</p>
+				<input type="text" id="co_app_employer" name="co_app_employer" value="" class="input">
+			</li>
+			<li class="right">
+				<p>Address</p>
+				<input type="text" id="co_app_emp_address" name="co_app_emp_address" value="" class="input">
+			</li>
+			
+			<li class="left">
+				<p>City</p>
+				<input type="text" id="co_app_emp_city" name="co_app_emp_city" value="" class="input">
+			</li>			
+			<li class="right">
+				<p>State</p>
+				<input type="text" id="co_app_emp_state" name="co_app_emp_state" value="" class="input">
+			</li>
+			
+			<li class="left">
+				<p>Postal Code</p>
+				<input type="text" id="co_app_emp_zip" name="co_app_emp_zip" value="" class="input">
+			</li>
+			<li class="right" id="co_app_emp_country_heading">
+				<p>Country</p>
+				<select id="co_app_emp_country" name="co_app_emp_country" class="select">
+				<option value="">Select
+				<option value="1">United States<option value="2">Canada<option value="3">Afghanistan<option value="5">Albania<option value="6">Algeria<option value="7">American Samoa<option value="8">Andorra<option value="9">Angola<option value="10">Anguilla<option value="11">Antarctica<option value="12">Antigua and Barbuda<option value="13">Argentina<option value="14">Armenia<option value="15">Aruba<option value="16">Australia<option value="17">Austria<option value="18">Azerbaijan<option value="19">Bahamas<option value="20">Bahrain<option value="21">Bangladesh<option value="22">Barbados<option value="23">Belarus<option value="24">Belgium<option value="25">Belize<option value="26">Benin<option value="27">Bermuda<option value="28">Bhutan<option value="29">Bolivia<option value="30">Bosnia and Herzegovina<option value="31">Botswana<option value="32">Bouvet Island<option value="33">Brazil<option value="34">British Indian Ocean Territory<option value="35">Brunei Darussalam<option value="36">Bulgaria<option value="37">Burkina Faso<option value="38">Burundi<option value="39">Cambodia<option value="40">Cameroon<option value="41">Cape Verde<option value="42">Caribbean Netherlands <option value="43">Cayman Islands<option value="44">Central African Republic<option value="45">Chad<option value="46">Chile<option value="47">China<option value="48">Christmas Island<option value="49">Cocos (Keeling) Islands<option value="50">Colombia<option value="51">Comoros<option value="52">Congo<option value="53">Congo, Democratic Republic of<option value="54">Cook Islands<option value="55">Costa Rica<option value="56">C<option value="57">Croatia<option value="58">Cuba<option value="59">Cura<option value="60">Cyprus<option value="61">Czech Republic<option value="62">Denmark<option value="63">Djibouti<option value="64">Dominica<option value="65">Dominican Republic<option value="66">Ecuador<option value="67">Egypt<option value="68">El Salvador<option value="69">Equatorial Guinea<option value="70">Eritrea<option value="71">Estonia<option value="72">Ethiopia<option value="73">Falkland Islands<option value="74">Faroe Islands<option value="75">Fiji<option value="76">Finland<option value="77">France<option value="78">French Guiana<option value="79">French Polynesia<option value="80">French Southern Territories<option value="81">Gabon<option value="82">Gambia<option value="83">Georgia<option value="84">Germany<option value="85">Ghana<option value="86">Gibraltar<option value="87">Greece<option value="88">Greenland<option value="89">Grenada<option value="90">Guadeloupe<option value="91">Guam<option value="92">Guatemala<option value="93">Guernsey<option value="94">Guinea<option value="95">Guinea-Bissau<option value="96">Guyana<option value="97">Haiti<option value="98">Heard and McDonald Islands<option value="99">Honduras<option value="100">Hong Kong<option value="101">Hungary<option value="102">Iceland<option value="103">India<option value="104">Indonesia<option value="105">Iran<option value="106">Iraq<option value="107">Ireland<option value="108">Isle of Man<option value="109">Israel<option value="110">Italy<option value="111">Jamaica<option value="112">Japan<option value="113">Jersey<option value="114">Jordan<option value="115">Kazakhstan<option value="116">Kenya<option value="117">Kiribati<option value="118">Kuwait<option value="119">Kyrgyzstan<option value="120">Lao People's Democratic Republic<option value="121">Latvia<option value="122">Lebanon<option value="123">Lesotho<option value="124">Liberia<option value="125">Libya<option value="126">Liechtenstein<option value="127">Lithuania<option value="128">Luxembourg<option value="129">Macau<option value="130">Macedonia<option value="131">Madagascar<option value="132">Malawi<option value="133">Malaysia<option value="134">Maldives<option value="135">Mali<option value="136">Malta<option value="137">Marshall Islands<option value="138">Martinique<option value="139">Mauritania<option value="140">Mauritius<option value="141">Mayotte<option value="142">Mexico<option value="143">Micronesia, Federated States of<option value="144">Moldova<option value="145">Monaco<option value="146">Mongolia<option value="147">Montenegro<option value="148">Montserrat<option value="149">Morocco<option value="150">Mozambique<option value="151">Myanmar<option value="152">Namibia<option value="153">Nauru<option value="154">Nepal<option value="155">New Caledonia<option value="156">New Zealand<option value="157">Nicaragua<option value="158">Niger<option value="159">Nigeria<option value="160">Niue<option value="161">Norfolk Island<option value="162">North Korea<option value="163">Northern Mariana Islands<option value="164">Norway<option value="165">Oman<option value="166">Pakistan<option value="167">Palau<option value="168">Palestinian Territory, Occupied<option value="169">Panama<option value="170">Papua New Guinea<option value="171">Paraguay<option value="172">Peru<option value="173">Philippines<option value="174">Pitcairn<option value="175">Poland<option value="176">Portugal<option value="177">Puerto Rico<option value="178">Qatar<option value="179">Reunion<option value="180">Romania<option value="181">Russian Federation<option value="182">Rwanda<option value="183">Saint Barth<option value="184">Saint Helena<option value="185">Saint Kitts and Nevis<option value="186">Saint Lucia<option value="187">Saint Vincent and the Grenadines<option value="188">Saint-Martin (France)<option value="189">Saint-Martin (Pays-Bas)<option value="190">Samoa<option value="191">San Marino<option value="192">Sao Tome and Principe<option value="193">Saudi Arabia<option value="194">Senegal<option value="195">Serbia<option value="196">Seychelles<option value="197">Sierra Leone<option value="198">Singapore<option value="199">Slovakia (Slovak Republic)<option value="200">Slovenia<option value="201">Solomon Islands<option value="202">Somalia<option value="203">South Africa<option value="204">South Georgia and South Sandwich Islands<option value="205">South Korea<option value="206">South Sudan<option value="207">Spain<option value="208">Sri Lanka<option value="209">St. Pierre and Miquelon<option value="210">Sudan<option value="211">Suriname<option value="212">Svalbard and Jan Mayen Islands<option value="213">Swaziland<option value="214">Sweden<option value="215">Switzerland<option value="216">Syria<option value="217">Taiwan<option value="218">Tajikistan<option value="219">Tanzania<option value="220">Thailand<option value="221">The Netherlands<option value="222">Timor-Leste<option value="223">Togo<option value="224">Tokelau<option value="225">Tonga<option value="226">Trinidad and Tobago<option value="227">Tunisia<option value="228">Turkey<option value="229">Turkmenistan<option value="230">Turks and Caicos Islands<option value="231">Tuvalu<option value="232">Uganda<option value="233">Ukraine<option value="234">United Arab Emirates<option value="235">United Kingdom<option value="236">United States Minor Outlying Islands<option value="237">Uruguay<option value="238">Uzbekistan<option value="239">Vanuatu<option value="240">Vatican<option value="241">Venezuela<option value="242">Vietnam<option value="243">Virgin Islands (British)<option value="244">Virgin Islands (U.S.)<option value="245">Wallis and Futuna Islands<option value="246">Western Sahara<option value="247">Yemen<option value="248">Zambia<option value="249">Zimbabwe
+				</select>
+			</li>
+			
+			<li class="left">
+				<p>Phone</p>
+				<input type="text" id="co_app_emp_phone" name="co_app_emp_phone" value="" class="input">
+			</li>
+			<li class="right">
+				<p>Length of Employment</p>
+				<div class="leftfield"><input type="text" id="co_app_emp_year" name="co_app_emp_year" value="" class="input" placeholder="Years"></div>
+				<div class="rightfield"><input type="text" id="co_app_emp_month" name="co_app_emp_month" value="" class="input" placeholder="Months"></div>
+			</li>
+			
+			<li class="left">
+				<p>Position / Title</p>
+				<input type="text" id="co_app_emp_position" name="co_app_emp_position" value="" class="input">
+			</li>
+			<li class="right">
+				<p>Supervisor</p>
+				<input type="text" id="co_app_emp_supervisor" name="co_app_emp_supervisor" value="" class="input">
+			</li>		
+	  </ul>
+	  <div class="clear"></div>
+	  </div>
+	  </div>
+	  
+	  <div id="co_app_pevious_employer" class="singleblock com_none">
+	  <div class="singleblock_heading"><span>Previous Employer</span></div> 
+	  <div class="singleblock_box singleblock_box_h">	   
+	  <ul class="form">	   		
+			<li class="left">
+				<p>Employer</p>
+				<input type="text" id="co_app_prev_employer" name="co_app_prev_employer" value="" class="input">
+			</li>
+			<li class="right">
+				<p>Address</p>
+				<input type="text" id="co_app_prev_emp_address" name="co_app_prev_emp_address" value="" class="input">
+			</li>
+			
+			<li class="left">
+				<p>City</p>
+				<input type="text" id="co_app_prev_emp_city" name="co_app_prev_emp_city" value="" class="input">
+			</li>			
+			<li class="right">
+				<p>State</p>
+				<input type="text" id="co_app_prev_emp_state" name="co_app_prev_emp_state" value="" class="input">
+			</li>
+			
+			<li class="left">
+				<p>Postal Code</p>
+				<input type="text" id="co_app_prev_emp_zip" name="co_app_prev_emp_zip" value="" class="input">
+			</li>
+			<li class="right" id="co_app_prev_emp_country_heading">
+				<p>Country</p>
+				<select id="co_app_prev_emp_country" name="co_app_prev_emp_country" class="select">
+				<option value="">Select
+				<option value="1">United States<option value="2">Canada<option value="3">Afghanistan<option value="5">Albania<option value="6">Algeria<option value="7">American Samoa<option value="8">Andorra<option value="9">Angola<option value="10">Anguilla<option value="11">Antarctica<option value="12">Antigua and Barbuda<option value="13">Argentina<option value="14">Armenia<option value="15">Aruba<option value="16">Australia<option value="17">Austria<option value="18">Azerbaijan<option value="19">Bahamas<option value="20">Bahrain<option value="21">Bangladesh<option value="22">Barbados<option value="23">Belarus<option value="24">Belgium<option value="25">Belize<option value="26">Benin<option value="27">Bermuda<option value="28">Bhutan<option value="29">Bolivia<option value="30">Bosnia and Herzegovina<option value="31">Botswana<option value="32">Bouvet Island<option value="33">Brazil<option value="34">British Indian Ocean Territory<option value="35">Brunei Darussalam<option value="36">Bulgaria<option value="37">Burkina Faso<option value="38">Burundi<option value="39">Cambodia<option value="40">Cameroon<option value="41">Cape Verde<option value="42">Caribbean Netherlands <option value="43">Cayman Islands<option value="44">Central African Republic<option value="45">Chad<option value="46">Chile<option value="47">China<option value="48">Christmas Island<option value="49">Cocos (Keeling) Islands<option value="50">Colombia<option value="51">Comoros<option value="52">Congo<option value="53">Congo, Democratic Republic of<option value="54">Cook Islands<option value="55">Costa Rica<option value="56">C<option value="57">Croatia<option value="58">Cuba<option value="59">Cura<option value="60">Cyprus<option value="61">Czech Republic<option value="62">Denmark<option value="63">Djibouti<option value="64">Dominica<option value="65">Dominican Republic<option value="66">Ecuador<option value="67">Egypt<option value="68">El Salvador<option value="69">Equatorial Guinea<option value="70">Eritrea<option value="71">Estonia<option value="72">Ethiopia<option value="73">Falkland Islands<option value="74">Faroe Islands<option value="75">Fiji<option value="76">Finland<option value="77">France<option value="78">French Guiana<option value="79">French Polynesia<option value="80">French Southern Territories<option value="81">Gabon<option value="82">Gambia<option value="83">Georgia<option value="84">Germany<option value="85">Ghana<option value="86">Gibraltar<option value="87">Greece<option value="88">Greenland<option value="89">Grenada<option value="90">Guadeloupe<option value="91">Guam<option value="92">Guatemala<option value="93">Guernsey<option value="94">Guinea<option value="95">Guinea-Bissau<option value="96">Guyana<option value="97">Haiti<option value="98">Heard and McDonald Islands<option value="99">Honduras<option value="100">Hong Kong<option value="101">Hungary<option value="102">Iceland<option value="103">India<option value="104">Indonesia<option value="105">Iran<option value="106">Iraq<option value="107">Ireland<option value="108">Isle of Man<option value="109">Israel<option value="110">Italy<option value="111">Jamaica<option value="112">Japan<option value="113">Jersey<option value="114">Jordan<option value="115">Kazakhstan<option value="116">Kenya<option value="117">Kiribati<option value="118">Kuwait<option value="119">Kyrgyzstan<option value="120">Lao People's Democratic Republic<option value="121">Latvia<option value="122">Lebanon<option value="123">Lesotho<option value="124">Liberia<option value="125">Libya<option value="126">Liechtenstein<option value="127">Lithuania<option value="128">Luxembourg<option value="129">Macau<option value="130">Macedonia<option value="131">Madagascar<option value="132">Malawi<option value="133">Malaysia<option value="134">Maldives<option value="135">Mali<option value="136">Malta<option value="137">Marshall Islands<option value="138">Martinique<option value="139">Mauritania<option value="140">Mauritius<option value="141">Mayotte<option value="142">Mexico<option value="143">Micronesia, Federated States of<option value="144">Moldova<option value="145">Monaco<option value="146">Mongolia<option value="147">Montenegro<option value="148">Montserrat<option value="149">Morocco<option value="150">Mozambique<option value="151">Myanmar<option value="152">Namibia<option value="153">Nauru<option value="154">Nepal<option value="155">New Caledonia<option value="156">New Zealand<option value="157">Nicaragua<option value="158">Niger<option value="159">Nigeria<option value="160">Niue<option value="161">Norfolk Island<option value="162">North Korea<option value="163">Northern Mariana Islands<option value="164">Norway<option value="165">Oman<option value="166">Pakistan<option value="167">Palau<option value="168">Palestinian Territory, Occupied<option value="169">Panama<option value="170">Papua New Guinea<option value="171">Paraguay<option value="172">Peru<option value="173">Philippines<option value="174">Pitcairn<option value="175">Poland<option value="176">Portugal<option value="177">Puerto Rico<option value="178">Qatar<option value="179">Reunion<option value="180">Romania<option value="181">Russian Federation<option value="182">Rwanda<option value="183">Saint Barth<option value="184">Saint Helena<option value="185">Saint Kitts and Nevis<option value="186">Saint Lucia<option value="187">Saint Vincent and the Grenadines<option value="188">Saint-Martin (France)<option value="189">Saint-Martin (Pays-Bas)<option value="190">Samoa<option value="191">San Marino<option value="192">Sao Tome and Principe<option value="193">Saudi Arabia<option value="194">Senegal<option value="195">Serbia<option value="196">Seychelles<option value="197">Sierra Leone<option value="198">Singapore<option value="199">Slovakia (Slovak Republic)<option value="200">Slovenia<option value="201">Solomon Islands<option value="202">Somalia<option value="203">South Africa<option value="204">South Georgia and South Sandwich Islands<option value="205">South Korea<option value="206">South Sudan<option value="207">Spain<option value="208">Sri Lanka<option value="209">St. Pierre and Miquelon<option value="210">Sudan<option value="211">Suriname<option value="212">Svalbard and Jan Mayen Islands<option value="213">Swaziland<option value="214">Sweden<option value="215">Switzerland<option value="216">Syria<option value="217">Taiwan<option value="218">Tajikistan<option value="219">Tanzania<option value="220">Thailand<option value="221">The Netherlands<option value="222">Timor-Leste<option value="223">Togo<option value="224">Tokelau<option value="225">Tonga<option value="226">Trinidad and Tobago<option value="227">Tunisia<option value="228">Turkey<option value="229">Turkmenistan<option value="230">Turks and Caicos Islands<option value="231">Tuvalu<option value="232">Uganda<option value="233">Ukraine<option value="234">United Arab Emirates<option value="235">United Kingdom<option value="236">United States Minor Outlying Islands<option value="237">Uruguay<option value="238">Uzbekistan<option value="239">Vanuatu<option value="240">Vatican<option value="241">Venezuela<option value="242">Vietnam<option value="243">Virgin Islands (British)<option value="244">Virgin Islands (U.S.)<option value="245">Wallis and Futuna Islands<option value="246">Western Sahara<option value="247">Yemen<option value="248">Zambia<option value="249">Zimbabwe
+				</select>
+			</li>
+			
+			<li class="left">
+				<p>Phone</p>
+				<input type="text" id="co_app_prev_emp_phone" name="co_app_prev_emp_phone" value="" class="input">
+			</li>
+			<li class="right">
+				<p>Length of Employment</p>
+				<div class="leftfield"><input type="text" id="co_app_prev_emp_year" name="co_app_prev_emp_year" value="" class="input" placeholder="Years"></div>
+				<div class="rightfield"><input type="text" id="co_app_prev_emp_month" name="co_app_prev_emp_month" value="" class="input" placeholder="Months"></div>
+			</li>		
+	  </ul>
+	  <div class="clear"></div>
+	  </div>
+	  </div>
+	  
+	  <div class="singleblock">
+	  <div class="singleblock_heading"><span>Income</span></div> 
+	  <div class="singleblock_box singleblock_box_h">	   
+	  <ul class="form">	   		
+			<li class="left">
+				<p>Wages [$]</p>
+				<input type="text" id="co_app_wages" name="co_app_wages" value="" class="input">
+			</li>
+			<li class="right">
+				<p>Paid</p>
+				<input type="radio" id="co_app_paid1" name="co_app_paid" value="Monthly" class="radiobutton" checked="checked">&nbsp;Monthly&nbsp;&nbsp;&nbsp;
+				<input type="radio" id="co_app_paid2" name="co_app_paid" value="Annually" class="radiobutton">&nbsp;Annually
+			</li>
+	  </ul>
+	  <ul class="form">		
+			<li class="left">
+				<p>Other Income [$]</p>
+				<input type="text" id="co_app_oth_income" name="co_app_oth_income" value="" class="input">
+			</li>			
+			<li class="right">
+				<p>Paid</p>
+				<input type="radio" id="co_app_oth_income_paid1" name="co_app_oth_income_paid" value="Monthly" class="radiobutton" checked="checked">&nbsp;Monthly&nbsp;&nbsp;&nbsp;
+				<input type="radio" id="co_app_oth_income_paid1" name="co_app_oth_income_paid" value="Annually" class="radiobutton">&nbsp;Annually
+			</li>
+			
+			<li>
+				<p>Other Income Description</p>
+				<textarea name="co_app_oth_income_description" id="co_app_oth_income_description" rows="1" cols="1" class="comments"></textarea>
+				<p class="smalltext">Applicant does not need to disclose income from alimony, child support, or separate maintenance, unless applicant desires this income included in determining creditworthiness.</p>
+			</li>
+	  </ul>
+	  <div class="clear"></div>
+	  </div>
+	  </div>
+	  
+	  <div class="singleblock">
+	  <div class="singleblock_heading"><span>Other Information</span></div> 
+	  <div class="singleblock_box singleblock_box_h">	   
+	  <ul class="form">	   		
+			<li class="left">
+				<p>Nearest Relative - not living with you</p>
+				<input type="text" id="co_app_nearest_relative" name="co_app_nearest_relative" value="" class="input">
+			</li>
+			<li class="right">
+				<p>Relationship</p>
+				<input type="text" id="co_app_nearest_relative_relationship" name="co_app_nearest_relative_relationship" value="" class="input">
+			</li>
+	  </ul>
+	  <ul class="form">			
+			<li class="left">
+				<p>Phone</p>
+				<input type="text" id="co_app_nearest_relative_phone" name="co_app_nearest_relative_phone" value="" class="input">
+			</li>	
+	  </ul>
+	  <div class="clear"></div>
+	  </div>
+	  </div>
+	  
+	  
+	  <div class="clearfix"></div>
+	  <div class="multistepformbutton">
+		<button type="button" class="button prevbutton" prevstep="1"><span>Back</span></button>
+		<button type="button" class="button nextbutton" nextstep="3"><span>Next</span></button>
+	  </div>
+	  
+	  </div>
+	  <!--Step 2 End-->
+	  
+	  <!--Step 3-->
+	  <div id="form3" class="formstep com_none">
+	  
+	  <div class="singleblock"> 
+	  <div class="singleblock_heading"><span>Boat Information</span><span class="requiredinfo">* Required</span></div> 
+	  <div class="singleblock_box singleblock_box_h">	   
+	  <ul class="form">	   		
+			<li class="left">
+				<p>Manufacturer</p>
+				<input type="text" id="boat_manufacturer" name="boat_manufacturer" value="" class="input">
+			</li>
+			<li class="right">
+				<p>Model</p>
+				<input type="text" id="boat_model" name="boat_model" value="" class="input">
+			</li>
+			
+			<li class="left">
+				<p>Year</p>
+				<input type="text" id="boat_year" name="boat_year" value="" class="input">
+			</li>
+			<li class="right">
+				<p>Length [ft]</p>
+				<input type="text" id="boat_length" name="boat_length" value="" class="input">
+			</li>
+			
+			<li class="left">
+				<p>Price [$]</p>
+				<input type="text" id="boat_price" name="boat_price" value="" class="input">
+			</li>
+			<li class="right">
+				<p>Sales Agent Name</p>
+				<input type="text" id="sales_agent_name" name="sales_agent_name" value="" class="input">
+			</li>		
+	  </ul>
+	  <ul class="form">
+      		<li class="left">
+				<p>Engine Make</p>
+				<input type="text" id="engine_make" name="engine_make" value="" class="input">
+			</li>
+			<li class="right">
+				<p>Engine Type</p>
+				<select name="engine_type" id="engine_type" class="select">
+				<option value="">Select
+                <option value="1">Inboard<option value="3">Inboard / Outboard<option value="5">No Engine<option value="6">Other<option value="2">Outboard                      
+                </select>
+			</li>
+            
+            <li class="left">
+				<p>Drive Type</p>
+				<select name="drive_type" id="drive_type" class="select">
+				<option value="">Select
+                <option value="11">Air Propeller<option value="1">Direct Drive<option value="4">Jet Drive<option value="8">Other<option value="9">Outboard<option value="2">Pod Drive<option value="3">Sail Drive<option value="6">Stern Drive<option value="5">Surface Drive<option value="7">V Drive                      
+                </select>
+			</li>  
+            <li class="right">
+				<p>Number of Engines</p>
+				<select fieldvalue="" name="engine_no" id="engine_no" class="select">
+				<option value="">Select
+                <option value="1">1<option value="2">2<option value="3">3<option value="4">4                      
+                </select>
+			</li>
+            
+            <li class="left">
+				<p>Fuel Type</p>
+				<input type="radio" id="fuel_type1" name="fuel_type" value="Gas" class="radiobutton">&nbsp;Gas&nbsp;&nbsp;&nbsp;
+				<input type="radio" id="fuel_type2" name="fuel_type" value="Diesel" class="radiobutton">&nbsp;Diesel
+			</li>
+            <li class="right">
+				<p>Horsepower Individual</p>
+				<input fieldvalue="" type="text" id="horsepower_individual" name="horsepower_individual" value="" class="input">                
+                <p>Horsepower Combined: <span class="horsepower_combined_v fontbold">0</span></p>
+			</li>
+      </ul>
+	  
+	  <ul class="form">
+      		<li>
+				<p>Is there a Trade-In&nbsp;&nbsp;
+				<input type="checkbox" id="tradein" name="tradein" value="1" class="checkbox">&nbsp;Yes
+                </p>
+			</li>
+            
+            <li class="left tradeinclass com_none">
+				<p>Trade-In Year</p>
+				<input type="text" id="tradein_year" name="tradein_year" value="" class="input">
+			</li>
+			<li class="right tradeinclass com_none">
+				<p>Trade-In Make</p>
+				<input type="text" id="tradein_make" name="tradein_make" value="" class="input">
+			</li>
+            
+            <li class="left tradeinclass com_none">
+				<p>Trade-In Model</p>
+				<input type="text" id="tradein_model" name="tradein_model" value="" class="input">
+			</li>
+			<li class="right tradeinclass com_none">
+				<p>Trade-In Length</p>
+				<input type="text" id="tradein_length" name="tradein_length" value="" class="input">
+			</li>
+            
+            <li class="left tradeinclass com_none">
+				<p>Trade-In Engine Make</p>
+				<input type="text" id="tradein_engine_make" name="tradein_engine_make" value="" class="input">
+			</li>
+			<li class="right tradeinclass com_none">
+				<p>Trade-In HP</p>
+				<input type="text" id="tradein_hp" name="tradein_hp" value="" class="input">
+			</li>
+            
+            <li class="left tradeinclass com_none">
+				<p>Trade-In # Engines</p>
+				<select fieldvalue="tradein_" name="tradein_engine_no" id="tradein_engine_no" class="select">
+				<option value="">Select
+                <option value="1">1<option value="2">2<option value="3">3<option value="4">4                     
+                 </select>
+			</li>
+			
+			<li class="right tradeinclass com_none">
+				<p>Trade-In Horsepower Individual</p>
+				<input fieldvalue="tradein_" type="text" id="tradein_horsepower_individual" name="tradein_horsepower_individual" value="" class="input">                
+                <p>Trade-In Horsepower Combined: <span class="tradein_horsepower_combined_v fontbold">0</span></p>
+			</li>
+			
+			<li class="left tradeinclass com_none">
+				<p>Trade-In Fuel Type</p>
+				<input type="radio" id="tradein_fuel_type1" name="tradein_fuel_type" value="Gas" class="radiobutton">&nbsp;Gas&nbsp;&nbsp;&nbsp;
+				<input type="radio" id="tradein_fuel_type2" name="tradein_fuel_type" value="Diesel" class="radiobutton">&nbsp;Diesel
+			</li>
+      </ul>
+	  <div class="clear"></div>
+	  </div>
+	  </div>
+	  
+	  <div class="singleblock"> 
+	  <div class="singleblock_heading"><span>Loan Information</span></div> 
+	  <div class="singleblock_box singleblock_box_h">	   
+	  <ul class="form">	   		
+			<li class="left">
+				<p>Purchase Price [$]</p>
+				<input type="text" id="purchase_price" name="purchase_price" value="" class="input">
+			</li>
+			<li class="right">
+				<p>Estimated Tax Rate %</p>
+				<input type="text" id="estimated_tax_rate" name="estimated_tax_rate" value="" class="input">
+			</li>
+			
+			<li>
+				<p>Estimated Taxes Payable: <span class="estimated_tax_pay fontbold"></span></p>
+			</li>
+	  </ul>
+	  <ul class="form">			
+			<li class="left">				
+				<p>Cash Down [$]</p>
+				<div class="column1">
+				<input type="text" id="cash_down" name="cash_down" value="" class="input">
+				</div>
+				
+				<div class="column2 responsivespace">
+				<select id="cash_down_per" name="cash_down_per" class="select">	
+				<option value="0">Select %	
+				<option value="5">5 %<option value="10">10 %<option value="15">15 %<option value="20">20 %<option value="25">25 %<option value="30">30 %<option value="35">35 %<option value="40">40 %<option value="45">45 %<option value="50">50 %			
+				</select>
+				</div>
+			</li>
+			<li class="right">
+				<p>Net Purchase Amount: <span class="net_purchase_amount fontbold"></span></p>
+			</li>
+	  </ul>
+	  <ul class="form">
+			<li class="left tradeinclass com_none">
+				<p>Trade Amount [$]</p>
+				<input type="text" id="trade_amount" name="trade_amount" value="" class="input">
+			</li>	
+			<li class="right tradeinclass com_none">
+				<p>Trade Payoff [$]</p>
+				<input type="text" id="trade_payoff" name="trade_payoff" value="" class="input">
+			</li>	
+			
+			<li>
+				<p>Desired Loan Amount: <span class="desired_loan_amount fontbold"></span></p>
+			</li>
+	  </ul>
+	  <div class="clear"></div>
+	  </div>
+	  </div>
+	   
+	  <div class="clearfix"></div>
+	  <div class="multistepformbutton">
+		<button type="button" class="button prevbutton" prevstep="2"><span>Back</span></button>
+		<button type="button" class="button nextbutton" nextstep="4"><span>Next</span></button>
+	  </div>
+	   
+	  </div>
+	  <!--Step 3 End-->
+	  
+	  <!--Step 4-->
+	  <div id="form4" class="formstep com_none">
+	  	
+	  <div class="singleblock"> 
+	  <div class="singleblock_heading"><span>Personal Financial Statement</span><span class="requiredinfo">* Required</span></div> 
+	  <div class="singleblock_box singleblock_box_h">
+	  		
+				<div class="left-cell-half">
+		<h3>Assets
+		<ul class="form2">
+			<li class="first noborder formfieldheading">Asset Name</li>
+			<li class="second formfieldheading">Financial Institution</li>
+			<li class="third formfieldheading">$</li>
+		
+				<li class="first noborder"><p>Cash in Checking</p></li>
+				<li class="second"><input type="text" id="financial_inst0" name="financial_inst0" value="" class="input"></li>
+				<li class="third"><input placeholder="$" type="text" id="assetamt0" name="assetamt0" value="" class="input assetamt"></li>
+			
+				<li class="first noborder"><p>Cash in Savings</p></li>
+				<li class="second"><input type="text" id="financial_inst1" name="financial_inst1" value="" class="input"></li>
+				<li class="third"><input placeholder="$" type="text" id="assetamt1" name="assetamt1" value="" class="input assetamt"></li>
+			
+				<li class="first noborder"><p>Money Markets</p></li>
+				<li class="second"><input type="text" id="financial_inst2" name="financial_inst2" value="" class="input"></li>
+				<li class="third"><input placeholder="$" type="text" id="assetamt2" name="assetamt2" value="" class="input assetamt"></li>
+			<li class="fieldsep noborder"></li>
+				<li class="first noborder"><p>Stocks and Bonds</p></li>
+				<li class="second"><input type="text" id="financial_inst3" name="financial_inst3" value="" class="input"></li>
+				<li class="third"><input placeholder="$" type="text" id="assetamt3" name="assetamt3" value="" class="input assetamt"></li>
+			
+				<li class="first noborder"><p>Mutual Funds</p></li>
+				<li class="second"><input type="text" id="financial_inst4" name="financial_inst4" value="" class="input"></li>
+				<li class="third"><input placeholder="$" type="text" id="assetamt4" name="assetamt4" value="" class="input assetamt"></li>
+			
+				<li class="first noborder"><p>Other Liquidity</p></li>
+				<li class="second"><input type="text" id="financial_inst5" name="financial_inst5" value="" class="input"></li>
+				<li class="third"><input placeholder="$" type="text" id="assetamt5" name="assetamt5" value="" class="input assetamt"></li>
+			
+				<li class="first noborder"><p>Cash in Business</p></li>
+				<li class="second"><input type="text" id="financial_inst6" name="financial_inst6" value="" class="input"></li>
+				<li class="third"><input placeholder="$" type="text" id="assetamt6" name="assetamt6" value="" class="input assetamt"></li>
+			<li class="fieldsep noborder"></li>
+				<li class="first noborder"><p>IRA/ 401K/ Roth</p></li>
+				<li class="second"><input type="text" id="financial_inst7" name="financial_inst7" value="" class="input"></li>
+				<li class="third"><input placeholder="$" type="text" id="assetamt7" name="assetamt7" value="" class="input assetamt"></li>
+			
+				<li class="first noborder"><p>Non Marketable</p></li>
+				<li class="second"><input type="text" id="financial_inst8" name="financial_inst8" value="" class="input"></li>
+				<li class="third"><input placeholder="$" type="text" id="assetamt8" name="assetamt8" value="" class="input assetamt"></li>
+			
+				<li class="first noborder"><p>Non Marketable</p></li>
+				<li class="second"><input type="text" id="financial_inst9" name="financial_inst9" value="" class="input"></li>
+				<li class="third"><input placeholder="$" type="text" id="assetamt9" name="assetamt9" value="" class="input assetamt"></li>
+			<li class="fieldsep noborder"></li>
+		</ul>
+		
+		<ul class="form3">
+			<li class="first noborder">Real Estate</li>
+			<li class="second">Property Location</li>
+			<li class="third">Income</li>
+			<li class="fourth">Present Value</li>
+		
+				<li class="first noborder"><p>Present Home</p></li>
+				<li class="second"><input type="text" id="financial_inst10" name="financial_inst10" value="" class="input"></li>
+				<li class="third"><input placeholder="$" type="text" id="assetincome10" name="assetincome10" value="" class="input assetamt"></li>
+				<li class="fourth"><input placeholder="$" type="text" id="assetamt10" name="assetamt10" value="" class="input assetamt"></li>
+			
+				<li class="first noborder"><p>Other Homes/ RE</p></li>
+				<li class="second"><input type="text" id="financial_inst11" name="financial_inst11" value="" class="input"></li>
+				<li class="third"><input placeholder="$" type="text" id="assetincome11" name="assetincome11" value="" class="input assetamt"></li>
+				<li class="fourth"><input placeholder="$" type="text" id="assetamt11" name="assetamt11" value="" class="input assetamt"></li>
+			
+				<li class="first noborder"><p>Other Homes/ RE</p></li>
+				<li class="second"><input type="text" id="financial_inst12" name="financial_inst12" value="" class="input"></li>
+				<li class="third"><input placeholder="$" type="text" id="assetincome12" name="assetincome12" value="" class="input assetamt"></li>
+				<li class="fourth"><input placeholder="$" type="text" id="assetamt12" name="assetamt12" value="" class="input assetamt"></li>
+			
+				<li class="first noborder"><p>Other Homes/ RE</p></li>
+				<li class="second"><input type="text" id="financial_inst13" name="financial_inst13" value="" class="input"></li>
+				<li class="third"><input placeholder="$" type="text" id="assetincome13" name="assetincome13" value="" class="input assetamt"></li>
+				<li class="fourth"><input placeholder="$" type="text" id="assetamt13" name="assetamt13" value="" class="input assetamt"></li>
+			<li class="fieldsep noborder"></li>
+		</ul>
+		
+		<ul class="form4">			
+		
+				<li class="first noborder"><p>Trust Value</p></li>
+				<li class="second"><input placeholder="$" type="text" id="assetamt14" name="assetamt14" value="" class="input assetamt"></li>
+			
+				<li class="first noborder"><p>Business Value</p></li>
+				<li class="second"><input placeholder="$" type="text" id="assetamt15" name="assetamt15" value="" class="input assetamt"></li>
+			
+				<li class="first noborder"><p>Vehicle(s) - Combined</p></li>
+				<li class="second"><input placeholder="$" type="text" id="assetamt16" name="assetamt16" value="" class="input assetamt"></li>
+			
+				<li class="first noborder"><p>Current Boat</p></li>
+				<li class="second"><input placeholder="$" type="text" id="assetamt17" name="assetamt17" value="" class="input assetamt"></li>
+			<li class="fieldsep noborder"></li>
+		</ul>
+		
+		<ul class="form4">			
+		
+				<li class="first noborder"><p>Household Goods</p></li>
+				<li class="second"><input placeholder="$" type="text" id="assetamt18" name="assetamt18" value="" class="input assetamt"></li>
+			
+		</ul>
+		
+		<ul class="form4">	
+			<li class="full noborder">Other Non-Titled Assets (describe)</li>
+		
+				<li class="first noborder"><input type="text" id="financial_inst19" name="financial_inst19" value="" class="input"></li>
+				<li class="second"><input placeholder="$" type="text" id="assetamt19" name="assetamt19" value="" class="input assetamt"></li>
+			
+				<li class="first noborder"><input type="text" id="financial_inst20" name="financial_inst20" value="" class="input"></li>
+				<li class="second"><input placeholder="$" type="text" id="assetamt20" name="assetamt20" value="" class="input assetamt"></li>
+			
+				<li class="first noborder"><input type="text" id="financial_inst21" name="financial_inst21" value="" class="input"></li>
+				<li class="second"><input placeholder="$" type="text" id="assetamt21" name="assetamt21" value="" class="input assetamt"></li>
+			
+		</ul>
+		</h3></div>
+				<div class="right-cell-half">
+		<h3>Liabilities
+		<ul class="form5">
+			<li class="first noborder formfieldheading">Name Of Liability</li>
+			<li class="second formfieldheading">Financial Institution</li>
+			<li class="third formfieldheading">$</li>
+			<li class="fourth formfieldheading">PMT</li>
+		
+				<li class="first noborder"><p>Notes Payable Sec</p></li>
+				<li class="second"><input type="text" id="l_financial_inst0" name="l_financial_inst0" value="" class="input"></li>
+				<li class="third"><input placeholder="$" type="text" id="liabilitiesamt0" name="liabilitiesamt0" value="" class="input liabilitiesamt"></li>
+				<li class="fourth"><input placeholder="$" type="text" id="pmt0" name="pmt0" value="" class="input pmtamt"></li>
+			
+				<li class="first noborder"><p>Notes Payable Sec</p></li>
+				<li class="second"><input type="text" id="l_financial_inst1" name="l_financial_inst1" value="" class="input"></li>
+				<li class="third"><input placeholder="$" type="text" id="liabilitiesamt1" name="liabilitiesamt1" value="" class="input liabilitiesamt"></li>
+				<li class="fourth"><input placeholder="$" type="text" id="pmt1" name="pmt1" value="" class="input pmtamt"></li>
+			
+				<li class="first noborder"><p>Boat Loan</p></li>
+				<li class="second"><input type="text" id="l_financial_inst2" name="l_financial_inst2" value="" class="input"></li>
+				<li class="third"><input placeholder="$" type="text" id="liabilitiesamt2" name="liabilitiesamt2" value="" class="input liabilitiesamt"></li>
+				<li class="fourth"><input placeholder="$" type="text" id="pmt2" name="pmt2" value="" class="input pmtamt"></li>
+			<li class="fieldsep noborder"></li>
+		</ul>
+		
+		<ul class="form5">			
+		
+				<li class="first noborder"><p>Notes Unsecured</p></li>
+				<li class="second"><input type="text" id="l_financial_inst3" name="l_financial_inst3" value="" class="input"></li>
+				<li class="third"><input placeholder="$" type="text" id="liabilitiesamt3" name="liabilitiesamt3" value="" class="input liabilitiesamt"></li>
+				<li class="fourth"><input placeholder="$" type="text" id="pmt3" name="pmt3" value="" class="input pmtamt"></li>
+			
+				<li class="first noborder"><p>Notes Unsecured</p></li>
+				<li class="second"><input type="text" id="l_financial_inst4" name="l_financial_inst4" value="" class="input"></li>
+				<li class="third"><input placeholder="$" type="text" id="liabilitiesamt4" name="liabilitiesamt4" value="" class="input liabilitiesamt"></li>
+				<li class="fourth"><input placeholder="$" type="text" id="pmt4" name="pmt4" value="" class="input pmtamt"></li>
+			
+				<li class="first noborder"><p>Notes Unsecured</p></li>
+				<li class="second"><input type="text" id="l_financial_inst5" name="l_financial_inst5" value="" class="input"></li>
+				<li class="third"><input placeholder="$" type="text" id="liabilitiesamt5" name="liabilitiesamt5" value="" class="input liabilitiesamt"></li>
+				<li class="fourth"><input placeholder="$" type="text" id="pmt5" name="pmt5" value="" class="input pmtamt"></li>
+			
+				<li class="first noborder"><p>Notes Unsecured</p></li>
+				<li class="second"><input type="text" id="l_financial_inst6" name="l_financial_inst6" value="" class="input"></li>
+				<li class="third"><input placeholder="$" type="text" id="liabilitiesamt6" name="liabilitiesamt6" value="" class="input liabilitiesamt"></li>
+				<li class="fourth"><input placeholder="$" type="text" id="pmt6" name="pmt6" value="" class="input pmtamt"></li>
+			
+				<li class="first noborder"><p>Notes Unsecured</p></li>
+				<li class="second"><input type="text" id="l_financial_inst7" name="l_financial_inst7" value="" class="input"></li>
+				<li class="third"><input placeholder="$" type="text" id="liabilitiesamt7" name="liabilitiesamt7" value="" class="input liabilitiesamt"></li>
+				<li class="fourth"><input placeholder="$" type="text" id="pmt7" name="pmt7" value="" class="input pmtamt"></li>
+			<li class="fieldsep noborder"></li>
+		</ul>
+		
+		<ul class="form5">			
+		
+				<li class="first noborder"><p>Other Notes Due</p></li>
+				<li class="second"><input type="text" id="l_financial_inst8" name="l_financial_inst8" value="" class="input"></li>
+				<li class="third"><input placeholder="$" type="text" id="liabilitiesamt8" name="liabilitiesamt8" value="" class="input liabilitiesamt"></li>
+				<li class="fourth"><input placeholder="$" type="text" id="pmt8" name="pmt8" value="" class="input pmtamt"></li>
+			
+				<li class="first noborder"><p>Other Notes Due</p></li>
+				<li class="second"><input type="text" id="l_financial_inst9" name="l_financial_inst9" value="" class="input"></li>
+				<li class="third"><input placeholder="$" type="text" id="liabilitiesamt9" name="liabilitiesamt9" value="" class="input liabilitiesamt"></li>
+				<li class="fourth"><input placeholder="$" type="text" id="pmt9" name="pmt9" value="" class="input pmtamt"></li>
+			
+				<li class="first noborder"><p>Other Notes Due</p></li>
+				<li class="second"><input type="text" id="l_financial_inst10" name="l_financial_inst10" value="" class="input"></li>
+				<li class="third"><input placeholder="$" type="text" id="liabilitiesamt10" name="liabilitiesamt10" value="" class="input liabilitiesamt"></li>
+				<li class="fourth"><input placeholder="$" type="text" id="pmt10" name="pmt10" value="" class="input pmtamt"></li>
+			
+				<li class="first noborder"><p>Other Notes Due</p></li>
+				<li class="second"><input type="text" id="l_financial_inst11" name="l_financial_inst11" value="" class="input"></li>
+				<li class="third"><input placeholder="$" type="text" id="liabilitiesamt11" name="liabilitiesamt11" value="" class="input liabilitiesamt"></li>
+				<li class="fourth"><input placeholder="$" type="text" id="pmt11" name="pmt11" value="" class="input pmtamt"></li>
+			
+				<li class="first noborder"><p>Other Notes Due</p></li>
+				<li class="second"><input type="text" id="l_financial_inst12" name="l_financial_inst12" value="" class="input"></li>
+				<li class="third"><input placeholder="$" type="text" id="liabilitiesamt12" name="liabilitiesamt12" value="" class="input liabilitiesamt"></li>
+				<li class="fourth"><input placeholder="$" type="text" id="pmt12" name="pmt12" value="" class="input pmtamt"></li>
+			<li class="fieldsep noborder"></li>
+		</ul>
+		
+		<ul class="form5">			
+		
+				<li class="first noborder"><p>Real Estate Mtgs.</p></li>
+				<li class="second"><input type="text" id="l_financial_inst13" name="l_financial_inst13" value="" class="input"></li>
+				<li class="third"><input placeholder="$" type="text" id="liabilitiesamt13" name="liabilitiesamt13" value="" class="input liabilitiesamt"></li>
+				<li class="fourth"><input placeholder="$" type="text" id="pmt13" name="pmt13" value="" class="input pmtamt"></li>
+			
+				<li class="first noborder"><p>Real Estate Mtgs.</p></li>
+				<li class="second"><input type="text" id="l_financial_inst14" name="l_financial_inst14" value="" class="input"></li>
+				<li class="third"><input placeholder="$" type="text" id="liabilitiesamt14" name="liabilitiesamt14" value="" class="input liabilitiesamt"></li>
+				<li class="fourth"><input placeholder="$" type="text" id="pmt14" name="pmt14" value="" class="input pmtamt"></li>
+			
+				<li class="first noborder"><p>Real Estate Mtgs.</p></li>
+				<li class="second"><input type="text" id="l_financial_inst15" name="l_financial_inst15" value="" class="input"></li>
+				<li class="third"><input placeholder="$" type="text" id="liabilitiesamt15" name="liabilitiesamt15" value="" class="input liabilitiesamt"></li>
+				<li class="fourth"><input placeholder="$" type="text" id="pmt15" name="pmt15" value="" class="input pmtamt"></li>
+			
+				<li class="first noborder"><p>Real Estate Mtgs.</p></li>
+				<li class="second"><input type="text" id="l_financial_inst16" name="l_financial_inst16" value="" class="input"></li>
+				<li class="third"><input placeholder="$" type="text" id="liabilitiesamt16" name="liabilitiesamt16" value="" class="input liabilitiesamt"></li>
+				<li class="fourth"><input placeholder="$" type="text" id="pmt16" name="pmt16" value="" class="input pmtamt"></li>
+			
+				<li class="first noborder"><p>Real Estate Mtgs.</p></li>
+				<li class="second"><input type="text" id="l_financial_inst17" name="l_financial_inst17" value="" class="input"></li>
+				<li class="third"><input placeholder="$" type="text" id="liabilitiesamt17" name="liabilitiesamt17" value="" class="input liabilitiesamt"></li>
+				<li class="fourth"><input placeholder="$" type="text" id="pmt17" name="pmt17" value="" class="input pmtamt"></li>
+			<li class="fieldsep noborder"></li>
+		</ul>
+		
+		<ul class="form5">			
+		
+				<li class="first noborder"><p>Other Debts ( Rev.)</p></li>
+				<li class="second"><input type="text" id="l_financial_inst18" name="l_financial_inst18" value="" class="input"></li>
+				<li class="third"><input placeholder="$" type="text" id="liabilitiesamt18" name="liabilitiesamt18" value="" class="input liabilitiesamt"></li>
+				<li class="fourth"><input placeholder="$" type="text" id="pmt18" name="pmt18" value="" class="input pmtamt"></li>
+			
+				<li class="first noborder"><p>Other Debts ( Rev.)</p></li>
+				<li class="second"><input type="text" id="l_financial_inst19" name="l_financial_inst19" value="" class="input"></li>
+				<li class="third"><input placeholder="$" type="text" id="liabilitiesamt19" name="liabilitiesamt19" value="" class="input liabilitiesamt"></li>
+				<li class="fourth"><input placeholder="$" type="text" id="pmt19" name="pmt19" value="" class="input pmtamt"></li>
+			
+				<li class="first noborder"><p>Other Debts ( Rev.)</p></li>
+				<li class="second"><input type="text" id="l_financial_inst20" name="l_financial_inst20" value="" class="input"></li>
+				<li class="third"><input placeholder="$" type="text" id="liabilitiesamt20" name="liabilitiesamt20" value="" class="input liabilitiesamt"></li>
+				<li class="fourth"><input placeholder="$" type="text" id="pmt20" name="pmt20" value="" class="input pmtamt"></li>
+			
+				<li class="first noborder"><p>Other Debts ( Rev.)</p></li>
+				<li class="second"><input type="text" id="l_financial_inst21" name="l_financial_inst21" value="" class="input"></li>
+				<li class="third"><input placeholder="$" type="text" id="liabilitiesamt21" name="liabilitiesamt21" value="" class="input liabilitiesamt"></li>
+				<li class="fourth"><input placeholder="$" type="text" id="pmt21" name="pmt21" value="" class="input pmtamt"></li>
+			
+				<li class="first noborder"><p>Other Debts ( Rev.)</p></li>
+				<li class="second"><input type="text" id="l_financial_inst22" name="l_financial_inst22" value="" class="input"></li>
+				<li class="third"><input placeholder="$" type="text" id="liabilitiesamt22" name="liabilitiesamt22" value="" class="input liabilitiesamt"></li>
+				<li class="fourth"><input placeholder="$" type="text" id="pmt22" name="pmt22" value="" class="input pmtamt"></li>
+			
+		</ul>
+		</h3></div>
+				<div class="clear"></div>
+				
+				<div class="left-cell-half">
+					<ul class="form4">
+						<li class="first noborder"><p><strong>Total Assets</strong></p></li>
+						<li class="second"><p><span class="totalasset">$0</span></p></li>
+					</ul>
+				</div>
+				<div class="right-cell-half">
+					<ul class="form6">
+						<li class="first noborder"><p><strong>Total Liabilities</strong></p></li>
+						<li class="third"><p><span class="totalliabilities">$0</span></p></li>
+						<li class="fourth blank">&nbsp;</li>
+					</ul>
+					
+					<ul class="form6">
+						<li class="first noborder"><p><strong>Net Worth</strong></p></li>
+						<li class="third"><p><span class="totalnetworth">$0</span></p></li>
+						<li class="fourth blank">&nbsp;</li>
+					</ul>
+				</div>
+				
+				<div class="clear"></div>
+			
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$.fn.assetcalculation = function(){
+					var totalasset = 0;
+					$(".assetamt").each(function(){
+						var idd = $(this).attr("id");
+						if (!field_validation_border(idd, 4, 0)){
+							all_ok = "n";
+							setfocus = set_field_focus(setfocus, idd);
+						}
+										
+						var rowassetamt = parseFloat($(this).val());
+						if(isNaN(rowassetamt)) { rowassetamt = 0; }
+						totalasset = totalasset + rowassetamt;
+					});
+					
+					//totalasset = totalasset * 1000;
+					totalasset = number_round(totalasset);
+					$(".totalasset").html(digits("$" + totalasset));
+					
+					var totalliabilities = 0;
+					$(".liabilitiesamt").each(function(){
+						var idd = $(this).attr("id");
+						if (!field_validation_border(idd, 4, 0)){
+							all_ok = "n";
+							setfocus = set_field_focus(setfocus, idd);
+						}
+										
+						var rowassetamt = parseFloat($(this).val());
+						if(isNaN(rowassetamt)) { rowassetamt = 0; }
+						totalliabilities = totalliabilities + rowassetamt;
+					});
+					
+					//totalliabilities = totalliabilities * 1000;
+					totalliabilities = number_round(totalliabilities);
+					$(".totalliabilities").html(digits("$" + totalliabilities));
+					
+					var totalnetworth = totalasset - totalliabilities;					
+					totalnetworth = number_round(totalnetworth);
+					$(".totalnetworth").html(digits("$" + totalnetworth));
+				}
+				
+				$(".assetamt, .liabilitiesamt").keyup(function(){
+					$(this).assetcalculation();
+				});
+				
+				$(".pmtamt").keyup(function(){
+					var idd = $(this).attr("id");
+					if (!field_validation_border(idd, 4, 0)){						
+						setfocus = set_field_focus(setfocus, idd);
+					}
+				});
+				
+				//submit the form
+				$(".assetsubmit").click(function(){
+					var all_ok = "y";
+					var setfocus = "n";
+					
+					//asset
+					var assetcounter = 0;
+					$(".assetamt").each(function(){
+						var rowassetamt = parseFloat($(this).val());
+						if($.isNumeric(rowassetamt)) {
+							assetcounter = 1;
+						}
+					});
+					
+					if (assetcounter == 0){
+						all_ok = "n";
+					}
+					//end
+					
+					//liabilities
+					var liabilitiescounter = 0;
+					$(".liabilitiesamt").each(function(){
+						var rowassetamt = parseFloat($(this).val());
+						if($.isNumeric(rowassetamt)) {
+							liabilitiescounter = 1;
+						}
+					});
+					
+					if (liabilitiescounter == 0){
+						all_ok = "n";
+					}
+					//end
+					
+					//pmt
+					$(".pmtamt").each(function(){
+						var idd = $(this).attr("id");
+						if (!field_validation_border(idd, 4, 0)){						
+							setfocus = set_field_focus(setfocus, idd);
+							all_ok = "n";
+						}
+					});			
+					//end
+					
+					if (!field_validation_border("fullname", 1, 1)){
+						all_ok = "n";
+						setfocus = set_field_focus(setfocus, "fullname");
+					}
+					
+					if (!field_validation_border("email", 2, 1)){
+						all_ok = "n";
+						setfocus = set_field_focus(setfocus, "email");
+					}
+					
+					//credit authorization 	
+					if(!($("#form_auth").is(":checked"))){
+						all_ok = "n";
+						$(".credit_authorization").addClass("indicateborder");
+					}
+					//end
+					
+					if (all_ok == "y"){ 
+						$("#assetapplication-ff" ).submit();
+					}else{
+						errormessagepop("Please fill the form properly");
+						return false;
+					}					
+				});
+			});
+		</script>
+		
+	  		<div class="clear"></div>
+	  </div>
+	  </div>
+	  
+	  <div class="clearfix"></div>
+	  <div class="multistepformbutton">
+		<button type="button" class="button prevbutton" prevstep="3"><span>Back</span></button>
+		<button type="button" class="button nextbutton" nextstep="5"><span>Next</span></button>
+	  </div>
+	  	
+	  </div>
+	  <!--Step 4 End-->
+	  
+	  <!--Step 5-->
+	  <div id="form5" class="formstep com_none">
+	  
+	  <div class="singleblock"> 
+	  <div class="singleblock_box">	 
+	  <p>
+	  I (We) confirm that the information provided is complete and accurate to the best of my/our knowledge. 
+	  I (We) authorize <strong>YachtCloser Financial</strong> and it's affiliated lending institutions to obtain information in 
+	  connection with this application including credit investigation, employment history and any other information necessary to evaluate credit. 
+	  Furthermore, this application shall remain the property of <strong>YachtCloser Financial</strong>.
+	  </p>  
+	  
+	  <div class="credit_authorization">		  	    
+		  <ul class="form">	   		
+				<li class="t-center">
+					<p>Applicant</p>
+					<span class="creditauthcheckbox"><input type="checkbox" id="applicant_auth" name="applicant_auth" value="1" class="checkbox"><label for="applicant_auth">Credit Authorization</label></span>
+				</li>
+				<li class="t-center jointapplicant com_none">
+					<p>Co-Applicant</p>
+					<span class="cocreditauthcheckbox"><input type="checkbox" id="co_applicant_auth" name="co_applicant_auth" value="1" class="checkbox"><label for="co_applicant_auth"></label> Credit Authorization</span>
+				</li>	
+		  </ul>
+		  <div class="clear"></div>
+	  </div>
+	  
+	  <p>
+	  PATRIOT ACT NOTICE: To help the government fight the funding of terrorism and money laundering activities, 
+	  Federal Law requires all financial institutions to obtain, verify and record information that identifies each person who opens an account. 
+	  For the purposes of this section, account shall be understood to include loan accounts.
+	  </p>
+	  <div class="clear"></div>
+	  </div>
+	  </div>
+	  
+	  
+	  <div class="clearfix"></div>
+	  <div class="multistepformbutton">
+			<button type="button" class="button prevbutton" prevstep="4"><span>Back</span></button>
+			<button type="button" class="button submitbutton"><span>Submit</span></button>
+	  </div>
+	  
+	  </div>				
+	  <!--Step 5 End-->
+	  
+	   </form>
+	  		<div class="clear"></div>
+		</div>
+	  </div>
+	  </div>
+		
+                
+                
+                <div class="clear"></div>
+    </div>
+     
+	<div class="clear"></div> 
+	</div> 
+<!--Main end-->
+
+<!--Footer Start-->
+
+		<div class="footer clearfixmain">
+			<div class="container clearfixmain">
+				
+				<div class="footertop clearfixmain">
+					
+             <ul class="footermenu">
+            
+                 <li><a href="index.htm">Home</a></li>
+                 
+                 <li><a href="inventory.htm">Inventory</a></li>
+                 
+                 <li><a href="mjm-yacht.htm">New Yachts</a></li>
+                 
+                 <li><a href="content.htm">Pages</a></li>
+                 
+                 <li class="current_page_item"><a href="contact-us.htm">Forms</a></li>
+                 
+                 <li><a href="marketing.htm">Marketing</a></li>
+                 
+                 <li><a href="about-us.htm">About Us</a></li>
+                 
+                 <li><a href="login\index.htm">Login</a></li>
+                 
+            </ul>
+			<div class="clearfix"></div>
+            
+				</div>
+				
+				<div class="footerlogo"><img src="images\footer-logo.png" alt="YC Website Demo"></div>
+				
+				<div class="footerbottom clearfixmain">
+					<ul class="footercol">
+						<li>
+							<div class="bottomphone"><a class="tel" href="tel:(954) 361-1322">(954) 361-1322</a></div>
+						</li>
+						
+						<li>
+							<div class="bottomemail"><a href="mailto:websites@yachtcloser.com">websites@yachtcloser.com</a></div>
+						</li>
+						
+						<li>
+							<ul class="social_icon">               	
+								<li><a class="facebook" title="Facebook" href="https://www.facebook.com/YachtCloser" target="_blank"><span class="socicon socicon-facebook"></span></a></li><li><a class="twitter" title="Twitter" href="https://twitter.com/yachtcloser" target="_blank"><span class="socicon socicon-twitter"></span></a></li><li><a class="google" title="Google Plus" href="https://plus.google.com/b/104437041434625196887/+YachtCloser/posts" target="_blank"><span class="socicon socicon-google"></span></a></li><li><a class="linkedin" title="Linkedin" href="https://www.linkedin.com/company/yachtcloser-com" target="_blank"><span class="socicon socicon-linkedin"></span></a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				
+			</div>
+		</div>
+		
+		<div class="footerlast clearfixmain">
+			<div class="container clearfixmain">
+				<ul class="footerbox">
+					<li>&copy; Copyright <?php echo="" date("y");=""?> YC Website Demo.</li>            
+					<li>Powered by <a href="http://www.yachtcloser.com" target="_blank">YachtCloser</a></li>
+				</ul>
+			</div>
+		</div>
+		<!--Footer End-->
+
+<a href="javascript:void(0);" class="BackToTop">Top</a>
+<div id="fc_msg" class="errormessagepop">
+<script></script></div></body>
+</html>

@@ -1,0 +1,244 @@
+/**** Navigation menu *********************/
+#menu.shrink { position: fixed; border-bottom: 0; top: 0; z-index: 999;
+	-webkit-box-shadow:0px 0px 3px 2px rgba(0,0,0,0.12);
+	-moz-box-shadow:0px 0px 3px 2px rgba(0,0,0,0.12);
+	box-shadow:0px 0px 3px 1px rgba(0,0,0,0.12);
+}
+#menu {
+	-webkit-transition:all 100ms ease-in-out;
+	-moz-transition:all 100ms ease-in-out;
+	-o-transition:all 100ms ease-in-out;
+	-ms-transition:all 100ms ease-in-out;
+	transition:all 100ms ease-in-out;	
+}
+
+@media screen and (min-width: 1100px) {
+	#menu .fa-angle-down { display: inline-block; padding-left: 4px; color: #fff; }
+	#menu .fa-angle-right { color: #000; position:absolute; right:10px; top:50%; margin-top:-8px; }
+	#toggle{ display:none;}
+	#menu{ width:100%; position: relative; background-color: #414c55; }
+	
+	ul.nav-menu { margin:0; padding:0; list-style:none; text-align: center; width: 100%; font-size:0; }	
+	ul.nav-menu li { position: relative; }
+	ul.nav-menu > li {margin:0 0 0 1px; padding:0; list-style:none; display: inline-block; font-size:14px; font-weight: 700; text-transform: uppercase; text-align:center; z-index: 999; }
+	ul.nav-menu li:first-child { background:none; margin-left: 0; }	
+	
+	ul.nav-menu li li{ margin: 0; display: block; background:none; font-weight: 400; font-size:12px; padding-right:0px!important; border: none; text-align: left; }
+	ul.nav-menu > li a { color:#fff; font-weight: 700; padding:10px 35px; margin: 0; display:block; text-transform: uppercase; }
+	/*ul.nav-menu.navlan > li a { padding:10px !important; }*/
+		
+	ul.nav-menu li a:hover{ color: #fff; }
+	ul.nav-menu > li.current-menu-item > a, ul.nav-menu > li.current-menu-item.dropdown > a{ color: #fff; background-color: #1586cd; }
+	ul.nav-menu > li.current-menu-item > a .fa-angle-down, ul.nav-menu > li:hover .fa-angle-down { color: #fff; }
+		
+	ul.nav-menu > li:hover > a,
+	ul.nav-menu > li a:hover,
+	ul.nav-menu > li:focus > a,
+	ul.nav-menu > li a:focus {
+		color: #fff; background-color: #1586cd; 
+	}
+	
+	.nav-menu .sub-menu,
+	.nav-menu .children {
+		background-color: #1586cd;
+		border-top: 0;
+		padding: 0;
+		position: absolute;
+		left: 0px;
+		top:100%;
+		z-index: 99999;
+		height: 1px;
+		width: 1px;
+		overflow: hidden;
+		clip: rect(1px, 1px, 1px, 1px);
+	}
+	
+	.nav-menu .sub-menu ul,
+	.nav-menu .children ul {
+		left: 100%;
+		top: 0;
+	}
+	
+	ul.nav-menu ul a,
+	.nav-menu ul ul a {
+		color: #fff;
+		margin: 0;		
+		padding: 7px 12px;
+		font-size: 12px;	
+		display:block;	
+	}
+	
+	ul.nav-menu ul li:hover,
+	.nav-menu ul ul li:hover,
+	ul.nav-menu ul li:focus,
+	.nav-menu ul ul li:focus {
+		background: none;
+		background-color: #283b62;
+		color:#fff;
+	}
+	
+	ul.nav-menu ul a:hover,
+	.nav-menu ul ul a:hover,
+	ul.nav-menu ul a:focus,
+	.nav-menu ul ul a:focus {
+		background: none;
+		background-color: #283b62;
+		color:#fff;
+	}
+	
+	ul.nav-menu li:hover > ul,
+	.nav-menu ul li:hover > ul,
+	ul.nav-menu .focus > ul,
+	.nav-menu .focus > ul {
+		clip: inherit;
+		overflow: inherit;
+		height: inherit;
+		min-width: 200px;
+		width: 100%;		
+	}
+	
+	.nav-menu .current_page_item > a,
+	.nav-menu .current_page_ancestor > a,
+	.nav-menu .current-menu-item > a,
+	.nav-menu .current-menu-ancestor > a {
+		color: #fff;
+	}
+	
+	.nav-menu .current_page_item > a:hover,
+	.nav-menu .current_page_ancestor > a:hover,
+	.nav-menu .current-menu-item > a:hover,
+	.nav-menu .current-menu-ancestor > a:hover {
+		color: #fff;
+	}
+}
+
+@media screen and (max-width: 1099px) {
+.header { border-bottom: 2px solid #283b62; }
+
+/*** Responsive menu X icon*********************/
+.gn-icon-menu {
+	display: block;
+	padding: 17px 5px 5px 5px;
+	width: 37px;
+	height:auto;	
+	color:#000;
+	font-size:10px;
+	box-sizing: border-box;
+	text-align: left;
+	background-color: #fff;
+}
+a.gn-icon-menu:hover { color: #000; }
+.gn-icon-menu menutitle { text-align:center; display: block; margin-top: 8px; font-weight: 700; }
+.gn-icon-menu span {
+	background-color: #283b62;	
+	display: block;
+	position: relative;
+	-webkit-transform: translate3d(0,0,0);
+}
+.gn-icon-menu span,
+.gn-icon-menu span:before,
+.gn-icon-menu span:after {
+	width: 100%;
+	height: 4px;
+	-moz-transition:       all 0.4s;
+	-o-transition:         all 0.4s;
+	-webkit-transition:    all 0.4s;
+	transition:            all 0.4s;
+	-webkit-transform: translate3d(0,0,0);
+}
+.gn-icon-menu span:before,
+.gn-icon-menu span:after {
+	content: " ";
+	margin-top: -.8em;
+	position: absolute;
+}
+.gn-icon-menu span:before {
+	background-color: #283b62;
+}
+.gn-icon-menu span:after {
+	background-color: #283b62;
+	margin-top: .8em;
+}
+.gn-icon-menu.on span {
+	background: transparent;
+}
+.gn-icon-menu.on span:before {
+	background-color: #000;
+	-moz-transform: rotate(45deg) translate(.6em, .5em);
+	-ms-transform: rotate(45deg) translate(.6em, .5em);
+	-o-transform: rotate(45deg) translate(.6em, .5em);
+	-webkit-transform: rotate(45deg) translate(.6em, .5em);
+	transform: rotate(45deg) translate(.6em, .5em);
+}
+.gn-icon-menu.on span:after {
+	background-color: #000;
+	-moz-transform: rotate(-45deg) translate(.55em, -.45em);
+	-ms-transform: rotate(-45deg) translate(.55em, -.45em);
+	-o-transform: rotate(-45deg) translate(.55em, -.45em);
+	-webkit-transform: rotate(-45deg) translate(.55em, -.45em);
+	transform: rotate(-45deg) translate(.55em, -.45em);
+}
+/*** Scrollbar *********************/
+#menu::-webkit-scrollbar { 
+	display: none; 
+	width: 8px;
+	background-color: #4C4C4C;
+}
+#menu::-webkit-scrollbar-thumb {   
+    background-color: #000;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+#menunnn::-webkit-scrollbar-thumb:window-inactive {
+	background: rgba(255,0,0,0.4); 
+}
+
+/*** Responsive Menu position *********************/
+#menu{
+	transition: all 0.3s ease;
+	position: fixed;
+	width: 0%;
+	top: 0;
+	right: -300px;
+	background: #969595;
+	height: 100%;
+	z-index: 999;
+	box-shadow: 0px 0px 10px black;
+	overflow-y: auto;
+	-webkit-overflow-scrolling: touch;
+} 
+
+#toggle{
+	position: fixed;
+	top: 15px;
+	right:5px;
+	z-index: 1000;
+}
+#toggle:hover{
+	cursor: pointer;
+}
+#menu.open{
+	right: 0;
+	width: 300px;
+	display: block;
+}
+#toggle.open{
+	right:20px;
+}
+#menu a{
+	display: block;
+	text-decoration: none;
+	padding:0;
+	margin:0;
+	transition: all 0.2s ease;
+	outline-style:none;
+}
+
+/*** Change Menu code from here *********************/ 
+#menu ul{ margin:70px 0 0 0; padding:0; list-style:none;}
+#menu ul ul{ margin:0; }
+#menu ul li{ margin:0; padding:0; list-style:none; line-height:normal; border-top:1px solid #878787; text-align: left; }
+#menu ul li a{ color:#fff; font-size:16px; padding:7px 15px; font-weight: bold;}
+#menu ul li a:hover{ color:#fff; background:#181818;}
+#menu li li { padding-left: 10px; }
+#menu li li a { font-weight: normal; }
+.fa-angle-down { display: none; }

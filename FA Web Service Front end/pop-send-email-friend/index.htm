@@ -1,0 +1,81 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0;">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Yachtcloser Demo</title>
+    <link href="..\css\style.css" rel="stylesheet" type="text/css">
+    <link href="..\css\jquery.fancybox.css" rel="stylesheet" type="text/css">
+    <link href="..\css\responsive.css" rel="stylesheet" type="text/css">
+    <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <style>
+		html, body { height: auto;}
+        body { background: #fff none; }
+    </style>
+   
+    <script language="javascript" type="text/javascript">
+		var bkfolder = "/";
+		var siteurlfull = "http://demo.ycwebservice.com";
+	</script>
+    <script type="text/javascript" src="..\js\jquery.min.js"></script>
+    <script type="text/javascript" src="..\js\html5.js"></script>
+    <script type="text/javascript" src="..\js\jquery-ui.min.js"></script>
+    <script type="text/javascript" src="..\js\jquery.ui.touch-punch.min.js"></script>
+    <script type="text/javascript" src="..\js\jquery.cookie.js"></script>
+    <script type="text/javascript" src="..\js\jquery.carouFredSel-6.2.1-packed.js"></script>
+    <script type="text/javascript" src="..\js\jquery.cycle2.min.js"></script>
+    <script type="text/javascript" src="..\js\jquery.fancybox.js"></script>
+    <script type="text/javascript" src="..\js\jquery.sticky-kit.min.js"></script>
+    <script type="text/javascript" src="..\js\language.js"></script>
+    <script type="text/javascript" src="..\js\validator.js"></script>
+    <script type="text/javascript" src="..\js\jquery.extra.js"></script>
+    <script type="text/javascript" src="..\js\creditapplication.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async="" defer=""></script>
+</head>
+<body class="pop">
+<div class="main text_area"><h1>Email A Friend</h1>
+ <form method="post" action="/" id="email_friend_ff" name="ff">
+        <input type="hidden" value="1002" id="lno" name="lno">
+        <input class="finfo" id="email2" name="email2" type="text">
+        <input type="hidden" id="fcapi" name="fcapi" value="sendemailfriendsubmit">
+        <ul class="form">
+                        
+            <li>
+                <p>From Email</p>
+                <input type="text" id="femail" name="femail" value="" class="input">
+            </li>
+            <li>
+                <p>From Name</p>
+                <input type="text" id="fname" name="fname" value="" class="input">
+            </li>            
+            <li>
+                <p>Send To Email</p>
+                <input type="text" id="stemail" name="stemail" value="" class="input">
+            </li>            
+            
+            <li>
+                <p>Subject</p>
+                <strong>2008 Hallberg-Rassy 60 MY</strong>
+            </li>
+            <li>
+                <p>Message</p>
+                <textarea name="message" id="message" rows="1" cols="1" class="comments">Take a look at this boat I found on YC Website Demo.
+
+http://demo.ycwebservice.com/boat/2008/hallberg-rassy/60-my/1002/
+</textarea>
+            </li>
+            <li>
+                <p><input type="checkbox" id="sendmecopy" name="sendmecopy" value="1">&nbsp;&nbsp; Send me a copy&nbsp;</p>                    
+            </li>
+            <li><div class="g-recaptcha" data-sitekey="6LcwGwgUAAAAAJN4_TdrEza_l3sM3iSk0QXfC0L_"></div></li>
+            <li>
+                <button type="submit" class="button" value="Send">Send</button>
+            </li>
+        </ul>
+    </form>
+<div class="clear"></div>
+</div>
+</body>
+</html>

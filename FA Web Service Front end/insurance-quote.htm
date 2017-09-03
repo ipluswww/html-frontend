@@ -1,0 +1,573 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0;">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Insurance Quote</title>
+    <meta name="description" content="Yachtcloser Demo">
+    <meta name="keywords" content="Yachtcloser Demo">
+    <meta name="google-site-verification" content="#">
+    
+		  <meta property="og:title" content="Insurance Quote">
+		  <meta property="og:description" content="Yachtcloser Demo">
+		  <meta property="og:url" content="http://demo.ycwebservice.com/insurance-quote">
+		  <meta property="og:image" content="http://demo.ycwebservice.com/images/logoshare.png">	  
+		   
+    <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons\favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicons\favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons\favicon-16x16.png">
+    <link rel="manifest" href="favicons\manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <link href="css\font-awesome.min.css" rel="stylesheet">
+	<link href="css\socicon.css" rel="stylesheet">
+    <link href="css\jquery-ui.css" rel="stylesheet" type="text/css">
+    <link href="css\animate.css" rel="stylesheet" type="text/css">
+    <link href="css\camera.css" rel="stylesheet" type="text/css">
+    <link href="css\style.css" rel="stylesheet" type="text/css">
+    <link href="css\style-extend.css" rel="stylesheet" type="text/css">
+    <link href="css\menu.css" rel="stylesheet" type="text/css">    
+    <link href="css\jquery.timepicker.css" rel="stylesheet" type="text/css">
+    <link href="css\jquery.fancybox.css" rel="stylesheet" type="text/css">
+    <link href="css\responsive.css" rel="stylesheet" type="text/css">
+    <!--[if IE]>
+    <link rel="stylesheet" href="/css/ie.php?path=/" type="text/css" media="screen">
+    <![endif]-->
+
+    <script language="javascript" type="text/javascript">
+		var bkfolder = "/";
+		var siteurlfull = "http://demo.ycwebservice.com";
+	</script>
+    <script type="text/javascript" src="js\jquery.min.js"></script>
+    <script type="text/javascript" src="js\html5.js"></script>
+    <script type="text/javascript" src="js\jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js\jquery.ui.touch-punch.min.js"></script>
+    <script type="text/javascript" src="js\jquery.timepicker.min.js"></script>
+    <script type="text/javascript" src="js\jquery.cookie.js"></script>
+    <script type="text/javascript" src="js\jquery.carouFredSel-6.2.1-packed.js"></script>
+    <script type="text/javascript" src="js\jquery.cycle2.min.js"></script>
+    <script type="text/javascript" src="js\jquery.fancybox.js"></script>
+    <script type="text/javascript" src="js\jquery.sticky-kit.min.js"></script>
+    <script type="text/javascript" src="js\jquery.previewer.js"></script>
+    <script type="text/javascript" src="js\language.js"></script>
+    
+    <script type="text/javascript" src="js\jquery.mobile.customized.min.js"></script>
+    <script type="text/javascript" src="js\jquery.easing.1.3.js"></script> 
+    <script type="text/javascript" src="js\camera.js"></script>
+
+    <script type="text/javascript" src="js\validator.js"></script>
+    <script type="text/javascript" src="js\jquery.extra.js"></script>
+    <script type="text/javascript" src="js\creditapplication.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async="" defer=""></script>
+
+ 
+    
+    
+            
+    <script type="text/javascript" src="js\abclient.js"></script>
+	<script type="text/javascript" src="js\abjquery.js"></script>
+    
+    <script></script>    
+    <script type="text/javascript">
+	var airbrake = new airbrakeJs.Client({projectId: 117837, projectKey: 'de3d05543b28193078e680a0e845ae4a'});
+	if (window.jQuery) 
+	  airbrakeJs.instrumentation.jquery(airbrake, jQuery);
+	
+	function ___log__error(aMsg, aUrl, aLine, aCol, aErr) {
+	 airbrake.notify({
+		error:       aErr,
+		context:     { script: 'script-name', url : aUrl, line: aLine, col: aCol },
+		session:     { userid: 'userid-if-any' }
+	  });
+	   return false;
+	};
+	//window.onerror = ___log__error;
+	</script>        
+</head>
+<body>
+
+<!--==============================header start=================================-->
+
+		<noscript>
+			<div class="noscript">
+				<div class="noscript-inner">
+					<p><strong>JavaScript seem to be disabled in your browser.</strong></p>
+					<p>You must have JavaScript enabled in your browser to utilize the functionality of this website.</p>
+				</div>
+			</div>
+		</noscript>
+		
+		<div class="fcheader header gradient clearfixmain">
+			<div class="container clearfixmain">
+				<ul class="headercol">
+					<li><a href="index.htm" title="YC Website Demo"><img src="images\logo.png" alt="YC Website Demo"></a></li>
+					<li class="clearfixmain">
+						<div class="header-right-top clearfixmain">
+														
+						</div>
+						
+						<div class="topsocial clearfixmain"> 
+							<ul class="social_icon">               	
+								<li><a class="facebook" title="Facebook" href="https://www.facebook.com/YachtCloser" target="_blank"><span class="socicon socicon-facebook"></span></a></li><li><a class="twitter" title="Twitter" href="https://twitter.com/yachtcloser" target="_blank"><span class="socicon socicon-twitter"></span></a></li><li><a class="google" title="Google Plus" href="https://plus.google.com/b/104437041434625196887/+YachtCloser/posts" target="_blank"><span class="socicon socicon-google"></span></a></li><li><a class="linkedin" title="Linkedin" href="https://www.linkedin.com/company/yachtcloser-com" target="_blank"><span class="socicon socicon-linkedin"></span></a></li>
+							</ul>        
+						</div>
+						
+						<div class="topphone clearfixmain">
+							<a class="tel" href="tel:(954) 361-1322"><span>(954) 361-1322</span></a>
+						</div>						
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+		<!--Top Navigation-->
+		<div id="toggle"><a title="Menu" class="gn-icon-menu" href="javascript:void(0);"><span></span><menutitle>Menu</menutitle></a></div>
+		<div id="menu" class="menu clearfixmain">
+			<div class="container clearfixmain">   	
+				<ul class="nav-menu"><li><a href="index.htm">Home</a></li><li><a href="inventory.htm">Inventory<i class="fa fa-angle-down"></i></a><ul class="sub-menu">
+				<li><a href="featured-boats.htm">Featured Boats</a></li>
+				
+				<li><a href="new-inventory.htm">New Inventory</a></li>
+				
+				<li><a href="brokerage-inventory.htm">Brokerage Inventory</a></li>
+				
+				<li><a href="search-by-type.htm">Search By Type</a></li>
+				
+				<li><a href="search-by-brand.htm">Search By Brand</a></li>
+				
+				<li><a href="recently-sold.htm">Recently Sold</a></li>
+				
+				<li><a href="find-my-boat.htm">Find My Boat</a></li>
+				</ul></li><li><a href="javascript:void(0);">New Yachts<i class="fa fa-angle-down"></i></a><ul class="sub-menu">
+				<li><a href="mjm-yacht.htm">MJM Yacht</a></li>
+				
+				<li><a href="san-juan-yachts.htm">San Juan Yachts</a></li>
+				
+				<li><a href="viking-yachts.htm">Viking Yachts</a></li>
+				</ul></li><li><a href="javascript:void(0);">Pages<i class="fa fa-angle-down"></i></a><ul class="sub-menu">
+				<li><a href="content.htm">Content</a></li>
+				
+				<li><a href="blog.htm">Blog</a></li>
+				
+				<li><a href="news.htm">News</a></li>
+				</ul></li><li class="current-menu-item"><a href="javascript:void(0);">Forms<i class="fa fa-angle-down"></i></a><ul class="sub-menu">
+				<li><a href="contact-us.htm">Contact Us</a></li>
+				
+				<li><a href="sell-your-boat.htm">Sell Your Boat</a></li>
+				
+				<li><a href="trade-your-boat.htm">Trade Your Boat</a></li>
+				
+				<li><a href="insurance-quote.htm">Insurance Quote</a></li>
+				
+				<li><a href="finance-application.htm">Finance Application</a></li>
+				
+				<li><a href="transport-quote.htm">Transport Quote</a></li>
+				
+				<li><a href="service.htm">Service</a></li>
+				
+				<li><a href="we-buy-boats.htm">We Buy Boats</a></li>
+				</ul></li><li><a href="marketing.htm">Marketing</a></li><li><a href="about-us.htm">About Us<i class="fa fa-angle-down"></i></a><ul class="sub-menu nav_last">
+				<li><a href="our-team.htm">Our Team</a></li>
+				
+				<li><a href="locations.htm">Locations</a></li>
+				
+				<li><a href="customer-testimonials.htm">Customer Testimonials</a></li>
+				
+				<li><a href="share-testimonial.htm">Share Testimonial</a></li>
+				</ul></li></ul>
+			</div>
+		</div>
+		<!--Top Navigation end-->
+		<!--==============================header end=================================-->
+
+<!--Image Slider-->
+<!--Image Slider end-->
+
+<!--Main start-->
+<div class="main">
+<div class="container text_area">
+    <ul class="breadcrumbs"><li><a href="index.htm">Home</a></li><li><a href="javascript:void(0);">Forms</a></li><li><a href="javascript:void(0);">Insurance Quote</a></li></ul>
+	  <div class="clear"></div>
+	       
+<h1><span>Insurance</span> Quote</h1><div>
+	
+	    <form method="post" action="/" id="boat_insurance-ff" name="boat_insurance-ff">
+	    <input class="finfo" id="email2" name="email2" type="text">
+	    <input type="hidden" id="fcapi" name="fcapi" value="boatinsurance">
+	    
+		<div class="singleblock">
+		<div class="singleblock_heading"><span>Owner Information</span></div>
+		<div class="singleblock_box singleblock_box_h">
+		<div class="column1">
+			<ul class="form">
+				<li>
+					<p>First Name</p>
+					<input type="text" id="fname" name="fname" value="" class="input">
+				</li>
+				
+				<li>
+					<p>Last Name</p>
+					<input type="text" id="lname" name="lname" value="" class="input">
+				</li>
+				
+				<li>
+					<p>Address</p>
+					<input type="text" id="address" name="address" value="" class="input">
+				</li>
+				
+				<li>
+					<p>City</p>
+					<input type="text" id="city" name="city" value="" class="input">
+				</li>
+				
+				<li>
+					<p>State</p>
+					<input type="text" id="state" name="state" value="" class="input">
+				</li>
+				
+				<li>
+					<p>Zip</p>
+					<input type="text" id="zip" name="zip" value="" class="input">
+				</li>  
+			</ul>
+		</div>
+		
+		<div class="column2">
+			<ul class="form">            	
+				<li>
+					<p>Phone</p>
+					<input type="text" id="phone" name="phone" value="" class="input">
+				</li>                    
+				  
+				<li>
+					<p>Email</p>
+					<input type="text" id="email" name="email" value="" class="input">
+				</li> 
+				
+				<li>
+					<p>Date of Birth (mm/dd/yyyy)</p>
+					<input defaultdateset="01/01/1980" rangeyear="1900:1999" type="text" id="dob" name="dob" value="" class="date-field-b input2">
+				</li>                    
+				   
+				<li>
+					<p>Drivers License #</p>
+					<input type="text" id="drivers_license" name="drivers_license" value="" class="input">
+				</li>
+			</ul>
+		</div>                     
+		<div class="clear"></div>
+		</div>
+		</div>
+		
+		<div class="singleblock">
+        <div class="singleblock_heading"><span>Boat Information</span></div>
+        <div class="singleblock_box singleblock_box_h">
+        	<div class="column1">
+            	<ul class="form">
+                	<li><p><strong>Vessel</strong></p></li>
+                    
+                    <li>
+                        <p>Make</p>
+                        <input type="text" id="manufacturer_name" name="manufacturer_name" value="" class="input">
+                    </li>
+                    
+                    <li>
+                        <p>Model</p>
+                        <input type="text" id="model" name="model" value="" class="input">
+                    </li>
+                    
+                    <li id="year_heading">
+                        <p>Year</p>
+                        <select class="my-dropdown2" id="year" name="year">
+                            <option value="">Select
+                            <option value="2018">2018<option value="2017">2017<option value="2016">2016<option value="2015">2015<option value="2014">2014<option value="2013">2013<option value="2012">2012<option value="2011">2011<option value="2010">2010<option value="2009">2009<option value="2008">2008<option value="2007">2007<option value="2006">2006<option value="2005">2005<option value="2004">2004<option value="2003">2003<option value="2002">2002<option value="2001">2001<option value="2000">2000<option value="1999">1999<option value="1998">1998<option value="1997">1997<option value="1996">1996<option value="1995">1995<option value="1994">1994<option value="1993">1993<option value="1992">1992<option value="1991">1991<option value="1990">1990<option value="1989">1989<option value="1988">1988<option value="1987">1987<option value="1986">1986<option value="1985">1985<option value="1984">1984<option value="1983">1983<option value="1982">1982<option value="1981">1981<option value="1980">1980<option value="1979">1979<option value="1978">1978<option value="1977">1977<option value="1976">1976<option value="1975">1975<option value="1974">1974<option value="1973">1973<option value="1972">1972<option value="1971">1971<option value="1970">1970<option value="1969">1969<option value="1968">1968<option value="1967">1967<option value="1966">1966<option value="1965">1965<option value="1964">1964<option value="1963">1963<option value="1962">1962<option value="1961">1961<option value="1960">1960<option value="1959">1959<option value="1958">1958<option value="1957">1957<option value="1956">1956<option value="1955">1955<option value="1954">1954<option value="1953">1953<option value="1952">1952<option value="1951">1951<option value="1950">1950<option value="1949">1949<option value="1948">1948<option value="1947">1947<option value="1946">1946<option value="1945">1945<option value="1944">1944<option value="1943">1943<option value="1942">1942<option value="1941">1941<option value="1940">1940<option value="1939">1939<option value="1938">1938<option value="1937">1937<option value="1936">1936<option value="1935">1935<option value="1934">1934<option value="1933">1933<option value="1932">1932<option value="1931">1931<option value="1930">1930<option value="1929">1929<option value="1928">1928<option value="1927">1927<option value="1926">1926<option value="1925">1925<option value="1924">1924<option value="1923">1923<option value="1922">1922<option value="1921">1921<option value="1920">1920<option value="1919">1919<option value="1918">1918<option value="1917">1917<option value="1916">1916<option value="1915">1915<option value="1914">1914<option value="1913">1913
+                        </select>
+                    </li>
+                    
+                    <li>
+                        <p>Length [in Ft.]</p>
+                        <input type="text" id="length" name="length" value="" class="input">
+                    </li>
+                    
+                    <li>
+                        <p>Intended Mooring Location</p>
+                        <input type="text" id="intended_mooring_location" name="intended_mooring_location" value="" class="input">
+                    </li>
+                    
+                    <li>
+                        <p>Intended Navigation Area</p>
+                        <input type="text" id="intended_navigation_area" name="intended_navigation_area" value="" class="input">
+                    </li>
+                </ul>
+            </div>
+            
+			<div class="column2">
+				<ul class="form">            	
+					<li><p><strong>Engine</strong></p></li>                    
+					
+					<li>
+						<p>Make</p>
+						<input type="text" id="engine_make_name" name="engine_make_name" value="" class="input">
+					</li>
+					
+					<li>
+						<p>Model</p>
+						<input type="text" id="engine_model" name="engine_model" value="" class="input">
+					</li>
+					
+					<li>
+						<p>Engine(s)</p>
+						<select name="engine_no" id="engine_no" class="my-dropdown2">
+							<option value="">Select
+							<option value="1">1<option value="2">2<option value="3">3<option value="4">4
+						</select>
+					</li>
+					
+					<li>
+						<p>Horsepower Individual</p>
+						<input type="text" id="horsepower_individual" name="horsepower_individual" value="" class="input">
+					</li>
+					
+					<li>
+						<p>Engine Type</p>
+						<select name="engine_type_id" id="engine_type_id" class="my-dropdown2">
+							<option value="">Select
+							<option value="1">Inboard<option value="3">Inboard / Outboard<option value="5">No Engine<option value="6">Other<option value="2">Outboard
+						</select>
+					</li>
+					
+					<li>
+						<p>Drive Type</p>
+						<select name="drive_type_id" id="drive_type_id" class="my-dropdown2">
+							<option value="">Select
+							<option value="11">Air Propeller<option value="1">Direct Drive<option value="4">Jet Drive<option value="8">Other<option value="9">Outboard<option value="2">Pod Drive<option value="3">Sail Drive<option value="6">Stern Drive<option value="5">Surface Drive<option value="7">V Drive
+						</select>
+					</li>
+					
+					<li>
+						<p>Fuel Type</p>
+						<select name="fuel_type_id" id="fuel_type_id" class="my-dropdown2">
+							<option value="">Select
+							<option value="1">Diesel<option value="3">Electric<option value="2">Gas/Petrol<option value="5">LPG<option value="4">Other
+						</select>
+					</li>
+				</ul>
+			</div>                
+			<div class="clear"></div>
+			</div>
+			</div>
+			
+			<div class="singleblock">
+				<div class="singleblock_heading"><span>Boating Experience</span></div>
+				<div class="singleblock_box singleblock_box_h">
+					<ul class="form">
+						<li>
+							<p>Previous Boats Owned</p>
+							<textarea name="previous_boats_owned" id="previous_boats_owned" rows="1" cols="1" class="comments"></textarea>
+						</li>
+						
+						<li class="left">
+							<p>Years Boating Experience</p>
+							<input type="text" id="boating_experience_year" name="boating_experience_year" value="" class="input">
+						</li>
+						<li class="right">
+							<p>Boating Courses Completed</p>
+							<select name="boating_courses_completed" id="boating_courses_completed" class="my-dropdown2">
+								<option value="">Select
+								<option value="1">No<option value="2">Yes<option value="3">Captain
+							</select>
+						</li>
+						<li>
+							<p>Prior Insurance Losses</p>
+							<input type="radio" class="radiobtn" id="prior_insurance_losses1" name="prior_insurance_losses" value="1"> Yes &nbsp;&nbsp;
+							<input type="radio" class="radiobtn" id="prior_insurance_losses2" name="prior_insurance_losses" value="0"> No
+							<div class="insurance_losses_details com_none"><input type="text" id="prior_insurance_losses_details" name="prior_insurance_losses_details" value="" class="input" placeholder="Describe"></div>
+						</li>
+						
+						<li>
+							<p>By clicking "<strong>Confirm and Send</strong>", I consent to share information on this form with <strong>YC Website Demo</strong> and acknowledge that such information is true and accurate. I further understand that I am requesting services from said company, at my own discretion, and that I am in no way obligated nor otherwise influenced to purchase intended services.</p>                    
+						</li>
+						
+					</ul>
+					<div class="clear"></div>
+				</div>
+			</div>
+			<div class="recaptchablock"><div class="g-recaptcha" data-sitekey="6LcwGwgUAAAAAJN4_TdrEza_l3sM3iSk0QXfC0L_"></div></div>
+		
+		<div class="singleblock">
+			<input id="redpageid" name="redpageid" type="hidden" value="">
+			<input type="submit" value="Confirm and Send" class="button">
+			<input type="button" value="Cancel" class="button cancel">
+		</div>
+			   
+		</form>		
+		<div class="disclaimer_div">Disclaimer: This is neither an implicit nor an explicit endorsement of the companies referred for consideration. It is simply an effort to inform the recipient of services that may be of assistance related to the purchase and sale of a boat. Recipients are encouraged to perform their own due diligence prior to engaging services.</div>		
+		
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$(".radiobtn").click(function(){  
+					sel_value_op = $('input:radio[name=prior_insurance_losses]:checked').val();
+					if (sel_value_op == 1){
+						$(".insurance_losses_details").removeClass("com_none");
+					}else{
+						$(".insurance_losses_details").addClass("com_none");
+					}
+			   });
+			   
+			   $("#boat_insurance-ff").submit(function(){		
+				   var all_ok = "y";
+				   var setfocus = "n";
+					
+				   //Owner Information	    
+				   if (!field_validation_border("fname", 1, 1)){ 
+						all_ok = "n"; 
+						setfocus = set_field_focus(setfocus, "fname");
+				   }
+				   
+				   if (!field_validation_border("lname", 1, 1)){ 
+						all_ok = "n"; 
+						setfocus = set_field_focus(setfocus, "lname");
+				   }
+				   
+				   if (!field_validation_border("phone", 1, 1)){ 
+						all_ok = "n"; 
+						setfocus = set_field_focus(setfocus, "phone");
+				   }
+				   
+				   if (!field_validation_border("email", 2, 1)){ 
+						all_ok = "n"; 
+						setfocus = set_field_focus(setfocus, "email"); 		   
+				   }
+				   
+				   if (!datefield_validation_border("dob", "", 1)){ 
+						all_ok = "n"; 
+						setfocus = set_field_focus(setfocus, "dob"); 		   
+				   }
+				   
+				   //Boat Information
+				   if (!field_validation_border("year", 3, 0)){
+						all_ok = "n";
+						setfocus = set_field_focus(setfocus, "year_heading");
+				   }
+				   
+				   if (!field_validation_border("length", 5, 0)){
+						all_ok = "n";
+						setfocus = set_field_focus(setfocus, "length");
+				   }
+				   
+				   if (!field_validation_border("horsepower_individual", 5, 0)){
+						all_ok = "n";
+						setfocus = set_field_focus(setfocus, "horsepower_individual");
+				   }
+				   
+				   //Boating Experience
+				   sel_value_op = $("input:radio[name=prior_insurance_losses]:checked").val();
+				   if (sel_value_op == 1){
+						if (!field_validation_border("prior_insurance_losses_details", 1, 1)){ 
+							all_ok = "n"; 
+							setfocus = set_field_focus(setfocus, "prior_insurance_losses_details");
+						}
+				   }
+				   
+				   if (all_ok == "n"){            
+						return false;
+				   }
+				   return true;		   
+			   });
+			   
+			   $(".cancel").click(function(){  
+					history.back(-1);
+			   });
+			   
+			});
+		</script>
+		</div>
+		
+                
+                
+                <div class="clear"></div>
+    </div>
+     
+	<div class="clear"></div> 
+	</div> 
+<!--Main end-->
+
+<!--Footer Start-->
+
+		<div class="footer clearfixmain">
+			<div class="container clearfixmain">
+				
+				<div class="footertop clearfixmain">
+					
+             <ul class="footermenu">
+            
+                 <li><a href="index.htm">Home</a></li>
+                 
+                 <li><a href="inventory.htm">Inventory</a></li>
+                 
+                 <li><a href="mjm-yacht.htm">New Yachts</a></li>
+                 
+                 <li><a href="content.htm">Pages</a></li>
+                 
+                 <li class="current_page_item"><a href="contact-us.htm">Forms</a></li>
+                 
+                 <li><a href="marketing.htm">Marketing</a></li>
+                 
+                 <li><a href="about-us.htm">About Us</a></li>
+                 
+                 <li><a href="login\index.htm">Login</a></li>
+                 
+            </ul>
+			<div class="clearfix"></div>
+            
+				</div>
+				
+				<div class="footerlogo"><img src="images\footer-logo.png" alt="YC Website Demo"></div>
+				
+				<div class="footerbottom clearfixmain">
+					<ul class="footercol">
+						<li>
+							<div class="bottomphone"><a class="tel" href="tel:(954) 361-1322">(954) 361-1322</a></div>
+						</li>
+						
+						<li>
+							<div class="bottomemail"><a href="mailto:websites@yachtcloser.com">websites@yachtcloser.com</a></div>
+						</li>
+						
+						<li>
+							<ul class="social_icon">               	
+								<li><a class="facebook" title="Facebook" href="https://www.facebook.com/YachtCloser" target="_blank"><span class="socicon socicon-facebook"></span></a></li><li><a class="twitter" title="Twitter" href="https://twitter.com/yachtcloser" target="_blank"><span class="socicon socicon-twitter"></span></a></li><li><a class="google" title="Google Plus" href="https://plus.google.com/b/104437041434625196887/+YachtCloser/posts" target="_blank"><span class="socicon socicon-google"></span></a></li><li><a class="linkedin" title="Linkedin" href="https://www.linkedin.com/company/yachtcloser-com" target="_blank"><span class="socicon socicon-linkedin"></span></a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				
+			</div>
+		</div>
+		
+		<div class="footerlast clearfixmain">
+			<div class="container clearfixmain">
+				<ul class="footerbox">
+					<li>&copy; Copyright <?php echo="" date("y");=""?> YC Website Demo.</li>            
+					<li>Powered by <a href="http://www.yachtcloser.com" target="_blank">YachtCloser</a></li>
+				</ul>
+			</div>
+		</div>
+		<!--Footer End-->
+
+<a href="javascript:void(0);" class="BackToTop">Top</a>
+<div id="fc_msg" class="errormessagepop">
+<script></script></div></body>
+</html>

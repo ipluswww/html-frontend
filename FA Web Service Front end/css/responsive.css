@@ -1,0 +1,607 @@
+
+@media screen and (max-width: 1225px) {
+	.extra_inputbox { float: none; }	
+	ul.ourteam-list.listview > li{ margin-left: 2.66%; width:23%; }
+	ul.ourteam-list.listview > li:nth-child(5n+1) { margin-left:2.66%; clear: none; }
+	ul.ourteam-list.listview > li:nth-child(4n+1) { margin-left:0; clear: both; }
+	
+	ul.tophomebox > li {  width: 32%; margin-left: 2%; }
+	ul.tophomebox > li:nth-child(4n+1) { margin-left:2%; }
+	ul.tophomebox > li:nth-child(3n+1) { margin-left:0; }
+}
+
+@media screen and (max-width: 1160px) {
+	.slidersearch .container { width: 100%; display: none; }
+	.boatsearch { display: block; width: 100%; padding:20px; position: relative; top: auto; left: auto; z-index: 75; }
+	.slidersearch_responsive { display: block; }
+}
+
+@media screen and (max-width: 1085px) {	
+	.leftcontentbox .left-cell-half, .rightcontentbox2 .left-cell-half{float:left; width:100%; margin-bottom: 20px; }
+	.leftcontentbox .right-cell-half, .rightcontentbox2 .right-cell-half{float:left; width:100%;}
+	
+	.homesection-bg2 { background-image: none; text-align:center; }
+	.homesection-bg2 h2 { text-align: center; }
+	.homesection-bg2 .pagesection { padding-left: 0; }
+	
+	.boatslideshow-main.design_2 .slide-boatimage { width: 54%; }
+	.boatslideshow-main.design_2 .slide-boatinfo { width: 42%; }
+}
+
+@media screen and (max-width: 1045px) {
+	ul.locationinner li:nth-child(2){ display: block; width: 100%; margin-left: 0; }
+	ul.locationinner li:nth-child(3){ display: block; width: 100%; margin-left: 0; margin-top: 12px; }
+	
+	ul.boxcol4 > li {  width: 23%; margin-left: 2.66%; }
+	ul.boxcol4 > li:nth-child(5n+1) { margin-left:2.66%; }
+	ul.boxcol4 > li:nth-child(4n+1) { margin-left:0; }
+}
+
+@media screen and (max-width: 980px) {
+
+	.main .leftcontentbox, .main .rightcontentbox2{ width: 63%; }
+	.main .rightcontentbox, .main .leftcontentbox2{ width: 35%; }
+	
+	.homecol .leftcol{ float:left; width:55%; }
+	.homecol .rightcol{ float:right; width:40%; }
+	
+    ul.cat-list{ margin:0 0 0 -12px; list-style:none; }
+    ul.cat-list li{ margin:0 0 25px 12px; }
+	
+	ul.gal-list{ margin:0 0 0 -12px; list-style:none; }
+    ul.gal-list li{ margin:0 0 25px 12px; }
+	
+	.editordivrow .edimgleft {float: left; width: 35%; }
+	.editordivrow .edcontentright {float: right; width: 60%; }
+	
+	.editordivrow .edimgright {float: right; width: 35%; }
+	.editordivrow .edcontentleft {float: left; width: 60%; }
+	
+	section.videocolumn h2 { font-size: 22px; }
+	
+	ul.ourteam-list.listview > li{ margin-left: 2%; width:32%; }
+	ul.ourteam-list.listview > li:nth-child(5n+1), 
+	ul.ourteam-list.listview > li:nth-child(4n+1) { margin-left:2%; clear: none; }
+	ul.ourteam-list.listview > li:nth-child(3n+1) { margin-left:0; clear: both; }
+	
+	ul.tophomebox > li {  width: 48%; margin-left: 2%; }
+	ul.tophomebox > li:nth-child(4n+1), 
+	ul.tophomebox > li:nth-child(3n+1) { margin-left:2%; }
+	ul.tophomebox > li:nth-child(2n+1) { margin-left:0; }
+	
+	.dashboard-menucol { width: 100%; padding: 0; }
+	.dashboard-contentcol { width: 100%; padding: 20px; }
+	
+	.dashboard-menucol .dashboard-show-menu { display: block; }
+	ul.menucol-parent { display: none; margin-bottom: 20px; }
+}
+
+@media screen and (max-width: 950px) {
+	ul.makebutton li{ width: 100%; margin: 10px 0 0 0; }	
+}
+
+@media screen and (max-width: 918px) {
+	.header-bottom-inner .res .spinnersmall { display: block; padding-left: 0px; }
+	.header-bottom-inner .res .sorttool { margin: 0; border-left: none; display: block; padding: 10px 0 0 0; }
+	ul.stephead li {  margin:0 0 0 50px; }
+	
+	ul.testimonialslider li .posterimage { margin-top: 50px; }
+	ul.boat_model_content > li:nth-child(1) { width: 100%; line-height: 0; }
+	ul.boat_model_content > li:nth-child(2) { width: 100%; padding: 20px 0; }
+	ul.boat_model_content > li:nth-child(3) { width: 100%; }
+}
+
+@media screen and (max-width: 865px) {
+	.container { width: 88%; }
+	.blogimg{ width:30%; }
+	.blogtext{ width:65%; }	
+	
+	.product dt{width:33%;}
+	.product dd{ width:57%; }
+	
+	.left-cell{width:35%;}
+    .right-cell{width:60%;}	
+	
+	ul.product-list li{ margin-left: 4%; width:48%; }
+	ul.product-list li:nth-child(3n+1) { margin-left:4%; }
+	ul.product-list li:nth-child(2n+1) { margin-left:0; }
+	
+	ul.formcol li { width: 32%; margin-left: 2%; }
+	ul.formcol li:nth-child(4n+1) { margin-left:2%; clear: none; }
+	ul.formcol li:nth-child(3n+1) { margin-left:0; clear: both; }
+	
+	.boatslideshow-main.design_2 .slide-boatimage { width: 100%; float: none; margin-bottom: 20px; }
+	.boatslideshow-main.design_2 .slide-boatinfo { width: 100%; float: none; margin-bottom: 50px; }
+	.customdivrow.companylogo img { margin: 0 auto; }
+	.boatslideshow-main .pager{ left: 0; right: 0; bottom: 20px; margin: 0 auto; z-index: 9999; width: 80%; text-align:center; }
+}
+
+@media screen and (max-width: 810px) {	
+	ul.latestnews li p.news{ margin: 0; display: block; }
+}
+
+@media screen and (max-width: 800px) {
+	.tel { cursor: pointer; }	
+	.text_area .leftimage {  width: 30%; }
+	.text_area .rightcontent {  width: 60%; padding-top: 20px; }
+	
+	.topcol .cols{ width:47%;}
+	.topcol .cols.c2 { float:right; }
+	.topcol .cols:first-child{ padding-left:0;}
+	.topcol .cols.c3 { width: 100%; margin:0; }
+	
+	.homeleft, .homeright, .homeleft2, .homeright2 { width: 100%; float: none; display: block; }
+	.homeleft, .homeleft2 { margin-bottom: 20px; }
+	.homeright2 { /*max-width: 400px;*/ margin: 0 auto; }
+	
+	div.boat-news .homeleft, div.boat-news .homeright { width: 100%; margin-bottom: 0; padding-bottom: 20px;}
+	div.boat-news .homeleft { margin-bottom: 20px; }
+
+	
+	.featured-yachts ul.featuredboat li{ margin:0 0 20px 4%; padding:0; background:none; width:48%; }
+	.featured-yachts ul.featuredboat li:nth-child(4n+1) { margin-left: 4%; }
+	.featured-yachts ul.featuredboat li:nth-child(2n+1) { margin-left: 0; }
+	/*.featured-yachts ul.featuredboat li{  width: 33.33%; }*/
+	
+	ul.cat-list, ul.gal-list{ margin:0 auto; margin-left: -12px; list-style:none; text-align:center; }
+    ul.cat-list li, ul.gal-list li{ float: none; display:inline-block; margin:0 0 25px 12px; }	
+	.categorybutton { text-align: center; }    
+	
+	/*boat list*/
+	ul.product-list.list-view .product .meta .clear{display:block;}
+   
+    .product-detail .left-cell{width:65%;}
+    .product-detail .right-cell{width:30%;}
+	
+	ul.product-description-nav{display:none;}
+    .product-description{padding:0; background:none; border:none;}
+    .description-tab{display:block;}
+    .description-tab h3.title{display:block; color: #4c4c4c; font-size:26px;  border-bottom:solid 1px #dcdcdc; padding-bottom:10px; cursor:pointer; background:url(../images/plus.png) right 6px no-repeat; padding-right:40px;}
+    .description-tab h3.title.opened { background:url(../images/minus.png) right 6px no-repeat; }
+	.description-tab .con{display:none;}
+    .headsearch { width: 30%; margin-top: 4%; }
+
+	.profile-main .mainleft { width: 25%; }
+	.profile-main .mainright { width: 70%; }
+	.profile-main .mainright .left { width: 100%; }
+	.profile-main .mainright .right { float: left; width: 100%; }
+	
+	ul.offerboatlist li { width: 48%; margin-left: 4%; margin-top: 20px; }
+	ul.offerboatlist li:nth-child(4n+1) { margin-left:4%; }
+	ul.offerboatlist li:nth-child(2n+1) { margin-left:0; }	
+
+	.homedealerholder .container { width: 90%; }
+	
+	ul.imagedisplay.gridview li { width: 32%; margin: 2px 0 2px 2%; border: 0px; }
+	ul.imagedisplay.gridview li:nth-child(4n+1) { margin-left:2%; }
+	ul.imagedisplay.gridview li:nth-child(3n+1) { margin-left:0; }
+	
+	.mapholder { width: 100%; }
+	
+	ul.locationgallery li { margin: 0 0 5px 2%; width: 49%; }
+	ul.locationgallery li:nth-child(4n+1) { margin-left:2%; }
+	ul.locationgallery li:nth-child(2n+1) { margin-left:0; }
+}
+
+@media screen and (max-width: 768px) {
+	.autoheight { }
+	.autocontent { }
+	
+	ul.boxes li{ width:100%;margin-left:0; border-bottom:1px solid #d3d3d3; padding-bottom:20px; }	
+	
+	ul.product-list.list-view .product .thumb{width:100%; margin-bottom:15px;}
+	ul.product-list.list-view .product .meta{margin-left:0;}
+
+    .profile-main {margin-right: 2%; width: 98%; }
+
+    .divrow3 .uimg { float: left; width: 10%; padding: 1% 1%; margin: 0;}
+    .divrow3 .txtcon { float: left; width: 60%; padding: 1% 1%;}
+    .divrow3 .options { float: right; width: 18%; padding: 1% 1%; text-align: right;}
+	
+	.divrow4 .uimg { float: left; width: 20%; padding: 1% 1%; margin: 0;}
+    .divrow4 .txtcon { float: left; width: 50%; padding: 1% 1%;}
+    .divrow4 .options { float: right; width: 18%; padding: 1% 1%; text-align: right;}	
+	
+	ul.stephead li {  margin:0 0 0 40px; font-size: 15px; }
+	
+	.offeringnewboats h2 { font-size:22px; }
+	
+	.responsivetableholder { overflow-y: scroll; }
+	.responsivetable { min-width: 767px; }
+	
+	ul.boxcol4 > li {  width: 32%; margin-left: 2%; }
+	ul.boxcol4 > li:nth-child(5n+1),
+	ul.boxcol4 > li:nth-child(4n+1) { margin-left:2%; }
+	ul.boxcol4 > li:nth-child(3n+1) { margin-left:0; }
+}
+
+@media screen and (max-width: 765px) {
+	
+	.homecol .leftcol{ float:left; width:100%; margin-bottom: 20px; }
+	.homecol .rightcol{ float:left; width:100%; }
+	
+	ul.logo-list li{ width: 18%; }
+	
+	.header-bottom-inner .leftpart { float: left; width: 100%; padding-bottom:6px; }
+	.header-bottom-inner .rightpart { float: left; width: 100%; padding-bottom:6px; }
+	.header-bottom-inner .rightpart .res { text-align: center; }
+	
+	.pagesection ul.testimonialslider li { margin: 20px 0 0 0; padding: 15px; border: 1px solid #cacaca; width: 100%; }
+	.pagesection ul.testimonialslider li:nth-child(2n+1) { margin-top:0; }
+}
+
+@media screen and (max-width: 755px) {	
+	ul.product-list.homefeatured li{ width:47.5%; }
+	.button.buttonright { margin-right: 0; margin-top: 5px; width: 100%; }
+	
+	.homeleft3 { width: 55%; }
+	.homeright3 { width: 40%; }
+}
+
+@media screen and (max-width: 725px) {	
+	.left-cell-half{float:left; width:100%; margin-bottom: 20px; }
+	.right-cell-half{float:left; width:100%;}
+	
+	.main .leftcontentbox, .main .leftcontentbox2{ float:left; width:100%; }
+	.main .rightcontentbox, .main .rightcontentbox2{ float:left; width:100%;}	
+	ul.stephead li {  margin:0 0 0 30px; }		
+	
+	.text_area .leftimage {  width: 38%; }
+	.text_area .rightcontent {  width: 54%; padding-top: 20px; }
+	
+	.blogimg{ width:32%; }
+	.blogtext{ width:60%; }
+    
+    .left-cell{width:100%; margin-bottom:20px;}
+    .right-cell{width:100%;}
+    .leftprice { display: block; }
+	.product-detail-header{padding-bottom:0px;}
+	.topprice h3 { display: none; }
+	.topprice .left{float:left; text-align: right; width:49%; color:#00afef; font:normal 24px/34px Arial, Helvetica, sans-serif;}
+	.topprice .right{float:left; text-align: left; width:64px !important; padding-left: 20px;}
+
+    /*boat list*/
+	ul.product-list.homeview .product .custom_label_div { width: 33%; position: absolute; left: 0%; top: 0%; }
+	/*boat list end*/
+
+    .product-detail .left-cell{width:100%; margin-bottom:20px;}
+    .product-detail .right-cell{width:100%;}
+
+    .broker-wrap{text-align:center;}
+    .product-detail .right-cell .section .broker .thumb{float:none; margin:0 auto;}
+   
+    .left-cell{}
+    h3.ad-search{background:#f6f6f6; border:solid 1px #d9d9d9; padding:10px 20px; display:block; text-align:center; cursor:pointer;}
+    h3.ad-search span{background:url(../images/menu2.png) right center no-repeat; display:block;}
+    .ad-search-con{display:none;}
+
+    .login-page .left-side{width:98%; float:left;}
+    .login-page .right-side{padding-top: 10px; width:98%; float:right;}
+    .login-page ul.form .forgot{width:100%;}
+    .login-page .space1 { padding-top: 5px; }
+
+    .dashboard-main { width: 100%; }
+    .dashboard-main .left-side{float:left; width:100%;}
+    .dashboard-main .right-side{float:left; width:100%; margin-top: 3%; }
+	
+	.profile-main .mainleft { width: 33%; }
+	.profile-main .mainright { width: 62%; }
+	
+	.pagecolumnmain .left-side, .pagecolumnmain .left-side-eq{width:100%; float: left; padding-bottom: 20px; }
+	.pagecolumnmain .right-side, .pagecolumnmain .right-side2, .pagecolumnmain .right-side-eq{width:100%; float:left; margin-right: 0;}
+	
+	.three-cols .three-cols-box:nth-child(2) { width: 100%; float: none; display: block; margin-bottom: 20px; }
+	.three-cols .three-cols-box:nth-child(3) { width: 100%; float: none; display: block; text-align: center; }
+	.three-cols .three-cols-box:nth-child(3) img { display: inline-block; margin: 0; }
+	.three-cols .three-cols-box:nth-child(3) img:first-child { margin-right: 10px; }
+	
+	ul.ourteam-list.listview > li{ margin-left: 4%; width:48%; }
+	ul.ourteam-list.listview > li:nth-child(5n+1), 
+	ul.ourteam-list.listview > li:nth-child(4n+1), 
+	ul.ourteam-list.listview > li:nth-child(3n+1) { margin-left:4%; clear: none; }
+	ul.ourteam-list.listview > li:nth-child(2n+1) { margin-left:0; clear: both; }
+	
+	ul.catmake-list-top > li{ display: block; width:100%; }
+	ul.catmake-list-top > li:nth-child(1) { padding-right: 0; }
+	ul.catmake-list-top > li:nth-child(2) { padding-left: 0; margin-top: 20px; }
+	ul.catmake-list-top > li:nth-child(2):before {
+		content: '';
+		border-left: 0;
+		position: absolute;
+		height: 0;
+		left: 0;
+		top: 0;
+	}
+	
+	.footer .footerbottom ul.footercol > li:nth-child(3) { margin-left:0; width: 100%; margin-top: 10px; text-align: center; }
+}
+
+@media screen and (max-width: 685px) {
+	
+	ul.form li .fieldlabel { float: none; width: 100%; margin-bottom: 10px; }
+	ul.form li .fieldval { float: none; width: 100%; }
+	ul.form li .fieldlabel.fieldlabelempty { display: none; }
+	
+	ul.emailtemplatelist li{ margin: 6px 0 0 2%; width:32%; }
+	ul.emailtemplatelist li:nth-child(6n+1) { margin-left:2%; clear: none; }
+	ul.emailtemplatelist li:nth-child(3n+1) { margin-left:0; clear: both; }
+	
+	ul.boatgrouplist li{float:none; margin:10px 0 0 0; width:100%; }
+	ul.boatgrouplist li:nth-child(3n+1) { margin-left:0; clear: none; }
+	
+	ul.locationcms li { margin: 15px 0 0 0; width: 100%; }
+	ul.locationcms li:nth-child(1) { margin-top:0; }
+	
+	.boatslideshow-main.design_1 .slide-boatimage { float: none; width: 100%; line-height: 0; }
+	.boatslideshow-main.design_1 .slide-boatthumb { float: none; width: 100%; margin-top: 10px; }
+	.sl_content_1 ul li{ width: 23%; margin-left: 2.66%; margin-top: 0; }
+	.sl_content_1 ul li:nth-child(2n+1) { margin-left: 2.66%; clear: none; }
+	.sl_content_1 ul li:nth-child(4n+1) { margin-left:0; clear: both; }
+}
+
+@media screen and (max-width: 640px) {
+	
+	.blank_top { height: 0; }
+	.header{ height: auto; position: relative; top: auto; left: auto; right: auto; }	
+	.header .container { position: relative; padding: 10px 0; }
+	
+	ul.headercol { display: block; }
+	ul.headercol > li:nth-child(1) { display: block; 
+		-moz-transition:       none;
+		-o-transition:         none;
+		-webkit-transition:    none;
+		transition:           none;
+		-webkit-transform: none;
+		
+		width: auto;
+		max-width:254px;
+		margin: 0 auto;
+		margin-bottom: 20px;
+		
+		-webkit-flex:1; /* Safari 6.1+ */
+		-ms-flex: 1; /* IE 10 */ 
+		flex: 1;
+	}
+	
+	ul.headercol > li:nth-child(2) { width: 100%; text-align: center; }
+
+	/*.main-content .leftcol{ width:100%;}
+	.main-content .rightcol{ width:100%;}*/
+    .suggestsearch { width: 40%; height: 150px; }	
+	
+	ul.testimonialslider li .posterimage { width: 100%; margin-top: 1px; display: block; text-align:center; }
+	ul.testimonialslider li .postercontent { width: 100%; display: block; }
+	
+	.homesection3 .homesection3-left { float: none; width: 100%; margin-bottom: 10px; }
+	.homesection3 .homesection3-right { float: none; width: 100%;  }
+
+	ul.stephead li {  margin:0 0 0 20px; }
+}
+
+@media screen and (max-width: 600px) {
+	
+	.signin-register-link { text-align: center; display: block; margin-right: 0; }	
+	.signin-register-link a.sn { top: 0; }
+	.signin-register-link span.txtlink { position: relative; top: 0;} 
+	.after-login{ top: 0; padding-top: 0; }
+	
+	ul.locationname li { width: 28%; }
+	ul.locationname li:nth-child(even) { float: left; }
+	
+	.blogimg{ width:35%; }
+	.blogtext{ width:56%; }
+	ul.stephead li {  margin:0 0 0 20px; font-size: 13px; }
+	
+	ul.formcol li { width: 49%; margin-left: 2%; }
+	ul.formcol li:nth-child(4n+1), ul.formcol li:nth-child(3n+1) { margin-left:2%; clear: none; }
+	ul.formcol li:nth-child(2n+1) { margin-left:0; clear: both; }
+	
+	ul.boxcol4 > li {  width: 49%; margin-left: 2%; }
+	ul.boxcol4 > li:nth-child(3n+1),
+	ul.boxcol4 > li:nth-child(2n+1) { margin-left:0; }
+}
+
+@media screen and (max-width: 560px) {	
+	
+    .divrow3 .uimg { float: left; width: 10%; padding: 1% 1%; margin: 0;}
+    .divrow3 .txtcon { float: left; width: 55%; padding: 1% 1%;}
+    .divrow3 .options { float: right; width: 23%; padding: 1% 1%; text-align: right;}
+	
+	.divrow4 .uimg { float: left; width: 20%; padding: 1% 1%; margin: 0;}
+    .divrow4 .txtcon { float: left; width: 45%; padding: 1% 1%;}
+    .divrow4 .options { float: right; width: 23%; padding: 1% 1%; text-align: right;}
+	
+	.featured-yachts ul.featuredboat li{float:none; margin:10px 0 0 0; width:100%; }
+	.featured-yachts ul.featuredboat li:nth-child(2n+1) { margin-left:0; }
+	/*.featured-yachts ul.featuredboat li{  width: 50%; }*/
+	
+	ul.newboats li { width: 100%; margin-left: 0%; }
+	ul.newboats li:nth-child(2n+1) { margin-left:0; clear: both; }
+	
+	.homeleft3 { width: 100%; float: none; display: block; }
+	.homeright3 { width: 100%; float: none; display: block; }
+	ul.mapandlocation li { text-align: center; }
+	
+	ul.catmake-list > li{  width:32%; margin:0 0 8px 2%;  }
+	ul.catmake-list > li:nth-child(4n+1) { margin-left:2%; }
+	ul.catmake-list > li:nth-child(3n+1) { margin-left:0; }
+}
+
+@media screen and (max-width: 531px) {
+	ul.logo-list li{ width: 31%; }	
+
+	.leftfloatdiv, .rightfloatdiv{ float: none; display: block; width: 100%; margin: 0 0 8px 0;}
+	.blog-box .leftfloatdiv, .blog-box .rightfloatdiv { width: 100%; }
+	.editordivrow .leftfloatdiv, .editordivrow .rightfloatdiv { width: 100%; }
+	.homesection3 .leftfloatdiv,.homesection3 .rightfloatdiv { width: 100%; }
+	
+	.editordivrow .edimgleft {float: left; width: 100%; margin-bottom: 12px; }
+	.editordivrow .edcontentright {float: right; width: 100%; }
+	
+	.editordivrow .edimgright {float: right; width: 100%; }
+	.editordivrow .edcontentleft {float: left; width: 100%; margin-bottom: 12px; }
+	
+	.editordivrow .edimgleft.testimonialimage img, .editordivrow .edimgright.testimonialimage img { margin-top: 0; }
+	
+	.blog-box { margin-top: 10px;}
+	.blogimg{ float: left; width:100%; margin-bottom: 5px; }
+	.blogtext{ float: left; width:100%; }
+	
+	ul.stephead { padding: 0; margin: 0; list-style: none; z-index: 2; position:relative; top: 0px;}
+	ul.stephead li { width: 100%; margin:0 0 10px 0; padding:0 0 0 30px; background:url(../images/stepnormal.png) 0 0 no-repeat; font-size: 16px; }
+	ul.stephead li.active { background:url(../images/stepactive.png) 0 0 no-repeat; }
+	ul.stephead li.completed { background:url(../images/stepcompleted.png) 0 0 no-repeat; }
+	.multistepform-holder {  margin-top: 10px; }	
+	
+	ul.product-list li{ margin-left: 0%; width:100%; }
+	ul.product-list li:nth-child(3n+1) { margin-left:0%; }
+	ul.product-list li:nth-child(2n+1) { margin-left:0; }
+	
+	ul.imagedisplay.gridview li { width: 48%; margin: 2px 0 2px 4%; border: 0px; }
+	ul.imagedisplay.gridview li:nth-child(4n+1) { margin-left:4%; }
+	ul.imagedisplay.gridview li:nth-child(3n+1) { margin-left:4%; }
+	ul.imagedisplay.gridview li:nth-child(2n+1) { margin-left:0; }
+	
+	.slide-boatinfo-left { float: none; width: 100%; }
+	.slide-boatinfo-right { float: none; width: 100%; }
+	
+	ul.latestnews li .newsimg { width:100%; float:none; margin-bottom: 10px; }
+	ul.latestnews li .newstext {float:mome; width: 100%; }
+	
+	ul.tophomebox > li {  width: 100%; margin-left: 0; }
+	ul.tophomebox > li:nth-child(4n+1), 
+	ul.tophomebox > li:nth-child(3n+1) { margin-left:0; }
+	ul.tophomebox > li:nth-child(2n+1) { margin-left:0; }
+	
+	ul.boxcol4 > li {  width: 100%; margin-left: 0; }
+	ul.boxcol4 > li:nth-child(5n+1), 
+	ul.boxcol4 > li:nth-child(4n+1), 
+	ul.boxcol4 > li:nth-child(3n+1) { margin-left:0; }
+	ul.boxcol4 > li:nth-child(2n+1) { margin-left:0; }
+}
+
+@media screen and (max-width: 480px) { 	
+	.featured-yachts ul.featuredboat li{  width: 100%; }  
+	.divrow3 .uimg { float: left; width: 10%; padding: 1% 1%; margin: 0;}
+    .divrow3 .txtcon { float: left; width: 50%; padding: 1% 1%;}
+    .divrow3 .options { float: right; width: 28%; padding: 1% 1%; text-align: right;}
+	
+	.divrow4 .uimg { float: left; width: 20%; padding: 1% 1%; margin: 0;}
+    .divrow4 .txtcon { float: left; width: 40%; padding: 1% 1%;}
+    .divrow4 .options { float: right; width: 28%; padding: 1% 1%; text-align: right;}
+
+    .specifications-row dl{margin-bottom:10px;}
+    .specifications-row dt{width:100%;}
+    .specifications-row dd{margin:0;}
+
+    .login-box{width:350px; padding:0;}
+    ul.product-list-big li{float:left; margin:0 40px 15px 25px; padding:0; background:none; width:84%;}
+
+    .headsearch { width: 50%; margin-top: 6%; }
+	
+	.singleblock_box .column1 { float:left; width:100%; }
+	.singleblock_box .column2 { float:left; width:100%; }
+
+    ul.form li.left{float:left; width:100%;}
+    ul.form li.right{float:left; width:100%;}
+	ul.form li.manageright {display: none;}
+	
+	ul.form .input2{width:89%; }
+    .headsearch { height: 200px; }
+	
+	.uploadleft { float: left; width: 100%; margin-bottom: 10px; }
+	.uploadright { float: right; width: 100%; }
+
+	.profile-main .mainleft { width: 100%; text-align:center; }
+	.profile-main .mainright { width: 100%; float: left; margin-top: 20px; }	
+		
+	ul.ourteam-list.listview > li{ margin-left: 0%; width:100%; }
+	ul.ourteam-list.listview > li:nth-child(5n+1), 
+	ul.ourteam-list.listview > li:nth-child(4n+1), 
+	ul.ourteam-list.listview > li:nth-child(3n+1), 
+	ul.ourteam-list.listview > li:nth-child(2n+1) { margin-left:0; clear: both; }
+	.manageheight { height: 0px; }
+	
+		
+	ul.buysellcontact > li{ display: block; width: 100%; margin:10px 0 0 0; }
+	ul.buysellcontact > li:nth-child(1){ margin-top: 0; }
+	.homesection6 a.button { padding: 10px; min-width: 200px; max-width: 320px; }
+}
+
+@media screen and (max-width: 454px) {	
+	.after-login ul { width:160px; }	
+	
+	ul.product-list.homefeatured { margin: 0; width: 100%; }
+	ul.product-list.homefeatured li{ width:100%; }
+	
+	.text_area .leftimage {  width: 90%; margin-right: 10%; }
+	.text_area .rightcontent {  width: 100%; padding-top: 20px; }
+	
+	ul.locationgallery li { margin: 0 0 5px 0; width: 100%; }
+	ul.locationgallery li:nth-child(4n+1) { margin-left:0; }
+	ul.locationgallery li:nth-child(2n+1) { margin-left:0; }
+	
+	.footer .footerbottom ul.footercol > li{ width: 100%; margin-left: 0%; margin-bottom: 10px; text-align:center; }
+	.footer .footerbottom ul.footercol > li:nth-child(3) { margin: 0;}
+	
+	.footerlast ul.footerbox > li { width: 100%; margin-left: 0; }
+	.footerlast ul.footerbox > li:nth-child(2n+1) { margin-left:0; }
+	.footerlast ul.footerbox > li:nth-child(1) { text-align: center; margin-bottom: 10px; }
+	.footerlast ul.footerbox > li:nth-child(2) { text-align: center; }
+	
+	ul.form li .fieldlabel { float: left; width: 100%; margin-bottom: 10px; }
+	ul.form li .fieldval { float: left; width: 100%; }
+	ul.form li .fieldlabel.responsivehide { display: none; }
+	
+	.emp_data_label { width: 44%; }
+	.emp_data_value { width: 28%; }
+	
+	.emp_data_label { word-break: break-all; }
+	.emp_data_value { word-break: break-all; }
+	.emp_data_value.bigger { font-size: 18px; }
+	.emp_data_value.medium{ font-size:16px; }
+}
+
+@media screen and (max-width: 430px) {
+	ul.headercol > li:nth-child(1) img{ width:86%; }
+	
+	ul.formcol li { width: 100%; margin-left: 0; }
+	ul.formcol li:nth-child(4n+1), ul.formcol li:nth-child(3n+1), ul.formcol li:nth-child(2n+1) { margin-left: 0; clear: both; }
+	
+	ul.catmake-list > li{ width:49%; margin:0 0 10px 2%; }
+	ul.catmake-list > li:nth-child(3n+1) { margin-left:2%; }
+	ul.catmake-list > li:nth-child(2n+1) { margin-left:0; }
+}
+
+@media screen and (max-width: 360px) {
+    .login-box{width:250px; padding:0;}
+    
+    .divrow3 .uimg { float: left; width: 10%; padding: 1% 1%; margin: 0;}
+    .divrow3 .txtcon { float: left; width: 45%; padding: 1% 1%;}
+    .divrow3 .options { float: right; width: 33%; padding: 1% 1%; text-align: right;}
+	
+	.divrow4 .uimg { float: left; width: 15%; padding: 1% 1%; margin: 0;}
+    .divrow4 .txtcon { float: left; width: 40%; padding: 1% 1%;}
+    .divrow4 .options { float: right; width: 33%; padding: 1% 1%; text-align: right;}
+
+    .headsearch { width: 70%; margin-top: 8%; }
+    .suggestsearch { width: 60%; height: 180px; }
+	
+	ul.offerboatlist li { width: 100%; margin-left: 0; }
+	ul.offerboatlist li:nth-child(4n+1) { margin-left:0; }
+	ul.offerboatlist li:nth-child(2n+1) { margin-left:0; }
+	
+	.footerphone, .footeremail { display: block; margin-right: 0; }
+}
+
+@media screen and (max-width: 340px) {
+	ul.form .input2{width:88%; }
+	.homesection3 ul li{ margin:10px 0 0 0; padding:0; list-style:none; width:100%; }
+	.homesection3 ul li:nth-child(1) { margin-top:0; }
+}
+
+@media screen and (max-width: 325px) {
+    .dashboard-main ul li.left{float:left; width:48%;}
+    .dashboard-main ul li.right{float:right; width:48%;}
+	ul.logo-list li{ width: 30.5%; }
+}
